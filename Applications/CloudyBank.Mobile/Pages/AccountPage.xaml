@@ -1,0 +1,77 @@
+<phone:PhoneApplicationPage 
+    x:Class="CloudyBank.Mobile.Pages.AccountPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:charts="clr-namespace:AmCharts.Windows.QuickCharts;assembly=AmCharts.Windows.QuickCharts.WP"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <controls:Panorama Title="{Binding Path=SelectedAccount.Title}">
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="Balance">
+                <Grid>
+                    <charts:SerialChart DataSource="{Binding Path=SelectedAccount.FilteredBalanceEvolution}" 
+                                        CategoryValueMemberPath="FormatedDate" Foreground="{StaticResource PhoneForegroundBrush}"
+                                        BorderBrush="{StaticResource PhoneBorderBrush}" AxisForeground="{StaticResource PhoneForegroundBrush}"
+                                        Background="Transparent" PlotAreaBackground="Transparent">
+                        
+                        
+                        
+                        <charts:SerialChart.Graphs>
+                            <charts:LineGraph Title="Balance" ValueMemberPath="Balance" StrokeThickness="3" Background="Black">  
+                                
+                            </charts:LineGraph>
+                        </charts:SerialChart.Graphs>
+                    </charts:SerialChart>
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="Depenses">
+                <Grid>
+                    <charts:PieChart TitleMemberPath="Key" ValueMemberPath="Value" 
+                                     DataSource="{Binding Path=SelectedAccount.TagChartData}"
+                                     Foreground="{StaticResource PhoneForegroundBrush}"
+                                     IsEnabled="False" Margin="0">
+                        <charts:PieChart.Brushes>
+                            
+                            <!--<SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.8"/>
+                            <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.6"/>
+                            <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.4"/>
+                            <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.2"/>
+                            <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.1"/>
+                            <SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>-->
+
+                            <!-- Brushes -->
+                            <SolidColorBrush x:Name="LimeBrush" Color="#8CBF26"/>
+                            <SolidColorBrush x:Name="OrangeBrush" Color="#F09609"/>
+                            <SolidColorBrush x:Name="RedBrush" Color="#E51400"/>
+                            <SolidColorBrush x:Name="BlueBrush" Color="#1BA1E2"/>
+                            <SolidColorBrush x:Name="GreenBrush" Color="#339933"/>
+                            <SolidColorBrush x:Name="BrownBrush" Color="#996600"/>
+                            <SolidColorBrush x:Name="TealBrush" Color="#00ABA9"/>
+                            <SolidColorBrush x:Name="MagentaBrush" Color="#FF0097"/>
+                            <SolidColorBrush x:Name="PurpleBrush" Color="#A200FF"/>
+                        </charts:PieChart.Brushes>
+                    </charts:PieChart>
+
+                </Grid>
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+
+    <!--Panorama-based applications should not show an ApplicationBar-->
+
+</phone:PhoneApplicationPage>

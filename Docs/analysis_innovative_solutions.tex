@@ -1,0 +1,119 @@
+\chapter{Analysis of innovative banking solutions}
+
+\section{Personal finance management}
+
+Personal finance management (PFM) is a set of functions and features which allow the user to monitor and analyze his personal finance situation, his spending habits and his payments. PFM is already a standard feature of several online banking applications especially in United States. Several third party companies are also offering PFM as a service independent on the bank \footnote{The biggest companies offering external PFM services are: Quicken, Mint, Bundle, Standard Chartered, Yodlee, Meniga however there are several smaller companies active only on local markets}. PFM is a vast subject which covers several areas, described in the following paragraphs.
+
+\subsection{Account aggregation}
+Account aggregation is a term which describes the process of collecting transactional data from several accounts into one place, so that the data could be managed and analyzed together.
+
+The majority of clients have several accounts sometimes even spread over several banks or financial institutions. Account aggregation was previously offered only by PFM solution providers. Nowadays banks enter this field and will be offering account aggregation as part of online banking services. It is likely to happen that the bank having the best user interface and high quality aggregation system will obtain advantage over other banks.
+
+\subsection{Payment categorization}
+In the terms of PFM, categorization is the process of assigning a category to given transaction (payment). There is a set of standard categories such as "traveling" or "food" which is proposed to the client, but client can also create his own categories.
+
+Categorization can be either manual or automatic. The manual categorization is performed by the user, whereas the automatic categorization is performed by the categorization engine. Good categorization engine is the base of each PFM solution. Categorization engine usually takes in account three types of rules.
+
+\begin{description}
+	\item [Rules based on Merchant Category Code (MCC) analysis]
+	Each vendor which is using credit card payments is assigned unique identification code (MCC code). Categorization engines can use this code to classify payments, if they are able to match the vendor with its MCC code.
+	\item [Rules defined by the client]
+	
+	Clients have the possibility to define their own rules, based on the vendor, amount and other transaction properties. The categorization engine than prefers the user-defined rules before starting its own categorization algorithms.
+	
+	\item [Rules based on the analysis of manually categorized transactions]
+	
+	The ability to learn lies in the hearth of any good categorization engine. The engine can apply machine learning algorithms to the data composed of manually categorized transactions by the users. Later it can use prediction models to estimate the categories of newly added transactions.
+	
+\end{description}
+
+The more transactions are categorized the better is the adoption of PFM by the clients. Furthermore it is the discriminating feature of PFM which decides whether the PFM solution will be adopted by it's users. Therefore when the categorization engine does not provide good results, the user either has to categorize his transactions manually or will not be able to perform additional analysis.
+
+\subsection{Budget management}
+Using the data obtained by categorization engine, PFM software can easily see which categories build the biggest parts of the overall budget. This will give the user also the possibility to set up goals on the whole budget or just a budget of certain category. PFM can also use the history data to estimate the evolution of user's budget.
+
+\subsection{Mobile aspects of PFM}
+Several PFM functions can take an advantage of mobile applications:
+
+\begin{description}
+	\item [Manual categorization]
+	
+	Smartphones enable the user to perform manual tasks such as manually categorize the payments. This might be useful especially during user's "dead time" (time spent in public transport, waiting in lines etc.).
+	\item [Scanning, image acquisition and recognition]
+	
+	Most of the smartphones are equipped with camera, which allows the user take picture of arbitrary documents. The users can use the camera to acquire images of checks and invoices. Once the invoice is scanned, OCR (Optical Character Recognition) software can be used in order to extract the information and import the payment directly to the PFM solution.		
+	
+\end{description}
+
+\subsection{Comparison with the community}
+The data gathered with payments categorization can be used to provide comparison with other clients of the bank. Furthermore, if the clients would decide to share some more personal information such as which banking products (loans, investment programs) they are using, than all clients could easily see whether they are using the same banking products as others with similar budget profile. This concept is widely used for the community trading platforms\footnote{Companies such as \href{https://us.etrade.com/e/t/home}{E*TRADE}, \href{http://hopee.fr.sharewise.com/browse/hopee}{Hopee} and \href{https://www.unience.com/}{Unience} offer Social Networks platforms targeting individual investors.} which allow the investors to learn from each others portfolios.
+
+\subsection{Payment management}
+Payment management is another feature which can keep the client on top of his payments and short-term obligations. This functionality can have a form of advanced calendar which will allow the client to define payments which have to be handled before the entered date. One of the possible enhancements could be allowing definitions of regular payments, which repeat itself once per week or per month. Once the payment is created the client will have the ability to settle it directly from within the calendar view. Notifications would be sent if the payment would not be settled before the payment date.
+
+\section{New communications channels}
+One of the new communication channel which is already used by several banks are Social Networks\footnote{Bank Of America was among the first banks to create a twitter account and blog}.
+
+Another new concept which will change the way of communication between client and banks are "virtual agencies". These web-based agencies are special sites, where each client is associated to group of advisers\footnote{Similar service was recently launched by \href{https://e-bp2l.net/}{Banque Populaire}}. These advisers are on-line in prolonged hours and make use of communication channels such as chats, Social Networks or video calls\footnote{BankInter launched a service offering video calls which reached 30 000 calls during the first 6 months}.
+
+\section{Document digitizing}
+Paper documents and contracts build up the relation between client and bank. There is a need for a common space between bank and the client where they could share these documents.
+
+This will be solved by creating an "electronic vault", which will be accessible by client as well as by his adviser and where several types of electronic documents could be stored. Including the following documents:
+
+\begin{itemize}
+	\item Contracts and agreements
+	\item Transactions and accounts overviews
+	\item Other documents needed for example for opening new account
+\end{itemize}
+
+Digitization of documents can make use of smartphones which are equipped with cameras. Basically each photograph could be directly sent to the electronic vault as an electronic document.
+
+Other option would be to perform additional treatment on a photograph such as Optical Character Recognition (OCR) to extract meaningful information\footnote{\href{http://turbotax.intuit.com/snaptax/mobile/}{TurboTax SnapTax} offers a solution which uses OCR to extract data from invoices, which can be than directly build using the banks payment system.}
+
+\section{Security}
+Security of information has become the major issue concerning software which is dealing with personal or sensitive information. Online banking should be secured and transparent but should not place too complex demands on the client. In other words modern bank should propose "strong authentication" without complex passwords.
+
+The term of "strong authentication" does not have concrete definition, however it has become a standard that secured systems do not depend only on login - password combination but ask the client for additional information which confirms his identity. To provide the additional information, one of the following scheme could be used.
+
+\begin{itemize}
+	\item One Time Passwords - password generated for one time use. Can be send to the user via SMS or generated on a special calculator or other hardware device.
+	\item Use of biometrics
+	\begin{itemize}
+		\item Fingerprints recognition \footnote{This security option is already provided by security group \href{http://www.digitalpersona.com/}{Digital Persona} and has been used by Banco Azteca}
+		\item Voice biometrics \footnote{Voice biometrics is used as security layer in the web application of \href{http://www.itwire.com/it-industry-news/strategy/25609-national-australia-bank-replaces-pins-with-voice-biometrics}{Bank Of Australia}}
+		\item Face recognition
+		\item Iris recognition \footnote{Iris recognition is used in mobile application of Spanish bank \href{http://www.mobbeel.com/mobbeel-integrates-biometric-iris-recognition-in-the-mobile-brokerage-application-of-bankinter/}{BankInter}}
+	\end{itemize}
+\end{itemize}
+
+\section{Open data interfaces}
+Regardless how good the analytical tools provided by the bank might be, the clients might always want to use external applications to perform additional analysis on transactional data. These external applications will need secure way to obtain the data.
+In the current situation external tools (such as PFM tools) have two possibilities two access the data:
+
+\begin{description}
+	\item [Impersonation of the client and reverse engineering of the obtained data]
+This option assumes that the client reveals at some point his credentials to the external application. The application than uses this credentials to access the banks web pages "as the client" and analyzes the data obtained from the web page. The application can use techniques such as screen-scrapping or analyze of the exported files.
+
+	\item [Access to the data through API offered by banks]
+This option assumes that the external application has an agreement with the bank, which exposes an API, allowing the external software to obtain the data. Nevertheless even when using this option, the client is still forced to reveal his credentials to the PFM solution provider.
+\end{description}
+
+As demonstrated here, both of these possibilities assume that the client gives away his credentials to the external application. The external application is therefore responsible for storing the user's credentials. The minimal security demand is that both the communication channel between the bank and the external application as well as the data storage of external application should be encrypted. But event if these requirements are met, the client is never completely sure, that his credential will not be misused.
+
+This however is a common problem not only limited to banking solutions. This situation is characterized by a relation of three parties: the user (resource owner), the application which holds user's data (data provider, in this case the bank) and application which wishes to access the data in behalf of the user (data consumer, in this case external PFM solution).
+
+This technical problem can be solved by implementing OAuth\cite{OAuth11} protocol. OAuth protocol has been designed to address this issue, hence it is a question of time whether and when banks will provide OAuth interfaces. There are several internet corporations which already provide OAuth interfaces (Twitter, Google, Facebook, Yahoo and Microsoft). OAuth provides a communication scheme, which allows the client to delegate permissions to access sensitive data to third party applications.
+
+In general banks should benefit from opening the data interfaces to partners. For example in order to enable third party company to perform the distribution of  reductions coupons in the dependence of users spending and personal profile \footnote{\href{https://swipely.com/lp/unsupported}{Swipely} offers a rewarding system which allows the users to get discounts directly after spending money at certain stores. The application will connect directly to the bank and analyze the spending which is done in order to pair the transaction with the stores in its database.}. From other point of view, allowing software developers to create applications with existing banking data, can be seen as wise step, because the clients will have a large variety of applications to use and might prefer the bank which provides the widest variety. Thus in general it is an advantage for the bank.
+
+\section{Innovative technical solutions}
+The thematic of innovations in banking was discussed in \cite{IBM09}. Although the identified functional requirements were not the same as the ones defined in this thesis, the technical solution described in this article can serve as a reference.
+
+This paper first introduces the standard architecture of banking solutions. In given example the web application is deployed to an application server and connected to Core Banking System (CBS) and Enterprise Service Bus (ESB). The application server hosts a Channel Handler which sends the request to appropriated controller and this controller generates the response page.
+
+The innovative architecture proposed by the authors, introduces "browser side runtime". This should consists of model and presentation layer. The model is populated by the data from server-side services. Data is exposed in JSON and XML formats. The "browser side runtime" works thus as a client side AJAX framework. The presentation layer should be build up of widgets.
+
+As suggested by the authors, the runtime can be build either using JavaScript or any existing RIA framework.
+
+The paper also suggests, that online banking should propose unlimited number of secondary services. Each service should be offered to a customer as a combination of widgets. As example of a service application to follow stocks on world markets is proposed. A subscription mechanism is proposed to enable the user to manage his services.

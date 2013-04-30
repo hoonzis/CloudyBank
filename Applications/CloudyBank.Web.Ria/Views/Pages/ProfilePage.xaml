@@ -1,0 +1,96 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.ProfilePage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           xmlns:visualizationToolkit="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+           xmlns:charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+           xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           xmlns:viewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels"
+           xmlns:userControls="clr-namespace:CloudyBank.Web.Ria.UserControls"
+           Title="Profile Page" Foreground="White">
+    <Grid x:Name="LayoutRoot" d:DataContext="{d:DesignData /SampleData/CustomerViewModelSampleData.xaml}">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Left side - personal profile information -->
+        <StackPanel Grid.Column="0" Margin="5">
+            <TextBlock Text="{Binding Path=ProfilePageRes.YourDepenses, Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Path=ProfilePageRes.DepensesNote, Source={StaticResource Strings}}" TextWrapping="Wrap" Height="30"/>
+            <Border Margin="5" Background="{StaticResource TealBrush}">    
+                <StackPanel Margin="5">
+                    <userControls:TimeSpanSelector Days="{Binding TagDepensesDaysCount, Mode=TwoWay}"/>
+                    <charting:Chart Margin="0" Style="{StaticResource SimpleChart}" Template="{StaticResource BareChart}">
+                        <charting:Chart.Series>
+                            <charting:PieSeries ItemsSource="{Binding TagDepenses}" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+                        </charting:Chart.Series>
+                    </charting:Chart>
+                </StackPanel>
+            </Border>
+            <Border Margin="5" Background="{StaticResource LimeBrush}">
+                <StackPanel>
+                    <charting:Chart Margin="0" Style="{StaticResource SimpleChart}" Template="{StaticResource BareChart}">
+                        <charting:Chart.LegendStyle>
+                            <Style TargetType="Control">
+                                <Setter Property="Width" Value="0"/>
+                            </Style>
+                        </charting:Chart.LegendStyle>
+                        <charting:BarSeries Title="{Binding Path=ProfilePageRes.Depenses, Source={StaticResource Strings}}" ItemsSource="{Binding TagDepenses}" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+                    </charting:Chart>
+                </StackPanel>
+        
+            </Border>
+
+            
+        </StackPanel>
+
+        <!-- Right side - community profiles-->
+        <Grid Grid.Column="1" Margin="5">
+            <!-- note about the possibility of seeing profile -->
+            <TextBlock Text="{Binding Path=ProfilePageRes.NoRightsToSeeProfiles, Source={StaticResource Strings}}" TextWrapping="Wrap"
+                               Visibility="{Binding HasProfile, Converter={StaticResource BoolToVisibilityReversed}}"/>
+
+            <StackPanel Visibility="{Binding HasProfile, Converter={StaticResource BoolToVisibility}}">
+                <TextBlock Text="{Binding Path=ProfilePageRes.CommunityDepenses, Source={StaticResource Strings}}" FontSize="16"/>
+                <TextBlock Text="{Binding Path=ProfilePageRes.CommunityNote, Source={StaticResource Strings}}" Height="30"/>
+
+
+                <Border Margin="5" Background="{StaticResource BrownBrush}" DataContext="{Binding SelectedProfile,ElementName=ProfilesSelectorRdb}">
+                    <StackPanel>
+                        <userControls:ProfileSelectorRdb CustomerProfiles="{Binding Path=Profiles, Source={StaticResource Referential}}" x:Name="ProfilesSelectorRdb" Foreground="White"/>
+                        <charting:Chart Style="{StaticResource SimpleChart}" Margin="0" Padding="0" Template="{StaticResource BareChart}">
+                            <charting:Chart.TitleStyle>
+                                <Style TargetType="ContentControl">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </Style>
+                            </charting:Chart.TitleStyle>
+                            <charting:Chart.Series>
+                                <charting:PieSeries ItemsSource="{Binding TagDepenses}" IndependentValueBinding="{Binding TagName}" DependentValueBinding="{Binding Depenses}" Margin="0" Padding="0"/>
+                            </charting:Chart.Series>
+                        </charting:Chart>
+                    </StackPanel>
+
+                </Border>
+
+                <Border Margin="5" Background="{StaticResource RedBrush}" DataContext="{Binding SelectedProfile,ElementName=ProfilesSelectorRdb}">
+                    <charting:Chart Margin="0" Style="{StaticResource SimpleChart}" Template="{StaticResource BareChart}">
+                        <charting:Chart.LegendStyle>
+                            <Style TargetType="Control">
+                                <Setter Property="Width" Value="0"/>
+                            </Style>
+                        </charting:Chart.LegendStyle>
+                        <charting:BarSeries ItemsSource="{Binding TagDepenses}" IndependentValueBinding="{Binding TagName}" DependentValueBinding="{Binding Depenses}"/>
+                    </charting:Chart>
+                </Border>
+            </StackPanel>
+
+        </Grid>
+        
+    </Grid>
+</navigation:Page>

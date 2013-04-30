@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="octo.partners.service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="octo.partners.service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="octo.partners.service/Imports">
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPartnerService.svc?xsd=xsd0" namespace="octo.partners.service" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPartnerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPartnerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="WCFPartnerService_GetPartnersForCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnersForCustomer" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_GetPartnersForCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnersForCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_CreatePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartner" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_CreatePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_UpdatePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartner" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_UpdatePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_RemovePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartner" />
+  </wsdl:message>
+  <wsdl:message name="WCFPartnerService_RemovePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartnerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCFPartnerService">
+    <wsdl:operation name="GetPartnersForCustomer">
+      <wsdl:input wsaw:Action="octo.partners.service/WCFPartnerService/GetPartnersForCustomer" message="tns:WCFPartnerService_GetPartnersForCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="octo.partners.service/WCFPartnerService/GetPartnersForCustomerResponse" message="tns:WCFPartnerService_GetPartnersForCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePartner">
+      <wsdl:input wsaw:Action="octo.partners.service/WCFPartnerService/CreatePartner" message="tns:WCFPartnerService_CreatePartner_InputMessage" />
+      <wsdl:output wsaw:Action="octo.partners.service/WCFPartnerService/CreatePartnerResponse" message="tns:WCFPartnerService_CreatePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartner">
+      <wsdl:input wsaw:Action="octo.partners.service/WCFPartnerService/UpdatePartner" message="tns:WCFPartnerService_UpdatePartner_InputMessage" />
+      <wsdl:output wsaw:Action="octo.partners.service/WCFPartnerService/UpdatePartnerResponse" message="tns:WCFPartnerService_UpdatePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartner">
+      <wsdl:input wsaw:Action="octo.partners.service/WCFPartnerService/RemovePartner" message="tns:WCFPartnerService_RemovePartner_InputMessage" />
+      <wsdl:output wsaw:Action="octo.partners.service/WCFPartnerService/RemovePartnerResponse" message="tns:WCFPartnerService_RemovePartner_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

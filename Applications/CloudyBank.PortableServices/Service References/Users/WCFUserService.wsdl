@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="octo.users.service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="octo.users.service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="octo.users.service/Imports">
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFUserService.svc?xsd=xsd0" namespace="octo.users.service" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFUserService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFUserService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFUserService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Security" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="WCFUserService_GetCurrentUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUser" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_GetCurrentUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_LoginCookie_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginCookie" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_LoginCookie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginCookieResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_LoginGetID_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginGetID" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_LoginGetID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginGetIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="WCFUserService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCFUserService">
+    <wsdl:operation name="GetCurrentUser">
+      <wsdl:input wsaw:Action="octo.users.service/WCFUserService/GetCurrentUser" message="tns:WCFUserService_GetCurrentUser_InputMessage" />
+      <wsdl:output wsaw:Action="octo.users.service/WCFUserService/GetCurrentUserResponse" message="tns:WCFUserService_GetCurrentUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginCookie">
+      <wsdl:input wsaw:Action="octo.users.service/WCFUserService/LoginCookie" message="tns:WCFUserService_LoginCookie_InputMessage" />
+      <wsdl:output wsaw:Action="octo.users.service/WCFUserService/LoginCookieResponse" message="tns:WCFUserService_LoginCookie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="octo.users.service/WCFUserService/Login" message="tns:WCFUserService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="octo.users.service/WCFUserService/LoginResponse" message="tns:WCFUserService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginGetID">
+      <wsdl:input wsaw:Action="octo.users.service/WCFUserService/LoginGetID" message="tns:WCFUserService_LoginGetID_InputMessage" />
+      <wsdl:output wsaw:Action="octo.users.service/WCFUserService/LoginGetIDResponse" message="tns:WCFUserService_LoginGetID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="octo.users.service/WCFUserService/Logout" message="tns:WCFUserService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="octo.users.service/WCFUserService/LogoutResponse" message="tns:WCFUserService_Logout_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,3 @@
+Accomodation,Different types of accomodation,hotel,motel
+Transport,Different types of transportation means,car,bus
+Internet,Payments for internet connection,wifi,internet,connection

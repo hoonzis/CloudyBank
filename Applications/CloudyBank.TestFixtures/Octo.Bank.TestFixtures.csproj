@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3DB4A37-C083-4EB8-AB87-743FF0F94BB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudyBank.TestFixtures</RootNamespace>
+    <AssemblyName>CloudyBank.TestFixtures</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\Libraries\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\Libraries\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="fit">
+      <HintPath>..\Libraries\fit.dll</HintPath>
+    </Reference>
+    <Reference Include="fitSharp">
+      <HintPath>..\Libraries\fitSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\Libraries\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.1.40711, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="SL.System.Windows">
+      <HintPath>..\Libraries\Silverlight\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="SL.System.RuntimeSerialization">
+      <HintPath>..\Libraries\Silverlight\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="SL.System.Xml">
+      <HintPath>..\Libraries\Silverlight\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.77.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\SqLite64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.77.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\SqLite64\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Fixtures\CustomerFixture.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceWrappers\BusinessPartnerServiceWrapper.cs" />
+    <Compile Include="ServiceWrappers\CustomerServiceWrapper.cs" />
+    <Compile Include="TestHelper\NhibernateHelper.cs" />
+    <Compile Include="TestHelper\SQLiteInMemoryTestConnectionProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloudyBank.Core\CloudyBank.Core.csproj">
+      <Project>{BC3D3C08-07E2-44A1-8C13-FF10739B547F}</Project>
+      <Name>CloudyBank.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.DataAccess\CloudyBank.DataAccess.csproj">
+      <Project>{F7C352DE-00C3-4A20-A4AD-91738328974E}</Project>
+      <Name>CloudyBank.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Dto\CloudyBank.Dto.csproj">
+      <Project>{46A228A0-7F88-4C1A-BFE6-324EDE6E02EE}</Project>
+      <Name>CloudyBank.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.MVVM\CloudyBank.MVVM.csproj">
+      <Project>{6D83664D-8DAB-4BB0-9954-60A836C5B2A6}</Project>
+      <Name>CloudyBank.MVVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.PortableServices\CloudyBank.PortableServices.csproj">
+      <Project>{F26E222A-85F6-4DF6-A51A-40A772B270FD}</Project>
+      <Name>CloudyBank.PortableServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Services\CloudyBank.Services.csproj">
+      <Project>{4862896A-0C44-4DA5-9775-70AEC0328F22}</Project>
+      <Name>CloudyBank.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Web.Ria\CloudyBank.Web.Ria.csproj">
+      <Project>{6CCBA0B1-1C62-4D67-AB22-6D136938C5F4}</Project>
+      <Name>CloudyBank.Web.Ria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Web\CloudyBank.Web.csproj">
+      <Project>{B3C40815-D17F-403A-95BD-51F2B8C1D7DF}</Project>
+      <Name>CloudyBank.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\CloudyBank.Dto.AccountDto.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomerTest_Page.txt" />
+    <Content Include="exclude.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PostBuildAction.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET SLIM_FITNES = "C:\servers\fitnesse\slim\"
+xcopy $(TargetDir)Services.xml "C:\servers\fitnesse\slim\" /y
+xcopy $(TargetDir)DataAccess.xml "C:\servers\fitnesse\slim\" /y
+xcopy $(TargetDir)*.* "C:\servers\fitnesse\slim\" /exclude:$(ProjectDir)exclude.txt /y /r /i</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

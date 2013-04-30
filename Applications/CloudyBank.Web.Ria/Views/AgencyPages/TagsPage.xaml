@@ -1,0 +1,77 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.TagsPage"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:dataForm="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.DataForm.Toolkit"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+           xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           d:DesignWidth="800" d:DesignHeight="480"
+           Title="TagsPage Page" Foreground="White">
+    <Grid x:Name="LayoutRoot" d:DataContext="{d:DesignData /SampleData/CustomerViewModelSampleData.xaml}">
+        <Grid.Resources>
+            <DataTemplate x:Key="TagDataFormTemplate">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Path=Common.Name, Source={StaticResource Strings}, StringFormat='\{0\}:'}" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding Path=Common.Description, Source={StaticResource Strings}, StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="1"/>
+
+                    <dataForm:DataField Margin="3" Grid.Column="1" LabelVisibility="Collapsed">
+                        <TextBox Text="{Binding Title, Mode=TwoWay}"/>
+                    </dataForm:DataField>
+                    <dataForm:DataField Margin="3" Grid.Column="1" Grid.Row="1" LabelVisibility="Collapsed">
+                        <TextBox  Text="{Binding Description, Mode=TwoWay, UpdateSourceTrigger=Default}" TextWrapping="Wrap" MinHeight="100" />
+                    </dataForm:DataField>
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Text="{Binding Path=Common.ManageTags,Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Path=Common.TagsNote, Source={StaticResource Strings}}"/>
+        </StackPanel>
+        
+        <ListBox ItemsSource="{Binding Tags}" SelectedItem="{Binding Path=CurrentItem, ElementName=TagsDataForm, Mode=TwoWay}"
+                 Foreground="White" Grid.Row="1" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource ListItemStyle}">
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Description}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <dataForm:DataForm x:Name="TagsDataForm" ItemsSource="{Binding Tags}" Margin="5,0,0,0" Grid.Column="1" Grid.Row="1"
+                           EditTemplate="{StaticResource TagDataFormTemplate}" VerticalAlignment="Top" 
+                           Background="{StaticResource BrownBrush}" Foreground="White" BorderThickness="0">
+            <i:Interaction.Triggers>               
+                <i:EventTrigger EventName="EditEnded">
+                    <mvvm:EventToCommand Command="{Binding UpdateTagCommand}" CommandParameter="{Binding Path=CurrentItem, ElementName=TagsDataForm}"/>
+                </i:EventTrigger>
+                <i:EventTrigger EventName="DeletingItem">
+                    <mvvm:EventToCommand Command="{Binding RemoveTagCommand}" CommandParameter="{Binding Path=CurrentItem, ElementName=TagsDataForm}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </dataForm:DataForm>
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,26 @@
+<UserControl x:Class="CloudyBank.Web.Ria.UserControls.TimeSpanSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="30" d:DesignWidth="350">
+   <Grid x:Name="LayoutRoot" Background="Transparent" Height="25">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="{Binding Path=Common.TimeSpan, Source={StaticResource Strings}}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+            <RadioButton Content="{Binding Path=Common.OneMonth, Source={StaticResource Strings}}" Style="{StaticResource RectangularRadioButton}" GroupName="TimeGroup" 
+                            x:Name="MonthRDB" Checked="RadioButton_Checked" IsChecked="True" CommandParameter="30" Foreground="White"/>
+                                        
+            <RadioButton Content="{Binding Path=Common.ThreeMonths, Source={StaticResource Strings}}" Style="{StaticResource RectangularRadioButton}" GroupName="TimeGroup"
+                            Checked="RadioButton_Checked" CommandParameter="60" Foreground="White"/>
+                                        
+            <RadioButton Content="{Binding Path=Common.SixMonths, Source={StaticResource Strings}}" Style="{StaticResource RectangularRadioButton}" GroupName="TimeGroup"
+                            Checked="RadioButton_Checked" CommandParameter="90" Foreground="White"/>
+                                        
+            <RadioButton Content="{Binding Path=Common.All, Source={StaticResource Strings}}" Style="{StaticResource RectangularRadioButton}" GroupName="TimeGroup"
+                            Checked="RadioButton_Checked" CommandParameter="Infinity" Foreground="White"/>
+                            
+        </StackPanel>
+    </Grid>
+
+</UserControl>

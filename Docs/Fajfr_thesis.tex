@@ -1,0 +1,317 @@
+% One-page layout: (proof-)reading on display
+%%%% \documentclass[11pt,oneside,a4paper]{book}
+% Two-page layout: final printing
+\documentclass[11pt,twoside,a4paper]{book}
+%=-=-=-=-=-=-=-=-=-=-=-=--=%
+% The user of this template may find useful to have an alternative to these 
+% officially suggested packages:
+\usepackage[czech, english]{babel}
+\usepackage[T1]{fontenc} % pouzije EC fonty 
+\usepackage[utf8]{inputenc}
+
+%=-=-=-=-=-=-=-=-=-=-=-=--=%
+% Depending on your particular TeX distribution and version of conversion tools 
+% (dvips/dvipdf/ps2pdf), some (advanced | desperate) users may prefer to use 
+% different settings.
+% Please uncomment the following style and use your CSLaTeX (cslatex/pdfcslatex) 
+% to process your work. Note however, this file is in UTF-8 and a conversion to 
+% your native encoding may be required. Some settings below depend on babel 
+% macros and should also be modified. See \selectlanguage \iflanguage.
+%\usepackage{czech}  %%%%%\usepackage[T1]{czech} %%%%[IL2] [T1] [OT1]
+%=-=-=-=-=-=-=-=-=-=-=-=--=%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Styles required in your work follow %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+%\usepackage{indentfirst} %1. odstavec jako v cestine.
+
+\usepackage{k336_thesis_macros} % specialni makra pro formatovani DP a BP
+ % \newcommand{\bfig}{\begin{figure}\begin{center}}
+ % \newcommand{\efig}{\end{center}\end{figure}}
+ % umoznuje pouzit prikaz \bfig namisto \begin{figure}\begin{center} atd.
+
+\newcommand\TypeOfWork{Master's Thesis}   \typeout{Master's Thesis} 
+
+\newcommand\StudProgram{Open Informatics}  %master program
+\newcommand\StudBranch{Software Engineering}   % pro prgoram EaI mag. (dobihajici i strukt.)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vyplnte nazev prace, autora a vedouciho
+% Set up Work Title, Author and Supervisor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\WorkTitle{Design and implementation of online banking system for near future}
+\newcommand\FirstandFamilyName{Bc. Jan Fajfr}
+\newcommand\Supervisor{Olivier Roux, OCTO Technology}
+
+
+% Pouzijete-li pdflatex, tak je prijemne, kdyz bude mit vase prace
+% funkcni odkazy i v pdf formatu
+\usepackage[
+pdftitle={\WorkTitle},
+pdfauthor={\FirstandFamilyName},
+bookmarks=true,
+colorlinks=true,
+breaklinks=true,
+urlcolor=red,
+citecolor=blue,
+linkcolor=blue,
+unicode=true,
+]
+{hyperref}
+
+
+
+% Extension posted by Petr Dlouhy in order for better sources reference (\cite{} command) especially in Czech.
+% April 2010
+% See comment over \thebibliography command for details.
+
+\usepackage[square, numbers]{natbib}             % sazba pouzite literatury
+%\usepackage{url}
+%\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>}\urlstyle{tt}}  %rm/sf/tt
+%\renewcommand{\emph}[1]{\textsl{#1}}    % melo by byt kurziva nebo sklonene,
+\let\oldUrl\url
+\renewcommand\url[1]{<\texttt{\oldUrl{#1}}>}
+
+\begin{document}
+\selectlanguage{english} 
+
+% prikaz \typeout vypise vyse uvedena nastaveni v prikazovem okne
+% pro pohodlne ladeni prace
+
+
+\iflanguage{czech}{
+	 \typeout{************************************************}
+	 \typeout{Zvoleny jazyk: cestina}
+	 \typeout{Typ prace: \TypeOfWork}
+	 \typeout{Studijni program: \StudProgram}
+	 \typeout{Obor: \StudBranch}
+	 \typeout{Jmeno: \FirstandFamilyName}
+	 \typeout{Nazev prace: \WorkTitle}
+	 \typeout{Vedouci prace: \Supervisor}
+	 \typeout{***************************************************}
+	 \newcommand\Department{Katedra počítačů}
+	 \newcommand\Faculty{Fakulta elektrotechnická}
+	 \newcommand\University{České vysoké učení technické v Praze}
+	 \newcommand\labelSupervisor{Vedoucí práce}
+	 \newcommand\labelStudProgram{Studijní program}
+	 \newcommand\labelStudBranch{Obor}
+}{
+	 \typeout{************************************************}
+	 \typeout{Language: english}
+	 \typeout{Type of Work: \TypeOfWork}
+	 \typeout{Study Program: \StudProgram}
+	 \typeout{Study Branch: \StudBranch}
+	 \typeout{Author: \FirstandFamilyName}
+	 \typeout{Title: \WorkTitle}
+	 \typeout{Supervisor: \Supervisor}
+	 \typeout{***************************************************}
+	 \newcommand\Department{Department of Computer Science and Engineering}
+	 \newcommand\Faculty{Faculty of Electrical Engineering}
+	 \newcommand\University{Czech Technical University in Prague}
+	 \newcommand\labelSupervisor{Supervisor}
+	 \newcommand\labelStudProgram{Study Programme} 
+	 \newcommand\labelStudBranch{Field of Study}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%    Poznamky ke kompletaci prace
+% Nasledujici pasaz uzavrenou v {} ve sve praci samozrejme 
+% zakomentujte nebo odstrante. 
+% Ve vysledne svazane praci bude nahrazena skutecnym 
+% oficialnim zadanim vasi prace.
+{
+\pagenumbering{roman} \cleardoublepage \thispagestyle{empty}
+\chapter*{Na tomto místě bude oficiální zadání vaší práce}
+\begin{itemize}
+\item Toto zadání je podepsané děkanem a vedoucím katedry,
+\item musíte si ho vyzvednout na studiijním oddělení Katedry počítačů na Karlově náměstí,
+\item v jedné odevzdané práci bude originál tohoto zadání (originál zůstává po obhajobě na katedře),
+\item ve druhé bude na stejném místě neověřená kopie tohoto dokumentu (tato se vám vrátí po obhajobě).
+\end{itemize}
+\newpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%    Titulni stranka / Title page 
+
+\coverpagestarts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    Podekovani / Acknowledgements 
+
+\acknowledgements
+\noindent
+I would like to thank to OCTO Technology for giving me the possibility to work on innovative subject as well to all my colleagues who helped me during the work on the thesis. Specially I would like to thank to Olivier Roux for his advices during the development of the project.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%   Prohlaseni / Declaration 
+
+\declaration{In Prague on January 1, 2012}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Abstract 
+
+\abstractpage
+Since online banking services were introduced, banks have offered to clients transaction and account management functions and did not propose many innovations. However the situation is changing. Banks have to compete with third party companies and are forced to change the way online banking is offered.
+
+This thesis describes the changes in online banking and banking in general. The aim is to identify, describe and analyze the innovative trends as well as to propose a technical solution for online banking, taking into account the innovations which have to be implemented.
+
+The architecture of the proposed application is prepared for integration into existing information system. Emphasis has been put on modularity and testability of the application.
+
+% abstrakt v cestine.
+\vglue60mm
+
+\noindent{\Huge \textbf{Abstrakt}}
+\vskip 2.75\baselineskip
+
+\noindent
+Od zavedení webového bankovnictví nabízejí banky klientům správu transakcí a účtu, ale nerozšiřují své bankovní portály o další služby. Situace se nicméně začíná výrazně měnit. Banky musejí soutěžit o klienty a zároveň se na trhu objevila celá řada aplikací, které nabízejí nástavby bankovních portálů.
+
+Tato diplomová práce popisuje změny ve webovém bankovnictví. Cílem práce je identifikovat, popsat a analyzovat inovativní trendy a zároveň navrhnout technické řešení pro jejich implementaci do bankovního webového portálu.
+
+Aplikace byla navržena tak, aby mohla být snadno integrována do existujícího informačního systému. Speciální důraz byl kladen na testovatelnost a modulární architekturu aplikace.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%**************************************************************
+
+\mainbodystarts
+% horizontalní mezera mezi dvema odstavci
+%\parskip=5pt
+%11.12.2008 parskip + tolerance
+\normalfont
+\parskip=0.2\baselineskip plus 0.2\baselineskip minus 0.1\baselineskip
+
+% Odsazeni prvniho radku odstavce resi class book (neaplikuje se na prvni 
+% odstavce kapitol, sekci, podsekci atd.) Viz usepackage{indentfirst}.
+% Chcete-li selektivne zamezit odsazeni 1. radku nektereho odstavce,
+% pouzijte prikaz \noindent.
+
+%**************************************************************
+
+\chapter{Introduction}
+The history of online banking started in the middle of the 90's, when banks started offering basic services on their web pages\footnote{According to \cite{wiki:onlinebanking} it was the Stanford Federal Credit Union which launched the first online banking site in 1994. However \cite{banking_history}  mentions the the October 1995 and Presidential Bank}.  During last decade online banking applications have offered the same functions and features and their usage did not change significantly. Internet banking did not evolve in comparison with other web applications.
+
+From technical point of view banks still offer to the customers static web pages fully rendered on the server side with no dynamic content. The functions have also remained the same. Banks are traditionally offering account management, transactions management, visualization in table data views and exports to files in various data formats.
+
+However during the last years customers might have experienced slight changes while banks are innovating theirs online banking offerings in order to keep up with the pace of other internet web sites and applications.
+
+The goal of this thesis is in the first phase to identify and analyze the innovative ideas which arose during last years and become standard parts of web banking. In some cases the innovations described in this thesis were already deployed in existing banking applications, in other cases, they were only described or mentioned in predictions for web banking.
+
+In the second phase this thesis describes an implementation of a web banking system for near future. The requirements on this system were selected from the innovative ideas identified during the first phase.
+
+This thesis explains an information system architecture which might be applied to new online banking system, regardless the technology which should be used for the implementation. The provided implementation makes use of several open-source frameworks and technologies. 
+
+
+\include{analysis_innovative_solutions}
+\include{aims_requirements}
+\include{analysis_and_design}
+\include{description_implementation}
+\include{testability}
+\include{summary}
+
+% originally following specification for bibliography formating was used
+%\bibliographystyle{abbrv}
+\bibliographystyle{plainnat}
+
+%\bibliographystyle{csplainnat}
+
+%bibliographystyle{plain}
+%\bibliographystyle{psc}
+{
+%JZ: 11.12.2008 Kdo chce mit v techto ukazkovych odkazech take odkaz na CSTeX:
+%\def\CS{$\cal C\kern-0.1667em\lower.5ex\hbox{$\cal S$}\kern-0.075em $}
+\bibliography{reference}
+}
+
+\appendix
+
+\include{technology_choices}
+\include{technology_details}
+\chapter{Description of the projects in the solution}
+The solution is composed of several interconnected projects. Diagrams \ref{fig:dependency_server_side} and \ref{fig:dependency_client_side} depict the dependencies between the projects. Here follows the description of each project.
+\begin{description}
+	\item[Octo.Bank.Core] Project which defines all interfaces which build the application.
+	\item[Octo.Bank.CoreDomain] The class model of the application domain. The class model is depicted on figures \ref{fig:domain_model_1} and \ref{fig:domain_model_2}.
+	\item[Octo.Bank.DataAccess] Implementation of the interfaces which mediate the access to database.
+	\item[Octo.Bank.DbTool] Console application for generation of database schema and initial data.
+	\item[Octo.Bank.Dto] Data transfer objects, which are serialized into XML, JSON, or proprietary binary format.
+	\item[Octo.Bank.Services] Implementation of the business layer services.
+	\item[External.ConsumerApp] Web implementation of OAuth consumer for testing.
+	\item[ml] The solution of machine.codeplex.com library, with implemented Naive Bayes classification.
+	\item[ml.Tests] Unit tests for the machine.codeplex.com library.
+	\item [Octo.Bank.Mobile] Windows Phone 7 application.
+	\item [Octo.Bank.Mobile.MVVM] MVVM framework prepared for compilation on Windows Phone 7 platform.
+	\item [Octo.Bank.Mobile.ViewModels] ViewModels linked from Silverlight project, prepared for compilation on Windows Phone 7.
+	\item [Octo.Bank.ParametrizedTests] Parametrized unit tests generated using Pex framework.
+	\item [Octo.Bank.TestFixtures] Dynamic library, containing fixture classes which are invoked by FitNesse functional test framework.
+	\item [Octo.Bank.Tests] Standard unit tests for data access and business service layer.
+	\item [Octo.Bank.Web.Ria.UnitTests] Unit tests for ViewModels classes.
+	\item [Octo.Bank.MVVM] Silverlight 4 version of the MVVM framework.
+	\item [Octo.Bank.Web] Main web application, hosting the Silverlight package and WCF services.
+	\item [Octo.Bank.Web.Ria] Silverlight project, containing also the ViewModels of the application.
+	\item [Octo.Bank.Web.Ria.Components] Silverlight user controls, which might serve also in other applications (such as event calendar).
+	\item [Octo.Bank.CloudService] Project used for the deployment to Azure platform.
+	\item [Octo.Bank.Models] Project containing dependency graphs.
+	\item [Octo.Bank.PortableServices] Proxy classes for communication services compiled as portable class library. This project is referenced from Windows Phone 7 and Silverlight projects.
+\end{description}
+
+\chapter{UML Diagrams}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{figures/dependency_server_side}
+\caption{Dependency diagram of the back-end part of the application}
+\label{fig:dependency_server_side}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{figures/dependency_client_side}
+\caption{Dependency diagram of the client-side part of the application}
+\label{fig:dependency_client_side}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{figures/customer_oriented}
+\caption{Domain model concentrated around the \textit{Customer} entity}
+\label{fig:domain_model_1}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{figures/operation_oriented}
+\caption{Domain model concentrated around the \textit{Operation} entity}
+\label{fig:domain_model_2}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{figures/db_diagram_all}
+\caption{Entity relationship model of the database}
+\label{fig:er_model}
+\end{center}
+\end{figure}
+
+\include{abreviations}
+
+\chapter{Content of the attached CD}
+\begin{verbatim}
+--> readme.txt - Explications and descriptions to run and build the solution
+--> text - The text of the diploma thesis
+--> src - The source codes
+ |--> Libraries - External DLL files referenced in the solution
+ |--> Octo.Bank.sln - Solution file which can be opened using Visual Studio
+ |--> Octo.Bank.[Project] - Different projects which are part of the solution
+\end{verbatim}
+
+\end{document}

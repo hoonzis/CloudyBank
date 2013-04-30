@@ -1,0 +1,58 @@
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="WSAgencyEndpoint">
+                    <security mode="None" />
+                </binding>
+                <binding name="WSCustomerEndpoint">
+                    <security mode="None" />
+                </binding>
+                <binding name="WSAccountEndpoint">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+            <customBinding>
+                <binding name="BinaryEndpoint">
+                    <binaryMessageEncoding />
+                    <httpTransport />
+                </binding>
+                <binding name="CustomBinding_WCFOAuthManagementService">
+                    <binaryMessageEncoding />
+                    <httpTransport />
+                </binding>
+                <binding name="BinaryEndpoint1">
+                    <binaryMessageEncoding />
+                    <httpTransport />
+                </binding>
+                <binding name="BinaryEndpoint2">
+                    <binaryMessageEncoding />
+                    <httpTransport />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:49830/WCFServices/WCFAgencyService.svc"
+                binding="customBinding" bindingConfiguration="BinaryEndpoint"
+                contract="Agencies.WCFAgencyService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFAgencyService.svc/soap"
+                binding="basicHttpBinding" bindingConfiguration="WSAgencyEndpoint"
+                contract="Agencies.WCFAgencyService" name="WSAgencyEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_WCFOAuthManagementService"
+                contract="OAuthTokens.WCFOAuthManagementService" name="CustomBinding_WCFOAuthManagementService" />
+            <endpoint address="http://localhost/WCFServices/WCFCustomerService.svc"
+                binding="customBinding" bindingConfiguration="BinaryEndpoint1"
+                contract="Customers.WCFCustomersService" name="BinaryEndpoint1" />
+            <endpoint address="http://localhost/WCFServices/WCFCustomerService.svc/soap"
+                binding="basicHttpBinding" bindingConfiguration="WSCustomerEndpoint"
+                contract="Customers.WCFCustomersService" name="WSCustomerEndpoint" />
+            <endpoint address="http://localhost/WCFServices/WCFAccountService.svc"
+                binding="customBinding" bindingConfiguration="BinaryEndpoint2"
+                contract="Accounts.WCFAccountService" name="BinaryEndpoint2" />
+            <endpoint address="http://localhost/WCFServices/WCFAccountService.svc/soap"
+                binding="basicHttpBinding" bindingConfiguration="WSAccountEndpoint"
+                contract="Accounts.WCFAccountService" name="WSAccountEndpoint" />
+        </client>
+    </system.serviceModel>
+</configuration>

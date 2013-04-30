@@ -1,0 +1,82 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.AgencyPages.PersonalInformationPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:technical="clr-namespace:CloudyBank.Web.Ria.Technical"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="250"
+           Title="PersonalInformationPage Page"
+           Foreground="White" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.Resources>
+            <technical:RadioButtonConverter x:Key="RadioButtonConverter"/>
+        </Grid.Resources>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel>
+            <TextBlock Text="{Binding Common.PersInfo, Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Common.PersInfoNote, Source={StaticResource Strings}}"/>
+        </StackPanel>
+		<Grid Grid.Row="1" Margin="0,30,0,0">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition MaxWidth="300"/>
+			</Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding Path=Common.FirstName, Source={StaticResource Strings}, StringFormat='\{0\}:'}" FontWeight="Bold" VerticalAlignment="Center" Margin="4"/>
+            <TextBlock Text="{Binding Path=FirstName}" Grid.Column="1" Margin="4"/>
+
+            <TextBlock Text="{Binding Path=Common.LastName, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="1" Margin="4" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Path=LastName}" Grid.Column="1" Grid.Row="1" Margin="4"/>
+
+            <TextBlock Text="{Binding Path=Common.Code, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="2" Margin="4" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Path=Code}" Grid.Column="1" Grid.Row="2" Margin="4"/>
+
+            <TextBlock Text="{Binding Path=Common.Email, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="3" Margin="4" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding Path=Email,Mode=TwoWay}" Grid.Column="1" Grid.Row="3" Margin="4"/>
+            
+            <TextBlock Text="{Binding Path=Common.PhoneNumber, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="4" Margin="4" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding Path=PhoneNumber,Mode=TwoWay}" Grid.Column="1" Grid.Row="4" Margin="4"/>
+
+            <TextBlock Text="{Binding Path=Common.FamilyStatus, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="5" Margin="4"/>
+            <StackPanel Grid.Column="1" Grid.Row="5" Margin="4">
+                <RadioButton Content="{Binding Path=Common.Maried, Source={StaticResource Strings}}" Margin="0 0 10 0" 
+                        GroupName="Situation" Foreground="White"
+                        IsChecked="{Binding FamilySituation, Mode=TwoWay, ConverterParameter=Maried, 
+                                    Converter={StaticResource RadioButtonConverter}}" Style="{StaticResource RectangularRadioButton}"/>
+                <RadioButton Content="{Binding Path=Common.Single, Source={StaticResource Strings}}" Margin="0 0 10 0" 
+                        GroupName="Situation" Foreground="White"
+                        IsChecked="{Binding FamilySituation, Mode=TwoWay, ConverterParameter=Single, 
+                                    Converter={StaticResource RadioButtonConverter}}" Style="{StaticResource RectangularRadioButton}"/>
+                <RadioButton Content="{Binding Path=Common.InCouple, Source={StaticResource Strings}}" Margin="0 0 10 0" 
+                        GroupName="Situation" Foreground="White"
+                        IsChecked="{Binding FamilySituation, Mode=TwoWay, ConverterParameter=InCouple, 
+                                    Converter={StaticResource RadioButtonConverter}}" Style="{StaticResource RectangularRadioButton}"/>
+                <RadioButton Content="{Binding Path=Common.NotSet, Source={StaticResource Strings}}" Margin="0 0 10 0" 
+                        GroupName="Situation" Foreground="White"
+                        IsChecked="{Binding FamilySituation, Mode=TwoWay, ConverterParameter=NotSet, 
+                                    Converter={StaticResource RadioButtonConverter}}" Style="{StaticResource RectangularRadioButton}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="6" Grid.ColumnSpan="2">
+                <Button x:Name="OKButton" Content="OK" Width="75" Height="23" HorizontalAlignment="Right" Command="{Binding SaveCommand}" 
+                        Margin="5" Style="{StaticResource SimpleButton}" Background="{StaticResource LimeBrush}"/>
+            </StackPanel>
+        </Grid>        
+    </Grid>
+</navigation:Page>

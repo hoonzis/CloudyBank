@@ -1,0 +1,1992 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CloudyBank.DataAccess.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AccountMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.#ctor(CloudyBank.DataAccess.Map.Bank.AccountMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.AccountMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAccountMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MAccountRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.AccountRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.#ctor(CloudyBank.DataAccess.Repository.AccountRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.Bind(CloudyBank.Core.DataAccess.IAccountRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AccountRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.GetAccountsByCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AccountRepository.GetAccountsByCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAccountRepository._GetAccountsByCustomerb__0KeyValuePairOfAccountRole">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AccountRepository.&lt;GetAccountsByCustomer&gt;b__0(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.Role})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAccountRepository.AllInstances.GetAccountsByCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AccountRepository.GetAccountsByCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AdvisorMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.#ctor(CloudyBank.DataAccess.Map.Bank.AdvisorMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.Bind(FluentNHibernate.Mapping.Providers.IIndeterminateSubclassMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.AdvisorMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAdvisorMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.AdvisorRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.#ctor(CloudyBank.DataAccess.Repository.AdvisorRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.Bind(CloudyBank.Core.DataAccess.IAdvisorRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AdvisorRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.GetAdvisorByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AdvisorRepository.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MAdvisorRepository.AllInstances.GetAdvisorByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.AdvisorRepository.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AgencyMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.#ctor(CloudyBank.DataAccess.Map.Bank.AgencyMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.AgencyMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAgencyMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AuditMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.#ctor(CloudyBank.DataAccess.Map.Bank.AuditMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.AuditMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MAuditMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthConsumerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.#ctor(CloudyBank.DataAccess.Map.Security.AuthConsumerMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Security.AuthConsumerMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthConsumerMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthNonceMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.#ctor(CloudyBank.DataAccess.Map.Security.AuthNonceMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Security.AuthNonceMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthNonceMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthTokenMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.#ctor(CloudyBank.DataAccess.Map.Security.AuthTokenMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Security.AuthTokenMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.MAuthTokenMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.BalancePointMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.#ctor(CloudyBank.DataAccess.Map.Bank.BalancePointMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.BalancePointMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MBalancePointMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MBaseRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.BaseRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.#ctor(CloudyBank.DataAccess.Repository.BaseRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.BaseRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.SessionFactoryGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.Repository.BaseRepository.SessionFactory"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.SessionFactorySetISessionFactory">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.Repository.BaseRepository.SessionFactory"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.AllInstances.SessionFactoryGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.Repository.BaseRepository.SessionFactory"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MBaseRepository.AllInstances.SessionFactorySetISessionFactory">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.Repository.BaseRepository.SessionFactory"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.BusinessPartnerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.#ctor(CloudyBank.DataAccess.Map.Bank.BusinessPartnerMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.BusinessPartnerMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MBusinessPartnerMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Customers.CustomerImageMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.#ctor(CloudyBank.DataAccess.Map.Customers.CustomerImageMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Customers.CustomerImageMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Customers.Moles.MCustomerImageMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.CustomerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.#ctor(CloudyBank.DataAccess.Map.Bank.CustomerMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.Bind(FluentNHibernate.Mapping.Providers.IIndeterminateSubclassMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.CustomerMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.CustomerProfileMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.#ctor(CloudyBank.DataAccess.Map.Bank.CustomerProfileMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.CustomerProfileMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MCustomerProfileMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.CustomerRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.#ctor(CloudyBank.DataAccess.Repository.CustomerRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.Bind(CloudyBank.Core.DataAccess.ICustomerRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.FindCustomersByNameStringArray">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.FindCustomersByName(System.String[])"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.GetCustomerByCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.GetCustomerByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.AllInstances.FindCustomersByNameStringArray">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.FindCustomersByName(System.String[])"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.AllInstances.GetCustomerByCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MCustomerRepository.AllInstances.GetCustomerByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.CustomerRepository.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Security.DesEncryptionProvider"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.DecryptString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.DesEncryptionProvider.Decrypt(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MDesEncryptionProvider.EncryptString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.DesEncryptionProvider.Encrypt(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.UserTypes.EncryptedString"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.#ctor(CloudyBank.DataAccess.UserTypes.EncryptedString)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.Bind(NHibernate.UserTypes.IUserType)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AssembleObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Assemble(System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.DeepCopyObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.DeepCopy(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.DisassembleObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Disassemble(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.EqualsObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Equals(System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.GetHashCodeObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.GetHashCode(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.IsMutableGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.IsMutable"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.NullSafeGetIDataReaderStringArrayObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.NullSafeGet(System.Data.IDataReader,System.String[],System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.NullSafeSetIDbCommandObjectInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.NullSafeSet(System.Data.IDbCommand,System.Object,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.ReplaceObjectObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Replace(System.Object,System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.ReturnedTypeGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.ReturnedType"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.SqlTypesGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.SqlTypes"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.AssembleObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Assemble(System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.DeepCopyObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.DeepCopy(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.DisassembleObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Disassemble(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.EqualsObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Equals(System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.GetHashCodeObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.GetHashCode(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.IsMutableGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.IsMutable"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.NullSafeGetIDataReaderStringArrayObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.NullSafeGet(System.Data.IDataReader,System.String[],System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.NullSafeSetIDbCommandObjectInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.NullSafeSet(System.Data.IDbCommand,System.Object,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.ReplaceObjectObjectObject">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.UserTypes.EncryptedString.Replace(System.Object,System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.ReturnedTypeGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.ReturnedType"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.MEncryptedString.AllInstances.SqlTypesGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.UserTypes.EncryptedString.SqlTypes"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MImageRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.ImageRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MImageRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MImageRepository.#ctor(CloudyBank.DataAccess.Repository.ImageRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MImageRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MImageRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MImageRepository.Bind(CloudyBank.Core.DataAccess.IImageRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.ImageRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.GetImagesForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.ImageRepository.GetImagesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.OctoBankCoreDataAccessIImageRepositoryGetImagesLabelsTuples">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.ImageRepository.CloudyBank.Core.DataAccess.IImageRepository.GetImagesLabelsTuples"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MImageRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.AllInstances.GetImagesForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.ImageRepository.GetImagesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MImageRepository.AllInstances.OctoBankCoreDataAccessIImageRepositoryGetImagesLabelsTuples">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.ImageRepository.CloudyBank.Core.DataAccess.IImageRepository.GetImagesLabelsTuples"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.OAuthRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.#ctor(CloudyBank.DataAccess.Repository.OAuthRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.Bind(CloudyBank.Core.DataAccess.IOAuthRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OAuthRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.GetConsumerString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OAuthRepository.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.GetTokenString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OAuthRepository.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.AllInstances.GetConsumerString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OAuthRepository.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOAuthRepository.AllInstances.GetTokenString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OAuthRepository.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.OperationMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.#ctor(CloudyBank.DataAccess.Map.Bank.OperationMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.OperationMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MOperationMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MOperationRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.OperationRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.#ctor(CloudyBank.DataAccess.Repository.OperationRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.Bind(CloudyBank.Core.DataAccess.IOperationRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OperationRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.GetOperationsByAccountInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OperationRepository.GetOperationsByAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MOperationRepository.AllInstances.GetOperationsByAccountInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.OperationRepository.GetOperationsByAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.PaymentEventMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.#ctor(CloudyBank.DataAccess.Map.Bank.PaymentEventMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.PaymentEventMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MPaymentEventMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.Repository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.#ctor(CloudyBank.DataAccess.Repository.Repository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.Bind(CloudyBank.Core.DataAccess.IRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.CountAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Int32})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.CountAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.DeleteT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Delete``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.EvictT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Evict``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.FindExpressionOfFuncOfTBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Find``1(System.Linq.Expressions.Expression`1{System.Func`2{``0,System.Boolean}})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.GetAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Collections.Generic.IList{``0}})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.GetAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.GetObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Object,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Get``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.LoadObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Object,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Load``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.RefreshT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Refresh``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.SaveOrUpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.SaveOrUpdate``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.SaveT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Save``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.UpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Update``1(``0)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.Clear">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Clear"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.Flush">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Flush"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.CountAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{CloudyBank.DataAccess.Repository.Repository,System.Int32})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.CountAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.DeleteT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Delete``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.EvictT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Evict``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.FindExpressionOfFuncOfTBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{CloudyBank.DataAccess.Repository.Repository,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Find``1(System.Linq.Expressions.Expression`1{System.Func`2{``0,System.Boolean}})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.GetAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{CloudyBank.DataAccess.Repository.Repository,System.Collections.Generic.IList{``0}})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.GetAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.GetObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{CloudyBank.DataAccess.Repository.Repository,System.Object,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Get``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.LoadObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{CloudyBank.DataAccess.Repository.Repository,System.Object,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Load``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.RefreshT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Refresh``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.SaveOrUpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.SaveOrUpdate``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.SaveT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Save``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.UpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{CloudyBank.DataAccess.Repository.Repository,``0})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Update``1(``0)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.Clear">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Clear"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MRepository.AllInstances.Flush">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.Repository.Flush"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.RoleMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.#ctor(CloudyBank.DataAccess.Map.Bank.RoleMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.RoleMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MRoleMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Security.SHA256HashProvider"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.#ctor(CloudyBank.DataAccess.Security.SHA256HashProvider)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.Bind(CloudyBank.Core.Security.IHashProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.SHA256HashProvider.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.CreateSaltInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.SHA256HashProvider.CreateSalt(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.HashString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.SHA256HashProvider.Hash(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.InstanceGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.DataAccess.Security.SHA256HashProvider.Instance"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.AllInstances.CreateSaltInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.SHA256HashProvider.CreateSalt(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.MSHA256HashProvider.AllInstances.HashString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Security.SHA256HashProvider.Hash(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Configuration.SessionFactoryFactory"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.#ctor(CloudyBank.DataAccess.Configuration.SessionFactoryFactory)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.Bind(CloudyBank.DataAccess.Configuration.ISessionFactoryFactory)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.ConfigureMappingMappingConfiguration">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.ConfigureMapping(FluentNHibernate.Cfg.MappingConfiguration)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.ConstructorBoolean">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.#ctor(System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.CreateSessionFactoryInstance">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.CreateSessionFactoryInstance"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.GetSessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.GetSessionFactory"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.NHibernateStuffConfiguration">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.NHibernateStuff(NHibernate.Cfg.Configuration)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.AllInstances.CreateSessionFactoryInstance">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.CreateSessionFactoryInstance"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.AllInstances.GetSessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.GetSessionFactory"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.MSessionFactoryFactory.AllInstances.NHibernateStuffConfiguration">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Configuration.SessionFactoryFactory.NHibernateStuff(NHibernate.Cfg.Configuration)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.SimpleAuditMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.#ctor(CloudyBank.DataAccess.Map.Bank.SimpleAuditMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.SimpleAuditMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MSimpleAuditMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.StandardTagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.#ctor(CloudyBank.DataAccess.Map.Bank.StandardTagMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.Bind(FluentNHibernate.Mapping.Providers.IIndeterminateSubclassMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.StandardTagMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MStandardTagMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TagDepensesMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.#ctor(CloudyBank.DataAccess.Map.Bank.TagDepensesMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.TagDepensesMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTagDepensesMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.#ctor(CloudyBank.DataAccess.Map.Bank.TagMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.TagMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTagMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MTagRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.TagRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTagRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTagRepository.#ctor(CloudyBank.DataAccess.Repository.TagRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTagRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTagRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTagRepository.Bind(CloudyBank.Core.DataAccess.ITagRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTagRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTagRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TagRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTagRepository.GetTagsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TagRepository.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MTagRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTagRepository.AllInstances.GetTagsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TagRepository.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TaskMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.#ctor(CloudyBank.DataAccess.Map.Bank.TaskMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.TaskMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MTaskMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MTaskRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.TaskRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.#ctor(CloudyBank.DataAccess.Repository.TaskRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.Bind(CloudyBank.Core.DataAccess.ITaskRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TaskRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.GetTasksForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TaskRepository.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MTaskRepository.AllInstances.GetTasksForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.TaskRepository.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.UserIdentityMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.#ctor(CloudyBank.DataAccess.Map.Bank.UserIdentityMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.Bind(FluentNHibernate.IMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.UserIdentityMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MUserIdentityMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MUserRepository">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Repository.UserRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MUserRepository.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MUserRepository.#ctor(CloudyBank.DataAccess.Repository.UserRepository)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MUserRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MUserRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.MUserRepository.Bind(CloudyBank.Core.DataAccess.IUserRepository)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.ConstructorISessionFactory">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.#ctor(NHibernate.ISessionFactory)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.GetUserPermissionInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserPermission(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.GetUserRoleString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserRole(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.GetUserTypeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserType(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.OctoBankCoreDataAccessIUserRepositoryGetUserByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.CloudyBank.Core.DataAccess.IUserRepository.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository._GetUserPermissionb__2Customer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.&lt;GetUserPermission&gt;b__2(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.MUserRepository.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.AllInstances.GetUserPermissionInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserPermission(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.AllInstances.GetUserRoleString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserRole(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.AllInstances.GetUserTypeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.GetUserType(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.MUserRepository.AllInstances.OctoBankCoreDataAccessIUserRepositoryGetUserByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Repository.UserRepository.CloudyBank.Core.DataAccess.IUserRepository.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap">
+            <summary>Mole type of <see cref="T:CloudyBank.DataAccess.Map.Bank.UserTagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.#ctor(CloudyBank.DataAccess.Map.Bank.UserTagMap)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.Bind(FluentNHibernate.Mapping.Providers.IIndeterminateSubclassMappingProvider)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.DataAccess.Map.Bank.UserTagMap.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.MUserTagMap.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SAccountRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.AccountRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SAccountRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SAccountRepository.InitializeStub">
+            <summary>Initializes a new instance of type SAccountRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SAccountRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SAccountRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SAdvisorMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AdvisorMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SAdvisorMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SAdvisorMap.InitializeStub">
+            <summary>Initializes a new instance of type SAdvisorMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SAdvisorMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SAdvisorMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SAdvisorRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.AdvisorRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SAdvisorRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SAdvisorRepository.InitializeStub">
+            <summary>Initializes a new instance of type SAdvisorRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SAdvisorRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SAdvisorRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SAgencyMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.AgencyMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SAgencyMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SAgencyMap.InitializeStub">
+            <summary>Initializes a new instance of type SAgencyMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SAgencyMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SAgencyMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.SAuthConsumerMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthConsumerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthConsumerMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthConsumerMap.InitializeStub">
+            <summary>Initializes a new instance of type SAuthConsumerMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthConsumerMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthConsumerMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.SAuthNonceMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthNonceMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthNonceMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthNonceMap.InitializeStub">
+            <summary>Initializes a new instance of type SAuthNonceMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthNonceMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthNonceMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Security.Moles.SAuthTokenMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Security.AuthTokenMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthTokenMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Security.Moles.SAuthTokenMap.InitializeStub">
+            <summary>Initializes a new instance of type SAuthTokenMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthTokenMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Security.Moles.SAuthTokenMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SBaseRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.BaseRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SBaseRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SBaseRepository.InitializeStub">
+            <summary>Initializes a new instance of type SBaseRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SBaseRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SBaseRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SBusinessPartnerMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.BusinessPartnerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SBusinessPartnerMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SBusinessPartnerMap.InitializeStub">
+            <summary>Initializes a new instance of type SBusinessPartnerMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SBusinessPartnerMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SBusinessPartnerMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Customers.Moles.SCustomerImageMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Customers.CustomerImageMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.SCustomerImageMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Customers.Moles.SCustomerImageMap.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerImageMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Customers.Moles.SCustomerImageMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Customers.Moles.SCustomerImageMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.CustomerMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerMap.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerProfileMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.CustomerProfileMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerProfileMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerProfileMap.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerProfileMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerProfileMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SCustomerProfileMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SCustomerRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.CustomerRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SCustomerRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SCustomerRepository.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SCustomerRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SCustomerRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.UserTypes.Moles.SEncryptedString">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.UserTypes.EncryptedString"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.SEncryptedString.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.UserTypes.Moles.SEncryptedString.InitializeStub">
+            <summary>Initializes a new instance of type SEncryptedString</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.SEncryptedString.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.UserTypes.Moles.SEncryptedString.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Configuration.Moles.SISessionFactoryFactory">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Configuration.ISessionFactoryFactory"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.SISessionFactoryFactory.#ctor">
+            <summary>Initializes a new instance of type SISessionFactoryFactory</summary>
+        </member>
+        <member name="F:CloudyBank.DataAccess.Configuration.Moles.SISessionFactoryFactory.GetSessionFactory">
+            <summary>Sets the stub of <see cref="M:CloudyBank.DataAccess.Configuration.ISessionFactoryFactory.GetSessionFactory"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.SISessionFactoryFactory.obda::CloudyBank#DataAccess#Configuration#ISessionFactoryFactory#GetSessionFactory">
+            <summary>Sets the stub of <see cref="M:CloudyBank.DataAccess.Configuration.ISessionFactoryFactory.GetSessionFactory"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SImageRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.ImageRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SImageRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SImageRepository.InitializeStub">
+            <summary>Initializes a new instance of type SImageRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SImageRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SImageRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SOAuthRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.OAuthRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SOAuthRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SOAuthRepository.InitializeStub">
+            <summary>Initializes a new instance of type SOAuthRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SOAuthRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SOAuthRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SOperationMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.OperationMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SOperationMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SOperationMap.InitializeStub">
+            <summary>Initializes a new instance of type SOperationMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SOperationMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SOperationMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SOperationRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.OperationRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SOperationRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SOperationRepository.InitializeStub">
+            <summary>Initializes a new instance of type SOperationRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SOperationRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SOperationRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SPaymentEventMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.PaymentEventMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SPaymentEventMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SPaymentEventMap.InitializeStub">
+            <summary>Initializes a new instance of type SPaymentEventMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SPaymentEventMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SPaymentEventMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.Repository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SRepository.InitializeStub">
+            <summary>Initializes a new instance of type SRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SRoleMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.RoleMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SRoleMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SRoleMap.InitializeStub">
+            <summary>Initializes a new instance of type SRoleMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SRoleMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SRoleMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Security.Moles.SSHA256HashProvider">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Security.SHA256HashProvider"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.SSHA256HashProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Security.Moles.SSHA256HashProvider.InitializeStub">
+            <summary>Initializes a new instance of type SSHA256HashProvider</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.SSHA256HashProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Security.Moles.SSHA256HashProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Configuration.Moles.SSessionFactoryFactory">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Configuration.SessionFactoryFactory"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.SSessionFactoryFactory.#ctor(System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Configuration.Moles.SSessionFactoryFactory.InitializeStub">
+            <summary>Initializes a new instance of type SSessionFactoryFactory</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.SSessionFactoryFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Configuration.Moles.SSessionFactoryFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SSimpleAuditMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.SimpleAuditMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SSimpleAuditMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SSimpleAuditMap.InitializeStub">
+            <summary>Initializes a new instance of type SSimpleAuditMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SSimpleAuditMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SSimpleAuditMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SStandardTagMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.StandardTagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SStandardTagMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SStandardTagMap.InitializeStub">
+            <summary>Initializes a new instance of type SStandardTagMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SStandardTagMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SStandardTagMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.STagDepensesMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TagDepensesMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STagDepensesMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STagDepensesMap.InitializeStub">
+            <summary>Initializes a new instance of type STagDepensesMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STagDepensesMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STagDepensesMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.STagMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STagMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STagMap.InitializeStub">
+            <summary>Initializes a new instance of type STagMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STagMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STagMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.STagRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.TagRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.STagRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.STagRepository.InitializeStub">
+            <summary>Initializes a new instance of type STagRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.STagRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.STagRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.STaskMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.TaskMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STaskMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.STaskMap.InitializeStub">
+            <summary>Initializes a new instance of type STaskMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STaskMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.STaskMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.STaskRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.TaskRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.STaskRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.STaskRepository.InitializeStub">
+            <summary>Initializes a new instance of type STaskRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.STaskRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.STaskRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Repository.Moles.SUserRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Repository.UserRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SUserRepository.#ctor(NHibernate.ISessionFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Repository.Moles.SUserRepository.InitializeStub">
+            <summary>Initializes a new instance of type SUserRepository</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SUserRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Repository.Moles.SUserRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.DataAccess.Map.Bank.Moles.SUserTagMap">
+            <summary>Stub type of <see cref="T:CloudyBank.DataAccess.Map.Bank.UserTagMap"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SUserTagMap.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.DataAccess.Map.Bank.Moles.SUserTagMap.InitializeStub">
+            <summary>Initializes a new instance of type SUserTagMap</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SUserTagMap.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.DataAccess.Map.Bank.Moles.SUserTagMap.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

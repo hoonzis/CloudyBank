@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c184f1af-cd83-4d8b-8dd2-6dd74d7481dd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/WCFServices/WCFAccountService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFAccountService5.xsd" MetadataType="Schema" ID="5bd49741-9eb0-4ba7-8089-f45b80d4e5e9" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFAccountService2.wsdl" MetadataType="Wsdl" ID="1211908b-7a48-4004-8124-8ad7eee1de2e" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFAccountService51.xsd" MetadataType="Schema" ID="9127c6c5-5d8d-46c8-bbf0-2236d1d435bb" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFAccountService1.disco" MetadataType="Disco" ID="ba295cd0-8f12-4c89-9c18-60f17693f03d" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?disco" />
+    <MetadataFile FileName="WCFAccountPort1.wsdl" MetadataType="Wsdl" ID="5945b0d2-0e75-4a66-9af6-6da9171a8905" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?wsdl" />
+    <MetadataFile FileName="WCFAccountService21.wsdl" MetadataType="Wsdl" ID="33b12014-5356-4ddf-856b-e1e35247e36b" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="WCFAccountService52.xsd" MetadataType="Schema" ID="e38c8418-38ff-4629-a38b-8b548557eaef" SourceId="1" SourceUrl="http://localhost/WCFServices/WCFAccountService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

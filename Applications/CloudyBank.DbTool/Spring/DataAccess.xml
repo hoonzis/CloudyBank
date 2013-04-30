@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="SessionFactoryFactory" type="CloudyBank.DataAccess.Configuration.SessionFactoryFactory, CloudyBank.DataAccess">
+    <constructor-arg type="Boolean" value="false" />
+  </object>
+
+  <object id="SessionFactory" factory-method="GetSessionFactory" factory-object="SessionFactoryFactory"/>
+
+</objects>

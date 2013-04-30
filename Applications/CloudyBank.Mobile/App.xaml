@@ -1,0 +1,34 @@
+<Application 
+    x:Class="CloudyBank.Mobile.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        
+        <!-- Brushes -->
+        <SolidColorBrush x:Key="LimeBrush" Color="#8CBF26"/>
+        <SolidColorBrush x:Name="OrangeBrush" Color="#F09609"/>
+        <SolidColorBrush x:Name="RedBrush" Color="#E51400"/>
+        <SolidColorBrush x:Name="BlueBrush" Color="#1BA1E2"/>
+        <SolidColorBrush x:Name="GreenBrush" Color="#339933"/>
+        <SolidColorBrush x:Name="BrownBrush" Color="#996600"/>
+        <SolidColorBrush x:Name="TealBrush" Color="#00ABA9"/>
+        <SolidColorBrush x:Name="MagentaBrush" Color="#FF0097"/>
+        <SolidColorBrush x:Name="PurpleBrush" Color="#A200FF"/>
+        
+        <SolidColorBrush x:Key="PhoneForegroundBrush" Color="{StaticResource PhoneForegroundColor}"/>
+        <SolidColorBrush x:Key="PhoneBackgroundBrush" Color="{StaticResource PhoneBackgroundColor}"/>
+        <SolidColorBrush x:Key="PhoneBorderBrush" Color="{StaticResource PhoneBorderColor}"/>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

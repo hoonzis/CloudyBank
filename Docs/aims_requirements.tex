@@ -1,0 +1,57 @@
+\chapter {Aims and requirements}
+Based on the previous analysis of innovative ideas this chapter will define the functional and non-functional requirements on the developed solution. As well as the innovative features, the solution has to offer also the traditional functions of bank information systems.
+
+\section{Traditional requirements on online banking}
+Traditional online banking application has the following set of functions:
+
+\begin{enumerate}
+	\item Account management
+	\item Transaction management
+	\item Data exports to PDF, CSV or Excel formats.
+\end{enumerate}
+
+\section{Requirements on innovative features}
+Based on the analysis in the previous chapter, the following set of features and functions should be implemented in the solution.
+
+\begin{itemize}
+	\item  Personal Finance Management
+	\begin{itemize}
+		\item Allow the clients to categorize transactions manually.
+		\item Allow the clients to use set of standard tags (or categories) as well as define own tags.
+		\item Provide an automatic classification engine.
+		\item Allow the clients to visualize the data from PFM, such as category repartition certain time period.
+		\item Provide the payment management functionality for the client implementing a calendar of payments.
+	\end{itemize}
+	\item  Electronic vault
+	Provide a electronic vault where the documents for client and his adviser will be stored. This vault will provide the following functions:
+	\begin{itemize}
+		\item  Only authenticated client will be able to upload any files to the vault
+		\item  Only authenticated client will be able to download any files from the vault
+		\item  Generated documents such as accounts overview will be stored directly in the vault.
+	\end{itemize}
+	\item Open Data
+	Clients will have the possibility to delegate the rights to access certain data to third party applications.
+	This access will be revokable and clients will have the possibility to revoke the access any time. OAuth protocol will be used as the industry standard for rights delegation.
+	\item  Using face recognition in authentication process
+	Clients will be able to use face recognition to simplify the process of authentication.
+\end{itemize}
+
+\section{Technical requirements}
+
+\subsection{Required technologies}
+OCTO Technology as the ordering party of this implementation demands the use of .NET technology stack. Specifically the solution should use the following technologies:
+\begin{itemize}
+	\item  Microsoft Silverlight as the web interface.
+	\item  Windows Phone 7 as the mobile platform.
+	\item  The back-end platform of the solution has to be deploy-able to Internet Information Server as well as Windows Azure platform.
+\end{itemize}
+
+\subsection{Decoupled architecture}
+Provided implementation has to be designed taking into account modularity and decoupled architecture. The modules which build the solution have to replaceable by other modules with different implementations.
+
+\subsection{Use of Cloud technologies}
+Cloud platforms have several advantages such as lowering the costs for maintenance and easy scalability.
+The solution should be deploy-able to Cloud based infrastructure. Because the solution is designed for .NET platform, Windows Azure is the platform which should be targeted.  
+
+\subsection{Testable architecture}
+OCTO Technology demands to place considerable effort on the unit testing of back-end and front-end of the application. Besides traditional unit testing approach Parametrized unit testing should be performed. One of the aims of this effort is to try the use of PEX\ref{tech:parametrized_testing} platform and evaluate it's usefulness for business layer testing.

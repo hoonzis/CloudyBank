@@ -1,0 +1,12 @@
+<CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel 
+xmlns:CloudyBank_Web_Ria_ViewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels"
+xmlns:CloudyBank_Web_Ria_WCFPartnerService="clr-namespace:CloudyBank.Web.Ria.WCFPartnerService"
+HasErrors="False" 
+Id="51" 
+IsNew="True" 
+Iban="tyghhgg"
+Name="fgfg">
+	<CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel.Partner>
+		<CloudyBank_Web_Ria_WCFPartnerService:BusinessPartnerDto CustomerId="24" Description="Consequat accumsan convallis nam bibendum" Id="21" Iban="Dignissim nullam dictumst" Name="Eleifend facilisi aptent faucibus"/>
+	</CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel.Partner>
+</CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel>

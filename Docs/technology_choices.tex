@@ -1,0 +1,100 @@
+\chapter{Technology choices}
+During the design and implementation of the application several technology choices have to be made. This chapter briefly justifies and summarizes the selected frameworks and technologies.
+\section{Communication and integration}
+\label{tech:wcf}
+The design of the communication layer is based on Windows Communication Foundation (WCF), which is standard part of .NET framework. Unlike in the Java ecosystem, where there are several communication frameworks (such as Apache Axis and Apache CXF), in .NET Windows Communication Framework is the preferred choice and usually no alternatives are taken into account. WCF provides the developer with the flexibility of choosing transportation protocol (TCP, HTTP, MSMQ) as well as the transportation format (XML, JSON, Binnary).
+
+One service can expose several Endpoints (URIs). Each Endpoint can be configured to use different Binding. Bindings can have different transportation protocols and format options. The same services can be thus exposed using different protocols and formats. In our application we can use this advantage and expose different endpoints for different clients. This is crucial for platform independent applications.
+
+\section{Data access}
+\label{tech:data}
+The most important part of the Data Access layer is the framework used for Object Relational Mapping (ORM). There are currently two major ORM frameworks in .NET:  NHibernate and Entity Framework. Both provide similar ORM features such as: code only approach, lazy loading, use of Poor old CLR objects(POCO) as persistence classes and integration of Language Integrated Query (LINQ).
+
+Entity Framework 4.0 has brought a lot of improvement to its previous version (named Entity Framework 1.0) which did not provide above mentioned functions and nowadays Entity Framework is comparable to NHibernate.
+
+NHibernate has still several advantages among these it's better ability to process batch treatment and also the fact that as an open source product it can be customized. There are also several extension projects (NHibernate Shards, NHibernate Search, Fluent NHibernate) which build up on NHibernate. Entity Framework provides build-in integration with Visual Studio, however thanks to the open-source nature of NHibernate similar integration tools were build also for NHibernate\footnote{Mindscape has released free edition of NHibernate Designer}.
+
+\subsection{Definition of database mapping}
+NHibernate uses its XML based HBM format to define the mappings between entities and POCOs. While the separation of code and configuration in XML can be seen as advantageous approach it gets complicated once the XML configuration files are larger and once we are introducing changes into the POCOs. The XML is not checked upon the compilation, so potential errors can be detected at run-time only and are generally hard to localize.
+
+As a solution to this issue Fluent NHibernate allows the developer to define the mappings in strongly-typed C\#, which practically eliminates these issues. If there is an error in configuration, it will be most likely discovered during the compilation (or sooner thanks to Visual Studio type checking). Currently Fluent provides almost full compatibility with HBM files.
+
+\subsection{Data generation}
+While developing data based applications, it is important to have testing data since the beginning of the implementation phase. AutoPoco is a simple framework which allows generation of POCOs (Plain Old CLR Objects) with meaningful values. Autopoco provides easy way to generate the starting data. It also provides several build-in sources for common properties which are stored in databases such as phone numbers, birth dates, names and credit card numbers. The framework is also extensible and allows developers to create own data sources, for specific custom properties.
+
+\section{Application composition}
+\label{tech:di}
+There are two design patterns (or approaches) which are very often used in order to compose the application from several modules: Dependency Injection and Aspect Oriented Programming.
+
+Dependency Injection is used to assemble complex system from existing blocks. There are several Dependency Injection containers available for .NET framework: Spring.NET, CastleWinsdor, StructureMap, AutoFac, Ninject, Unity (by Microsoft), LinFu.
+
+Aspect Oriented Programming allows developers to separate cross-cutting concerns from the applications blocks. This is usually done by injecting code into object's existing methods.
+In the .NET ecosystem, there are two ways used to implement aspect oriented programming: Proxy based AOP and IL Weaving based AOP.
+
+Proxy based AOP is easily achieved by wrapping targeted object by a proxy class. Than it is easy to intercept the calls to the target object by the proxy class and call the code, which should be injected. 
+The majority of Dependency Injection containers use proxy classes and therefor most of them offer also AOP. (Spring.NET, CastleWinsdor).
+
+IL Weawing is an expression for injection of Intermediate Language (IL) code after compile time before the generation of byte-code.
+
+There are two frameworks which provide AOP through IL Weaving: PostSharp and LinFu. PostSharp offers a commercial license. LinFu is an open-source project under LGPL license which covers both Dependency Injection and AOP.
+
+Spring.NET has been chosen because of it's maturity, the fact that it is well documented, works well with NHibernate and allows both Aspect Oriented Programming as well as Dependency Injection. One of the disadvantages of Spring.NET is the XML configuration which can become too large to maintain and again is not checked during compilation and may be a source of errors. 
+
+There are other frameworks, which us C\# as the language to configure the AOP or Dependency Injection. For instance PostSharp makes use of attributes and Ninject or StructureMap use strongly typed classes to configure the Dependency Injection container.
+
+\section{Security}
+The security of the application is based on Forms Authentication being the standard way of securing .NET web applications. Forms Authentication scheme works by issuing a token to user the first time that he authenticates. User can be authenticated against database or any other information source.
+
+This token in the form of cookie is added to the response which follows the authentication request. This way the cookie is added to the next request by the same client. Forms Authentication than takes care of revoking the cookie (after demanded time)  as well as of checking the cookie in each requests.
+
+Forms Authentication works automatically with browser based clients, when used from different clients, some additional work on the client has to be done in order to add the authentication cookie to each request.
+ 
+DotNetOpenAuth library was used in order to enable the support of OAuth protocol.
+
+\section{Unit testing}
+\label{tech:unit}
+Visual Studio provides standard unit testing framework called MsTest, therefor there is no need for external libraries. Thus this section discusses the options which have been chosen to isolate unit tests from the rest of the application code.
+
+\subsection{Isolation of unit tests}
+\label{tech:isolation}
+In order to write efficient unit tests, the tests have to be isolated from the rest of application code. To achieve that two conditions have to be fulfilled.
+\begin{itemize}
+	\item  Each module has to be defined by interfaces.
+	\item  Isolation framework should be used to provide simple implementations for defined interfaces.
+\end{itemize}
+
+The activity of replacing existing interface by implementation simple enough just to fulfill the needs of the test is called "mocking". There are several Mocking frameworks available: NMock, EasyMock, Moq, JustMock (commercial), TypeMock (comercial), RhinoMocks, NSubstitute, FakeItEasy and Moles.
+
+For this application RhinoMocks and Moles were chosen. Moles are used only for parametrized unit testing and are discussed in \ref{tech:moles}.
+RhinoMocks is an open source framework, easy to be used with active community. It was created by Ayende Rahien, the author of NHibernate. It works also with Silverlight.
+
+\section{Presentation layer}
+The choice of presentation layer was already part of the assignment. OCTO Technology wanted to use Silverlight 4. Putting aside that the choice was already done, here is a brief comparison of Silverlight and other alternative presented by the combination of HTML 5 and JavaScript.
+
+\subsection{Characteristics of Silverlight}
+Here is a list of characteristics which can be seen as advantages.
+\begin{itemize}
+	\item Intended to develop Rich Internet Applications.
+	\item Supports separation of the view and the logging using the MVVM pattern.
+	\item Possibility to use declarative language (XAML) to design user interface and imperative language to define the application logic.
+	\item Data visualization support using open source Silverlight Toolkit (charts, line series)
+	\item Re-usability of code on .NET compliant platform.
+	\item Possibility to access audio and video devices on client side.
+	\item Plug-in based technology. Requires the plug-in to be run inside the browser. The plug-in is not available for all possible combinations of platform and browser. This lowers the availability of the developed application and brings also higher requirements on hardware.
+	\item Standard web features are missing such as navigation.
+	\item Limited testability. Silverlight can not be tested with traditional functional testing frameworks such as Selenium. On the other hand, when the MVVM pattern is implied, the ViewModels can be tested as simple classes, using traditional Unit Testing technologies.
+\end{itemize}
+
+\subsection{Characteristics of HTML 5 / JavaScript combination}
+\begin{itemize}
+	\item  No plug-in needed, HTML 5 is supported on the majority of the current browsers.
+	\item  Naturally comes with web standard features: navigation, bookmarking.
+	\item  Developers has to handle the "all browsers compatibility" issue.
+	\item  Compared to C\# JavaScript is dynamic language, not compiled before the execution. This may be seen as advantage and disadvantage.
+\end{itemize}
+
+The decision between Silverlight and HTML depends on the project type. For line-of-business applications where the platforms used to run the applications are know before (and conform to Silverlight), Silverlight is a good choice.
+
+On the other hand, for widely open internet applications, the combination of HTML 5 and JavaScript will be the right choice assuring the availability of the application for everyone, regardless the platform. Currently HTML 5 supports almost all features provided by Silverlight.
+
+It is good to mention, that Silverlight as platform is based on the subset of Windows Presentation Framework. Windows Phone 7 platform was based on Silverlight and the new application runtime for Windows 8 (WinRT), is based on the same language and architecture. Thus the code ones written for Silverlight could be later used in Windows 8, Windows 7 and XBox device and might be a good solution for companies which invest heavily in Microsoft technologies.

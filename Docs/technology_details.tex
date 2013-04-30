@@ -1,0 +1,122 @@
+\chapter{Technology details}
+\section{Message Authentication}
+\label{tech:azure_blob_storage}
+Shared Access Signature scheme proposed by Azure Blob Storage is marketing name used for Message Authentication Code, standard term in cryptography, describing short piece of information which authenticates a message. The same mechanism is used as well in Amazon S3 (offer concurrent to Azure Blob Storage) but here it is called "Expiring URL".
+
+Shared Access Signature is generated using standard HMAC (Hash-base Message Authentication Code) algorithm. HMAC algorithms use one of the existing hash functions in combination with the secret key to generate the MAC value.
+
+Azure Blob storage uses the HMACSHA256 function, which as the name says, makes use of 256-bit SHA function and has the following definition (where “|” represents concatenation):
+
+\begin{equation}
+HMACSHA256 (key, data) = sha256(sha256(data|key)|key)
+\end{equation}
+
+The hash is applied two times during the process in order to disable attacks which were successful on previously simpler variants of the function which had used just hashed combination of data and key\cite{wiki:hmac}. The key is simply the Azure Blob Storage access key however the data is the combination of the following:
+
+\begin{itemize}
+	\item Identification of resource which should be accessed (container or blob)
+	\item Time stamp – specifying the expiration date
+	\item Permissions which will be given to access the resource
+\end{itemize}
+
+The same data is added to the request, so when the server receives the request, it performs the same calculation of the HMAC value to verify the Shared Access Signature. That is possible because the server is in possession of the access key.
+
+\section{Face recognition methods and algorithms}
+\label{tech:face_recognition}
+There following is a short list of two dimensional face recognition techniques\cite{Patil10}.
+\begin{description}
+	\item [Statistical methods] Methods which use statistics do define different ways to measure the distance between two images. In other words they try to find a way to define how similar two faces are to each other. There are several methods which fall into this group containing Linear Discriminant Analysis, Independent Component Analysis, Principal Component Analysis.
+	\item [Gabor Filters] Filters commonly used in image processing, that have a capability to capture important visual features. These filters are able to locate the important features in the image such eyes, nose or mouth. This method can be combined with the previously mentioned analytical methods to obtain better results.
+	\item [Neural Networks] Neural Networks are simulating the behavior of human brain to perform machine learning tasks such as classification or prediction. Neural Network is a set of interconnected nodes. The edges which are between the nodes are weighted so the information which travels between two nodes can be amplified. The information travels from set of input nodes, across a set of hidden nodes to a set of output nodes. The developer has to invent a way to encode the input (in this case an image) to a set of input nodes and decode the output (in this case a label identifying the person) from the set of output points.
+	Commonly used method is to take one node for each pixel in the image on the input side of the network and one node for each person in the database on the output side.
+\end{description}
+
+\section{Details of PCA algorithm}
+\label{tech:eigenface}
+The general purpose of PCA algorithm is to reduce the large dimensionality of the data space to smaller dimensionality of feature space, which can still be used to describe the data.
+
+As the set of features used to describe the object, the first several eigenvectors and eigenvalues of covariance matrix are used. Eigenfaces are graphical representation of eigenvectors and can be visualized as images.
+
+It has been shown, that the the eigenvectors associated with the largest eigenvalues are the ones that reflect the greatest variance in the image. Roughly 90\% of the total variance can be contained in the first 5\% to 10\% of the dimensions \cite{Kyungnam01}.
+
+Each image can be than projected on M dimensions (where M is the chosen number of eigenvectors). Thus the number of dimensions is reduced from the number of pixels onto the number of eigenvectors. Each image is then expressed as a vector of size M. The distance between two images can be defined as euclidean distance between these two vectors.
+
+\section{Haar Cascade face detection}
+\label{tech:haarcascade}
+Method which was introduced by Viola and Jones \cite{Viola01}. The Haar-like features rather than using the intensity values of a pixel, use the change in contrast values between adjacent rectangular groups of pixels \cite{Wilson06}. The sub-arrays of the image are scanned and the intensities of the pixels of each sub-array are added in order to determine the features depicting edges, lines or center-surrounds.
+
+To learn the Haar-cascade classifier a set of negative (without a face) and positive (containing a human face) images has to be provided. The classifier works in a cascade. That means, that several simple classifiers are sequentially used to set image as positive or negative. The image is set as positive if it passes all the cascade.
+
+OpenCV library already contains both: the algorithm to build and learn the classifier from arbitrary images and also built-in classifier for detecting human faces \cite{opencv:facedetection}.
+
+\section{Parametrized unit testing}
+\label{tech:parametrized_testing}
+
+Parametrized unit testing is used to simplify the generation of unit tests. Pex framework is used analyze the code under the test and generate inputs for unit tests in order to exercise all branches of tested code.
+
+Pex internally uses algebraic solver Z3 from Microsoft Research to determine the values of all the variables that may affect the branching to analyze all branches.
+
+For each branch in tested code, Pex builds  a formula, that represents the condition under which this branch may be reached. This formula is handed to Z3 algebraic solver, which uses decision formulas to decide the values of variable to reach the branch \cite{Tillman08}.
+
+By default Pex analysis the code of all of the loaded assemblies to determine the right inputs. During the analysis Pex enters event into the isolation framework and tries to define such input variables that it would cover all the branches not only inside the tested code, but also inside the isolation framework.
+
+For that reason it is recommended to use Moles \ref{tech:moles} isolation framework, which is designed in order to be used with Pex.
+
+\section{Moles stubbing framework}
+\label{tech:moles}
+Moles is a stubbing framework build by Microsoft Research to work well together with Pex. Moles works in a similar way as other frameworks, letting the developer to define return objects for executed methods. On the other hand, Moles generates the stubs of interfaces during the compilation, while other frameworks (as for example Rhino.Mocks) are able to create the stubs at run-time.
+
+Second advantage of Moles, which is not connected only to parametrized testing, is the fact, that it is able to substitute any method by delegate including static methods and methods inside .NET framework. This is particularly useful in cases when the code relies on static methods from .NET framework. Typical example of this situation is the usage of \textit{DateTime.Now} or \textit{Guid.NewGuid}. These methods are often called in business layers of applications and complicate the testing of the business layer.
+
+Using Moles the delegate which will be invoked on the particular method or property can be set. The following snippet shows the definition of static .NET class \textit{Guid} which resides directly inside the \textit{System} assembly.
+\begin{verbatim}
+public static class Guid { 
+  public static Guid NewGuid();
+}	
+\end{verbatim}
+To change the behavior of that class a mock is defines before the compilation by Moles framework.
+\begin{verbatim}
+public class MGuid { 
+  public static 
+    Func<Guid> NewGuid { set; get;}
+}
+\end{verbatim}
+By assigning a delegate to this mock, the developer can specify the return value of the function. In the following assembly lambda expression is inserted instead of delegate.
+\begin{verbatim}
+MGuid.NewGuid = () => new Guid("64d80a10-4f21-4acb-9d3d-0332e68c4394");
+\end{verbatim}
+In order to execute code assigned to the delegate inside the mock instead of the original code of the method just in time injection is performed by the Moles hosting environment, which checks whether any delegate was defined and executes the delegate if it was the case.
+\begin{verbatim}
+public static class Guid { 
+  public static Guid NewGuid() {
+  
+    //begin - injected at runtime
+    if (MGuid.NewGuid != null)
+      return MGuid.NewGuid();
+    
+    //end - injected at runtime
+    ...original code...
+  }
+}
+\end{verbatim}
+
+\section{Code verification}
+Design by contract is software design approach, which implies that developers define clear interfaces for each software component, specifying its exact behavior. The interfaces are defined by contracts and extend the possibilities of code verification and validation.
+
+The term "Design by Contract" was first used by Bertrand Meyer, who made it part of Eiffel programming language \cite{Meyer92}.
+
+Code Contracts is a language agnostic framework which enables the "Design by Contract" approach \cite{ContractsManual} by allowing the programmer to define three types of conditions for each method:
+\begin{description}
+	\item [Pre-condition] States in what forms the arguments of the method should be.
+	\item [Post-condition] States what forms the outputs of the method will have.
+	\item [Invariants] Conditions which will always be true during the execution of the method.
+\end{description}
+
+These conditions can be later verified by two types of checks:
+
+\begin{description}
+	\item  [Static checking] Checking procedure evaluated at the compilation time. At this time the compiler does not know what will be the values passed as arguments to the methods, but from the execution tree it can determine which method calls might potentially be evoked with non-compliant parameters.
+	\item  [Runtime checking] The code contracts are compiled as conditions directly into .NET byte-code. This allows the program to avoid writing conditions manually inside the method bodies.
+\end{description}
+
+Note that Code Contracts are not language feature. They are composed of class library and the checking tools which are available as plug-ins for Visual Studio.

@@ -1,0 +1,23 @@
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,c:\servers\fitnesse\slim\fitSharp.dll -a e:\projects\octo\CloudyBank\Applications\CloudyBank.TestFixtures\bin\Debug\App.config %p}
+!define TEST_RUNNER {c:\servers\fitnesse\slim\Runner.exe}
+ 
+!path e:\projects\octo\CloudyBank\Applications\CloudyBank.TestFixtures\bin\Debug\CloudyBank.TestFixtures.dll 
+ 
+|import                |
+|CloudyBank.TestFixtures.Fixtures|
+ 
+|script|customer fixture|
+|create customer;|Johny|Black|johny@email.com|1245645|Code1|
+|create business partner;|Code1|Mighty business|CZ-12454-2355-6343|
+|check|has business partner;|Code1|Mighty business|CZ-12454-2355-6343|true|
+|check|has business partner;|Code1|Other business|CZ-12454-2355-6343|false|
+
+
+|Comment|
+|This is a fitnesse page, which test if the business partner was added or not with right values|
+|In the page the Path to the CloudyBank.TestFixtures.dll has to be set to correct place|
+|Also the Slim FitSharp runners is used and it's location has to be specified|
+|The configuration file App.Config also has to be loaded - in order to specify how to create Spring context etc|
+|All dll and other support files, which are loaded by the CloudyBank.TestFixtures.dll have to be placed inside the SLIM folder|
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="04c4542c-078b-4781-b281-96f6a1f33c8f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFCustomerProfileService.xsd" MetadataType="Schema" ID="40967122-c1c3-4bbe-97c3-47259ab955df" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFCustomerProfileService1.xsd" MetadataType="Schema" ID="d561ecc7-95ad-4cf2-929c-b09ba8915e86" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFCustomerProfileService.wsdl" MetadataType="Wsdl" ID="f850c5eb-cfc5-467c-a173-a65ca9eeb4d9" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="WCFCustomerProfileService.disco" MetadataType="Disco" ID="9d64598e-da85-4741-a1f1-323be3b8447a" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?disco" />
+    <MetadataFile FileName="WCFCustomerProfilePort.wsdl" MetadataType="Wsdl" ID="e870abe8-abe4-4e7d-8f8f-7b0c2bee0d64" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?wsdl" />
+    <MetadataFile FileName="WCFCustomerProfileService2.xsd" MetadataType="Schema" ID="0c83fd35-466e-403c-b0bb-63e0105e2ce8" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFCustomerProfileService1.wsdl" MetadataType="Wsdl" ID="4969f505-83b5-4770-b637-9d1e6c197cc9" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFCustomerProfileService3.xsd" MetadataType="Schema" ID="16b10eed-b7e8-48b7-ad77-e3ab9a12d680" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

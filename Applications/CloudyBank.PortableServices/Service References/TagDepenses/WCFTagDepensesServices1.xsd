@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="octo.depenses.service" elementFormDefault="qualified" targetNamespace="octo.depenses.service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+  <xs:element name="GetTagDepensesForProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTagDepensesForProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" minOccurs="0" name="GetTagDepensesForProfileResult" nillable="true" type="q1:ArrayOfTagDepensesDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTagDepensesForCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTagDepensesForCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" minOccurs="0" name="GetTagDepensesForCustomerResult" nillable="true" type="q2:ArrayOfTagDepensesDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

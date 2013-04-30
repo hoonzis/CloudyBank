@@ -1,0 +1,90 @@
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Analysis of innovative banking solutions}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Personal finance management}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Account aggregation}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Payment categorization}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Budget management}{4}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Mobile aspects of PFM}{4}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Comparison with the community}{5}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Payment management}{5}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}New communications channels}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Document digitizing}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Security}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Open data interfaces}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Innovative technical solutions}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}Aims and requirements}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Traditional requirements on online banking}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Requirements on innovative features}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Technical requirements}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Required technologies}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Decoupled architecture}{10}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Use of Cloud technologies}{10}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Testable architecture}{10}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Analysis and design of the application}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}High level overview}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data access layer}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Business layer}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}Presentation layer}{14}{section.4.4}
+\contentsline {section}{\numberline {4.5}Reusing the code between client applications}{15}{section.4.5}
+\contentsline {section}{\numberline {4.6}Communication layer}{15}{section.4.6}
+\contentsline {section}{\numberline {4.7}Integration of non-relational database}{16}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Structure of Azure Blob Storage}{16}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Application interfaces provided by Azure}{17}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Security issues}{17}{section.4.8}
+\contentsline {section}{\numberline {4.9}Payment categorization}{18}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Naive Bayes classifier}{19}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Learning process}{20}{subsection.4.9.2}
+\contentsline {section}{\numberline {4.10}Data interfaces using OAuth protocol}{21}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Persistence of OAuth entities}{22}{subsection.4.10.1}
+\contentsline {chapter}{\numberline {5}Description of the implementation}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Assembling the application core}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Encryption of sensitive data}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Service injection in the ViewModel}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}Building Model View ViewModel framework}{30}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Creating commands from lambda expressions}{31}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Binding to events}{32}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Locating ViewModels}{33}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Implementation of Naive Bayes classifier}{35}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Construction of the predictor}{36}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Categorization process}{37}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Using face recognition for easier authentication}{38}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Eigenface-based face recognition}{38}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Open Source libraries for Eigenfaces algorithm}{39}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Process of face recognition}{40}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Capturing the image}{40}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}Server side recognition process}{42}{subsection.5.6.5}
+\contentsline {section}{\numberline {5.7}Implementation of Electronic vault}{43}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Comparison with regular database}{45}{subsection.5.7.1}
+\contentsline {chapter}{\numberline {6}Testability of the solution}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Standard unit tests}{47}{section.6.1}
+\contentsline {section}{\numberline {6.2}Parametrized unit tests}{47}{section.6.2}
+\contentsline {section}{\numberline {6.3}Unit testing the ViewModels}{49}{section.6.3}
+\contentsline {section}{\numberline {6.4}Acceptance tests}{49}{section.6.4}
+\contentsline {section}{\numberline {6.5}Load tests}{53}{section.6.5}
+\contentsline {chapter}{\numberline {7}Summary}{55}{chapter.7}
+\contentsline {chapter}{\numberline {A}Technology choices}{59}{appendix.A}
+\contentsline {section}{\numberline {A.1}Communication and integration}{59}{section.A.1}
+\contentsline {section}{\numberline {A.2}Data access}{59}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Definition of database mapping}{60}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Data generation}{60}{subsection.A.2.2}
+\contentsline {section}{\numberline {A.3}Application composition}{60}{section.A.3}
+\contentsline {section}{\numberline {A.4}Security}{61}{section.A.4}
+\contentsline {section}{\numberline {A.5}Unit testing}{61}{section.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Isolation of unit tests}{61}{subsection.A.5.1}
+\contentsline {section}{\numberline {A.6}Presentation layer}{62}{section.A.6}
+\contentsline {subsection}{\numberline {A.6.1}Characteristics of Silverlight}{62}{subsection.A.6.1}
+\contentsline {subsection}{\numberline {A.6.2}Characteristics of HTML 5 / JavaScript combination}{63}{subsection.A.6.2}
+\contentsline {chapter}{\numberline {B}Technology details}{65}{appendix.B}
+\contentsline {section}{\numberline {B.1}Message Authentication}{65}{section.B.1}
+\contentsline {section}{\numberline {B.2}Face recognition methods and algorithms}{66}{section.B.2}
+\contentsline {section}{\numberline {B.3}Details of PCA algorithm}{66}{section.B.3}
+\contentsline {section}{\numberline {B.4}Haar Cascade face detection}{66}{section.B.4}
+\contentsline {section}{\numberline {B.5}Parametrized unit testing}{67}{section.B.5}
+\contentsline {section}{\numberline {B.6}Moles stubbing framework}{67}{section.B.6}
+\contentsline {section}{\numberline {B.7}Code verification}{68}{section.B.7}
+\contentsline {chapter}{\numberline {C}Description of the projects in the solution}{71}{appendix.C}
+\contentsline {chapter}{\numberline {D}UML Diagrams}{73}{appendix.D}
+\contentsline {chapter}{\numberline {E}List of used abbreviations}{77}{appendix.E}
+\contentsline {chapter}{\numberline {F}Content of the attached CD}{79}{appendix.F}

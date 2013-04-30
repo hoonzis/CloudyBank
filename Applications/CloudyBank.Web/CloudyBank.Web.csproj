@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3C40815-D17F-403A-95BD-51F2B8C1D7DF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudyBank.Web</RootNamespace>
+    <AssemblyName>CloudyBank.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SilverlightApplicationList>{6CCBA0B1-1C62-4D67-AB22-6D136938C5F4}|..\CloudyBank.Web.Ria\CloudyBank.Web.Ria.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\CloudyBank.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\CloudyBank.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdministrationServices\Admin.aspx" />
+    <Content Include="AdministrationServices\CBSIntegrationService.svc" />
+    <Content Include="App_Data\haarcascade_frontalface_alt.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientBin\CloudyBank.Web.Ria.UnitTests.xap" />
+    <Content Include="ClientBin\CloudyBank.Web.Ria.xap" />
+    <Content Include="cvextern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="opencv_calib3d231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_contrib231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_core231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_features2d231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_ffmpeg_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_flann231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_highgui231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_imgproc231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_legacy231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_ml231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_objdetect231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_video231.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OpenServices\DataService.svc" />
+    <Content Include="Sites\Authorize.aspx" />
+    <Content Include="UnitTestsTestPage.aspx" />
+    <Content Include="UnitTestPage.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default.html" />
+    <Content Include="Silverlight.js" />
+    <Content Include="WCFServices\WCFAccountService.svc" />
+    <Content Include="WCFServices\WCFAdvisorService.svc" />
+    <Content Include="WCFServices\WCFAgencyService.svc" />
+    <Content Include="WCFServices\WCFCustomerProfileService.svc" />
+    <Content Include="WCFServices\WCFCustomerService.svc" />
+    <Content Include="WCFServices\WCFFileService.svc" />
+    <Content Include="WCFServices\WCFImageService.svc" />
+    <Content Include="WCFServices\WCFLogService.svc" />
+    <Content Include="WCFServices\WCFOAuthManagementService.svc" />
+    <Content Include="WCFServices\WCFOperationService.svc" />
+    <Content Include="WCFServices\WCFPartnerService.svc" />
+    <Content Include="WCFServices\WCFPaymentEventService.svc" />
+    <Content Include="WCFServices\WCFTagDepensesServices.svc" />
+    <Content Include="WCFServices\WCFTagService.svc" />
+    <Content Include="WCFServices\WCFUserService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministrationServices\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrationServices\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrationServices\CBSIntegrationService.svc.cs">
+      <DependentUpon>CBSIntegrationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrationServices\ICBSIntegrationService.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OAuth.ashx.cs">
+      <DependentUpon>OAuth.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenServices\DataService.svc.cs">
+      <DependentUpon>DataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="OpenServices\IDataService.cs" />
+    <Compile Include="Security\AzureTraceAppender.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\OAuth\Constants.cs" />
+    <Compile Include="Security\OAuth\CustomOAuthMessageFactory.cs" />
+    <Compile Include="Security\OAuth\DatabaseNonceStore.cs" />
+    <Compile Include="Security\OAuth\DatabaseTokenManager.cs" />
+    <Compile Include="Security\OAuth\OAuthAuthorizationManager.cs" />
+    <Compile Include="Security\OAuth\OAuthConsumer.cs" />
+    <Compile Include="Security\OAuth\OAuthPrincipalAuthorizationPolicy.cs" />
+    <Compile Include="Security\OAuth\OAuthToken.cs" />
+    <Compile Include="Security\OAuth\RequestScopedTokenMessage.cs" />
+    <Compile Include="Sites\Authorize.aspx.cs">
+      <DependentUpon>Authorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sites\Authorize.aspx.designer.cs">
+      <DependentUpon>Authorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\SilverlightFaultBehavior.cs" />
+    <Compile Include="WCFServices\WCFAccountService.svc.cs">
+      <DependentUpon>WCFAccountService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFAdvisorService.svc.cs">
+      <DependentUpon>WCFAdvisorService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFAgencyService.svc.cs">
+      <DependentUpon>WCFAgencyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFCustomerProfileService.svc.cs">
+      <DependentUpon>WCFCustomerProfileService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFCustomerService.svc.cs">
+      <DependentUpon>WCFCustomerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFFileService.svc.cs">
+      <DependentUpon>WCFFileService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFImageService.svc.cs">
+      <DependentUpon>WCFImageService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFLogService.svc.cs">
+      <DependentUpon>WCFLogService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFOAuthManagementService.svc.cs">
+      <DependentUpon>WCFOAuthManagementService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFOperationService.svc.cs">
+      <DependentUpon>WCFOperationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFPartnerService.svc.cs">
+      <DependentUpon>WCFPartnerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFPaymentEventService.svc.cs">
+      <DependentUpon>WCFPaymentEventService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFTagDepensesServices.svc.cs">
+      <DependentUpon>WCFTagDepensesServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFTagService.svc.cs">
+      <DependentUpon>WCFTagService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServices\WCFUserService.svc.cs">
+      <DependentUpon>WCFUserService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloudyBank.CoreDomain\CloudyBank.CoreDomain.csproj">
+      <Project>{E3C03587-B18B-40C0-B9E4-DD01ED0AC6BE}</Project>
+      <Name>CloudyBank.CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Core\CloudyBank.Core.csproj">
+      <Project>{BC3D3C08-07E2-44A1-8C13-FF10739B547F}</Project>
+      <Name>CloudyBank.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.DataAccess\CloudyBank.DataAccess.csproj">
+      <Project>{F7C352DE-00C3-4A20-A4AD-91738328974E}</Project>
+      <Name>CloudyBank.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Dto\CloudyBank.Dto.csproj">
+      <Project>{46A228A0-7F88-4C1A-BFE6-324EDE6E02EE}</Project>
+      <Name>CloudyBank.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudyBank.Services\CloudyBank.Services.csproj">
+      <Project>{4862896A-0C44-4DA5-9775-70AEC0328F22}</Project>
+      <Name>CloudyBank.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OAuth.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sites\Web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62964</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

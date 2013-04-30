@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1836e620-18c9-42e2-b1ef-62233efd39af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFImageService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFImageService.wsdl" MetadataType="Wsdl" ID="3aec0396-b941-4db1-8ca3-d155279a7285" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFImageService.xsd" MetadataType="Schema" ID="c5456b73-ef10-4012-9f76-d14460880f94" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFImageService1.wsdl" MetadataType="Wsdl" ID="62362be0-4730-418e-bcde-064cf8a68c54" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?wsdl" />
+    <MetadataFile FileName="WCFImageService1.xsd" MetadataType="Schema" ID="5db4c2b9-98b9-47e8-b75b-7632c34ab890" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFImageService2.xsd" MetadataType="Schema" ID="f402043c-1cc0-4282-b6f0-88c6895669b0" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFImageService3.xsd" MetadataType="Schema" ID="01722217-6f9c-4c7a-99e0-bc5cee6adf51" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFImageService.disco" MetadataType="Disco" ID="16647bb9-702c-4e42-a45d-5f30e1bc0b1a" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFImageService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

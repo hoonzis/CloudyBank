@@ -1,0 +1,1 @@
+<%@ ServiceHost Language="C#" Debug="true" Service="CloudyBank.Web.WCFServices.WCFPartnerService" CodeBehind="WCFPartnerService.svc.cs" %>

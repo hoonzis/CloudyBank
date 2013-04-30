@@ -1,0 +1,70 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.NewTransactionPage"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+    xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="700" Foreground="White">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel Background="Transparent">
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock" x:Name="BigFont">
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="{Binding TransactionPageRes.Transaction, Source={StaticResource Strings}}" FontSize="16"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="330"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <mvvm:ViewModelLocator x:Name="Customer" ViewModelName="CustomerViewModel"/>
+                <Border Background="{StaticResource GreenBrush}" Grid.Column="0" Margin="0,5,5,5">
+                    <StackPanel Margin="4">
+                        <TextBlock Text="{Binding Path=Common.From, Source={StaticResource Strings}}" Style="{StaticResource BigFont}"/>
+                        <ComboBox x:Name="FromAccountComboBox" ItemsSource="{Binding Path=Data.Accounts, ElementName=Customer}" 
+                                  SelectedItem="{Binding From, Mode=TwoWay}" DisplayMemberPath="Title" Foreground="Black"/>
+                        <TextBlock Text="{Binding Path=From.Number}"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="{StaticResource BrownBrush}" Grid.Column="0" Grid.Row="1" Margin="5">
+                    <StackPanel  Margin="4">
+                        <TextBlock Text="{Binding Path=Common.To, Source={StaticResource Strings}}" Style="{StaticResource BigFont}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=Common.Iban, Source={StaticResource Strings}, StringFormat='\{0\}:'}" VerticalAlignment="Center" Margin="4"/>
+                            <TextBox Text="{Binding Path=CreditAccountIban}" HorizontalAlignment="Stretch" Width="212"  Foreground="Black"/>
+                            <Button Content="Select" Click="Button_Click" Width="50" Style="{StaticResource SimpleButton}" Margin="5,0,0,0" Background="Transparent"/>
+                        </StackPanel>
+
+                        <TextBlock Text="{Binding Path=To.Title}" HorizontalAlignment="Left"/>
+                        <TextBlock Text="{Binding Path=PartnerName}" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="{StaticResource BrownBrush}" Grid.Row="0" Grid.Column="1" Margin="0,5,5,5" Grid.RowSpan="2">
+                    <StackPanel Margin="4">
+                        <TextBlock Text="{Binding Path=Common.Amount, Source={StaticResource Strings}}" Style="{StaticResource BigFont}"/>
+                        <TextBox Text="{Binding Path=Amount,Mode=TwoWay}"/>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="{Binding Message}" Visibility="Visible" Grid.Row="3" TextWrapping="Wrap"/>
+                <Button Command="{Binding MakeTransferCommand}" Content="{Binding Path=AgencyPageRes.MakeTransfer, Source={StaticResource Strings}}" Style="{StaticResource SimpleButton}" 
+                        Grid.Row="3" Grid.Column="1" Margin="5" Background="{StaticResource GreenBrush}"/>
+            
+            </Grid>
+        
+        </StackPanel>
+        <controlsToolkit:BusyIndicator IsBusy="{Binding InProgress}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}"/>
+    </Grid>
+</navigation:Page>

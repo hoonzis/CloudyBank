@@ -1,0 +1,7 @@
+REM this is the post build action executed after sucesful builds.
+REM all files are copied to the SLIM folder of Fitness - excluding a lot of unused files(.xml, .pdb etc).
+
+SET SLIM_FITNES = "C:\servers\fitnesse\slim\"
+xcopy $(TargetDir)Services.xml SLIM_FITNES /y
+xcopy $(TargetDir)DataAccess.xml SLIM_FITNES /y
+xcopy $(TargetDir)*.* SLIM_FITNES /exclude:$(ProjectDir)exclude.txt /y /r /i

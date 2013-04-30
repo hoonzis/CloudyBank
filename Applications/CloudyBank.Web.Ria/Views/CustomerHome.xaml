@@ -1,0 +1,45 @@
+<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+    xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+    xmlns:CloudyBank_Web_Ria="clr-namespace:CloudyBank.Web.Ria" x:Class="CloudyBank.Web.Ria.Views.CustomerHome"
+    xmlns:userControls="clr-namespace:CloudyBank.Web.Ria.UserControls"
+    mc:Ignorable="d"
+    d:DesignHeight="480" d:DesignWidth="1000" Height="800" MaxWidth="1000">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent" Width="1000">
+        <Grid.RowDefinitions>
+        	<RowDefinition Height="Auto" MinHeight="44"/>
+        	<RowDefinition Height="Auto" MinHeight="436"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,5,0,10" Width="1000">
+            <Border Background="{StaticResource BlueBrush}" Margin="3">
+                <Image Source="/CloudyBank.Web.Ria;component/Graphics/octo.png" Width="50"/>    
+            </Border>
+            
+            <userControls:NavigationMenu HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+        
+        <navigation:Frame x:Name="CustomerNavigationFrame" Source="/Customer" Grid.Row="1" Width="1000"
+        	Navigated="ContentFrame_Navigated" NavigationFailed="ContentFrame_NavigationFailed" JournalOwnership="OwnsJournal">
+        	<navigation:Frame.UriMapper>
+        		<uriMapper:UriMapper>
+        			<uriMapper:UriMapping Uri="" MappedUri="/Views/Customer.xaml"/>
+        			<uriMapper:UriMapping Uri="/Customer" MappedUri="/Views/Pages/CustomerPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Accounts" MappedUri="/Views/Pages/AccountsPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Budget" MappedUri="/Views/Pages/BudgetPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Profile" MappedUri="/Views/Pages/ProfilePage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Agency" MappedUri="/Views/Pages/AgencyPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Tags" MappedUri="/Views/Pages/TagsPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Partners" MappedUri="/Views/Pages/PartnersPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Help" MappedUri="/Views/Pages/HelpPage.xaml"/>
+        			<uriMapper:UriMapping Uri="/Settings" MappedUri="/Views/Pages/SettingsPage.xaml"/>
+        		</uriMapper:UriMapper>
+        	</navigation:Frame.UriMapper>
+        </navigation:Frame>
+    </Grid>
+</UserControl>

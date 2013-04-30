@@ -1,0 +1,20 @@
+<CloudyBank_Web_Ria_ViewModels:VaultViewModel xmlns:CloudyBank_Web_Ria_ViewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels" xmlns:CloudyBank_Web_Ria_Technical="clr-namespace:CloudyBank.Web.Ria.Technical" xmlns:System="clr-namespace:System;assembly=mscorlib" ErrorMessage="Cras nam" HasErrors="True" IsError="False" IsBusy="False">
+	<CloudyBank_Web_Ria_ViewModels:VaultViewModel.FileList>
+		<CloudyBank_Web_Ria_ViewModels:UserFileViewModel Author="Duis nunc" ContentType="Aliquam vestibulum" FileName="Sed dis" HasErrors="True" LastModified="11/17/2011 23:57:48" Url="Integer curabitur aenean quisque"/>
+		<CloudyBank_Web_Ria_ViewModels:UserFileViewModel Author="Vivamus adipiscing mauris amet phasellus" ContentType="Parturient vestibulum" FileName="Maecenas consequat" HasErrors="False" LastModified="11/17/2011 23:57:48" Url="Vestibulum aliquam convallis est"/>
+		<CloudyBank_Web_Ria_ViewModels:UserFileViewModel Author="Nullam aliquet blandit adipiscing class" ContentType="Dignissim curae aptent" FileName="Hac donec praesent etiam" HasErrors="True" LastModified="11/17/2011 23:57:48" Url="Leo mus commodo nec"/>
+	</CloudyBank_Web_Ria_ViewModels:VaultViewModel.FileList>
+	<CloudyBank_Web_Ria_ViewModels:VaultViewModel.Uploads>
+		<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel ErrorMessage="Lorem sociosqu" FileName="Hac ornare suscipit venenatis platea" HasErrors="True" State="Deleted">
+			<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>10</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>
+		</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel>
+		<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel ErrorMessage="Leo vestibulum mus" FileName="Nec magna torquent ultrices" HasErrors="False" State="Uploading">
+			<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>30</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>
+		</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel>
+		<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel ErrorMessage="Non massa metus" FileName="Duis morbi vulputate curabitur" HasErrors="True" State="Error">
+			<CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>
+				15
+			</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel.Done>
+		</CloudyBank_Web_Ria_Technical:AzureUploaderViewModel>
+	</CloudyBank_Web_Ria_ViewModels:VaultViewModel.Uploads>
+</CloudyBank_Web_Ria_ViewModels:VaultViewModel>

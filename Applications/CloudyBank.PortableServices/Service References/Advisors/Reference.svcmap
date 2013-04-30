@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9f208b66-e68b-427b-97df-88f08132d54d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFAdvisorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFAdvisorService.xsd" MetadataType="Schema" ID="b41088e9-b2bf-4495-b099-3d5157069cd0" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFAdvisorService1.xsd" MetadataType="Schema" ID="0770d990-ce1c-4044-8737-5f22bf8e06f1" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFAdvisorPort.wsdl" MetadataType="Wsdl" ID="9acdd78b-e535-411c-bde7-9ce2e241a62c" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?wsdl" />
+    <MetadataFile FileName="WCFAdvisorService.wsdl" MetadataType="Wsdl" ID="d8813d73-4de0-4048-bdae-ee1401caa467" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFAdvisorService.disco" MetadataType="Disco" ID="a189c46e-b462-4885-909e-0db0c88823f0" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?disco" />
+    <MetadataFile FileName="WCFAdvisorService2.xsd" MetadataType="Schema" ID="4a08fe45-e93f-4ac6-919f-ebbbd5b4711f" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFAdvisorService1.wsdl" MetadataType="Wsdl" ID="08450812-6860-4a2c-aa9f-d4f4ad3faef2" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAdvisorService.svc?wsdl=wsdl1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

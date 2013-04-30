@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@11)" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="ml, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(499d29da-d70b-4e9f-a8df-7100c8cd70c8.OutputPath)" Label="ml.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@10" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(bc3d3c08-07e2-44a1-8c13-ff10739b547f.OutputPath)" Label="CloudyBank.Core.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@13" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Mobile.MVVM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(ece025bf-b5ab-4bdc-837d-b76ebf648942.OutputPath)" Label="CloudyBank.Mobile.MVVM.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@15" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.MVVM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(6d83664d-8dab-4bb0-9954-60a836c5b2a6.OutputPath)" Label="CloudyBank.MVVM.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@17" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.CoreDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(e3c03587-b18b-40c0-b9e4-dd01ed0ac6be.OutputPath)" Label="CloudyBank.CoreDomain.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@19" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(46a228a0-7f88-4c1a-bfe6-324ede6e02ee.OutputPath)" Label="CloudyBank.Dto.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@2" Category="FileSystem.Category.FileOfType.exe" CodeSchemaProperty_StrongName="CloudyBank.DbTool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(1d03c92e-e48a-46e7-b5a9-14cbdedf66e1.OutputPath)" Label="CloudyBank.DbTool.exe">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@21" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(4862896a-0c44-4da5-9775-70aec0328f22.OutputPath)" Label="CloudyBank.Services.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@23" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.PortableServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(f26e222a-85f6-4df6-a51a-40a772b270fd.OutputPath)" Label="CloudyBank.PortableServices.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@25" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.TestFixtures, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(b3db4a37-c083-4eb8-ab87-743ff0f94bb0.OutputPath)" Label="CloudyBank.TestFixtures.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@27" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Mobile.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(a6b0c1e3-e487-4e91-934d-4ed3de2aa965.OutputPath)" Label="CloudyBank.Mobile.ViewModels.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@29" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(f7c352de-00c3-4a20-a4ad-91738328974e.OutputPath)" Label="CloudyBank.DataAccess.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@31" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="OctoBank.Web.Ria.Components, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(ceb48563-cdec-4658-a04a-5d1f1d96a819.OutputPath)" Label="OctoBank.Web.Ria.Components.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@33" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(0e7251da-ed0e-4be8-8ba4-04f1b0fab793.OutputPath)" Label="CloudyBank.Tests.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@35" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="ml.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(0784f872-96af-4e6e-ab03-6513831d6218.OutputPath)" Label="ml.Tests.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@37" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.ParametrizedTests, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(ffe9909a-b8f2-4642-bd57-97babc117d0f.OutputPath)" Label="CloudyBank.ParametrizedTests.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@39" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Web.Ria.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(78f7f066-bbdb-450e-b668-e02185a8ca95.OutputPath)" Label="CloudyBank.Web.Ria.UnitTests.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@4" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Web.Ria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(6ccba0b1-1c62-4d67-ab22-6d136938c5f4.OutputPath)" Label="CloudyBank.Web.Ria.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@6" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(b3c40815-d17f-403a-95bd-51f2b8c1d7df.OutputPath)" Label="CloudyBank.Web.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@8" Category="FileSystem.Category.FileOfType.dll" CodeSchemaProperty_StrongName="CloudyBank.Mobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(49e75f1a-29e2-44f6-87a8-82582b8083ae.OutputPath)" Label="CloudyBank.Mobile.dll">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="NewGroup1" Group="Collapsed" Label="Client side" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="@17" Category="CodeSchema_ReturnTypeLink" ReferenceCount="5" />
+    <Link Source="@10" Target="@19" Category="CodeSchema_ReturnTypeLink" ReferenceCount="1" />
+    <Link Source="@19" Target="@17" Category="References" ReferenceCount="2">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@2" Target="@10" Category="References" ReferenceCount="1">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@2" Target="@17" Category="References" ReferenceCount="1">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@2" Target="@21" Category="CodeSchema_Calls" ReferenceCount="2">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@2" Target="@29" Category="CodeSchema_Calls" ReferenceCount="2">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@21" Target="@10" Category="Implements" ReferenceCount="11">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@21" Target="@17" Category="CodeSchema_Calls" ReferenceCount="15">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@21" Target="@19" Category="CodeSchema_Calls" ReferenceCount="3">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@25" Target="@10" Category="References" ReferenceCount="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@25" Target="@19" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@25" Target="@23" Category="Implements" ReferenceCount="2">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@25" Target="@4" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@25" Target="@6" Category="CodeSchema_Calls" ReferenceCount="1" />
+    <Link Source="@27" Target="@13" Category="InheritsFrom" ReferenceCount="1">
+      <Category Ref="CodeSchema_AttributeUse" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@27" Target="@23" Category="CodeSchema_ReturnTypeLink" ReferenceCount="12">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@29" Target="@10" Category="Implements" ReferenceCount="2">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@29" Target="@17" Category="References" ReferenceCount="10">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@33" Target="@10" Category="CodeSchema_Calls" ReferenceCount="5">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@33" Target="@17" Category="CodeSchema_Calls" ReferenceCount="12">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@33" Target="@19" Category="CodeSchema_Calls" ReferenceCount="1" />
+    <Link Source="@33" Target="@21" Category="CodeSchema_Calls" ReferenceCount="4">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@33" Target="@29" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@35" Target="(@11)" Category="CodeSchema_Calls" ReferenceCount="2">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@35" Target="@17" Category="CodeSchema_Calls" ReferenceCount="3">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@37" Target="@10" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@37" Target="@17" Category="CodeSchema_Calls" ReferenceCount="11">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@37" Target="@19" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@37" Target="@21" Category="CodeSchema_Calls" ReferenceCount="4">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@39" Target="@23" Category="CodeSchema_Calls" ReferenceCount="3">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@39" Target="@4" Category="CodeSchema_Calls" ReferenceCount="1">
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@4" Target="@15" Category="References" ReferenceCount="5">
+      <Category Ref="CodeSchema_AttributeUse" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="InheritsFrom" />
+    </Link>
+    <Link Source="@4" Target="@23" Category="CodeSchema_Calls" ReferenceCount="20">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@4" Target="@31" Category="References" ReferenceCount="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@6" Target="@10" Category="References" ReferenceCount="11">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@6" Target="@17" Category="CodeSchema_Calls" ReferenceCount="3">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@6" Target="@19" Category="References" ReferenceCount="3">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@6" Target="@21" Category="CodeSchema_Calls" ReferenceCount="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@8" Target="@23" Category="References" ReferenceCount="1">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@8" Target="@27" Category="CodeSchema_Calls" ReferenceCount="1" />
+    <Link Source="NewGroup1" Target="@13" Category="Contains" />
+    <Link Source="NewGroup1" Target="@15" Category="Contains" />
+    <Link Source="NewGroup1" Target="@23" Category="Contains" />
+    <Link Source="NewGroup1" Target="@27" Category="Contains" />
+    <Link Source="NewGroup1" Target="@31" Category="Contains" />
+    <Link Source="NewGroup1" Target="@39" Category="Contains" />
+    <Link Source="NewGroup1" Target="@4" Category="Contains" />
+    <Link Source="NewGroup1" Target="@8" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" IsProviderRoot="False" NavigationActionLabel="Assemblies" />
+    <Category Id="CodeSchema_AttributeUse" Label="Uses Attribute" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Used by" OutgoingActionLabel="Uses Attribute" />
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="Return" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Return types" OutgoingActionLabel="Return types" />
+    <Category Id="Contains" Label="Contains" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" IsProviderRoot="False" NavigationActionLabel="Files" />
+    <Category Id="FileSystem.Category.FileOfType.dll" Label="dll File" BasedOn="CodeSchema_Assembly" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="dll Files" />
+    <Category Id="FileSystem.Category.FileOfType.exe" Label="exe File" BasedOn="CodeSchema_Assembly" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="exe Files" />
+    <Category Id="Implements" Label="Implements" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Implemented by" OutgoingActionLabel="Implements" />
+    <Category Id="InheritsFrom" Label="Inherits From" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Inherited By" OutgoingActionLabel="Inherits From" />
+    <Category Id="References" Label="References" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
+  </Categories>
+  <Properties>
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_StrongName" Label="StrongName" Description="StrongName" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Progression.Layout.GraphDirection" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.Progression.GraphModel.GroupStyle" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ReferenceCount" Label="Reference Count" Description="Total number of links" DataType="System.Int32" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#1C3068" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#4A65A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Type" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#D3DCEF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Generics" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Generics')" />
+      <Setter Property="Background" Value="#FFA080A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FFA08080" />
+    </Style>
+  </Styles>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(1d03c92e-e48a-46e7-b5a9-14cbdedf66e1.OutputPathUri)" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Uri="Assembly=$(6ccba0b1-1c62-4d67-ab22-6d136938c5f4.OutputPathUri)" />
+    <Alias n="4" Id="(@3)" />
+    <Alias n="5" Uri="Assembly=$(b3c40815-d17f-403a-95bd-51f2b8c1d7df.OutputPathUri)" />
+    <Alias n="6" Id="(@5)" />
+    <Alias n="7" Uri="Assembly=$(49e75f1a-29e2-44f6-87a8-82582b8083ae.OutputPathUri)" />
+    <Alias n="8" Id="(@7)" />
+    <Alias n="9" Uri="Assembly=$(bc3d3c08-07e2-44a1-8c13-ff10739b547f.OutputPathUri)" />
+    <Alias n="10" Id="(@9)" />
+    <Alias n="11" Uri="Assembly=$(499d29da-d70b-4e9f-a8df-7100c8cd70c8.OutputPathUri)" />
+    <Alias n="12" Uri="Assembly=$(ece025bf-b5ab-4bdc-837d-b76ebf648942.OutputPathUri)" />
+    <Alias n="13" Id="(@12)" />
+    <Alias n="14" Uri="Assembly=$(6d83664d-8dab-4bb0-9954-60a836c5b2a6.OutputPathUri)" />
+    <Alias n="15" Id="(@14)" />
+    <Alias n="16" Uri="Assembly=$(e3c03587-b18b-40c0-b9e4-dd01ed0ac6be.OutputPathUri)" />
+    <Alias n="17" Id="(@16)" />
+    <Alias n="18" Uri="Assembly=$(46a228a0-7f88-4c1a-bfe6-324ede6e02ee.OutputPathUri)" />
+    <Alias n="19" Id="(@18)" />
+    <Alias n="20" Uri="Assembly=$(4862896a-0c44-4da5-9775-70aec0328f22.OutputPathUri)" />
+    <Alias n="21" Id="(@20)" />
+    <Alias n="22" Uri="Assembly=$(f26e222a-85f6-4df6-a51a-40a772b270fd.OutputPathUri)" />
+    <Alias n="23" Id="(@22)" />
+    <Alias n="24" Uri="Assembly=$(b3db4a37-c083-4eb8-ab87-743ff0f94bb0.OutputPathUri)" />
+    <Alias n="25" Id="(@24)" />
+    <Alias n="26" Uri="Assembly=$(a6b0c1e3-e487-4e91-934d-4ed3de2aa965.OutputPathUri)" />
+    <Alias n="27" Id="(@26)" />
+    <Alias n="28" Uri="Assembly=$(f7c352de-00c3-4a20-a4ad-91738328974e.OutputPathUri)" />
+    <Alias n="29" Id="(@28)" />
+    <Alias n="30" Uri="Assembly=$(ceb48563-cdec-4658-a04a-5d1f1d96a819.OutputPathUri)" />
+    <Alias n="31" Id="(@30)" />
+    <Alias n="32" Uri="Assembly=$(0e7251da-ed0e-4be8-8ba4-04f1b0fab793.OutputPathUri)" />
+    <Alias n="33" Id="(@32)" />
+    <Alias n="34" Uri="Assembly=$(0784f872-96af-4e6e-ab03-6513831d6218.OutputPathUri)" />
+    <Alias n="35" Id="(@34)" />
+    <Alias n="36" Uri="Assembly=$(ffe9909a-b8f2-4642-bd57-97babc117d0f.OutputPathUri)" />
+    <Alias n="37" Id="(@36)" />
+    <Alias n="38" Uri="Assembly=$(78f7f066-bbdb-450e-b668-e02185a8ca95.OutputPathUri)" />
+    <Alias n="39" Id="(@38)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="0784f872-96af-4e6e-ab03-6513831d6218.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\ml.Tests\bin\Debug\ml.Tests.dll" />
+    <Path Id="0784f872-96af-4e6e-ab03-6513831d6218.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/ml.Tests/bin/Debug/ml.Tests.dll" />
+    <Path Id="0e7251da-ed0e-4be8-8ba4-04f1b0fab793.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Tests\bin\Debug\CloudyBank.Tests.dll" />
+    <Path Id="0e7251da-ed0e-4be8-8ba4-04f1b0fab793.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Tests/bin/Debug/CloudyBank.Tests.dll" />
+    <Path Id="1d03c92e-e48a-46e7-b5a9-14cbdedf66e1.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.DbTool\bin\Debug\CloudyBank.DbTool.exe" />
+    <Path Id="1d03c92e-e48a-46e7-b5a9-14cbdedf66e1.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.DbTool/bin/Debug/CloudyBank.DbTool.exe" />
+    <Path Id="46a228a0-7f88-4c1a-bfe6-324ede6e02ee.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Dto\bin\Debug\CloudyBank.Dto.dll" />
+    <Path Id="46a228a0-7f88-4c1a-bfe6-324ede6e02ee.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Dto/bin/Debug/CloudyBank.Dto.dll" />
+    <Path Id="4862896a-0c44-4da5-9775-70aec0328f22.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Services\bin\Debug\CloudyBank.Services.dll" />
+    <Path Id="4862896a-0c44-4da5-9775-70aec0328f22.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Services/bin/Debug/CloudyBank.Services.dll" />
+    <Path Id="499d29da-d70b-4e9f-a8df-7100c8cd70c8.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\External.ML\bin\Debug\ml.dll" />
+    <Path Id="499d29da-d70b-4e9f-a8df-7100c8cd70c8.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/External.ML/bin/Debug/ml.dll" />
+    <Path Id="49e75f1a-29e2-44f6-87a8-82582b8083ae.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Mobile\Bin\Debug\CloudyBank.Mobile.dll" />
+    <Path Id="49e75f1a-29e2-44f6-87a8-82582b8083ae.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Mobile/Bin/Debug/CloudyBank.Mobile.dll" />
+    <Path Id="6ccba0b1-1c62-4d67-ab22-6d136938c5f4.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Web.Ria\Bin\Debug\CloudyBank.Web.Ria.dll" />
+    <Path Id="6ccba0b1-1c62-4d67-ab22-6d136938c5f4.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Web.Ria/Bin/Debug/CloudyBank.Web.Ria.dll" />
+    <Path Id="6d83664d-8dab-4bb0-9954-60a836c5b2a6.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.MVVM\Bin\Debug\CloudyBank.MVVM.dll" />
+    <Path Id="6d83664d-8dab-4bb0-9954-60a836c5b2a6.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.MVVM/Bin/Debug/CloudyBank.MVVM.dll" />
+    <Path Id="78f7f066-bbdb-450e-b668-e02185a8ca95.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Web.Ria.UnitTests\Bin\Debug\CloudyBank.Web.Ria.UnitTests.dll" />
+    <Path Id="78f7f066-bbdb-450e-b668-e02185a8ca95.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Web.Ria.UnitTests/Bin/Debug/CloudyBank.Web.Ria.UnitTests.dll" />
+    <Path Id="a6b0c1e3-e487-4e91-934d-4ed3de2aa965.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Mobile.ViewModels\Bin\Debug\CloudyBank.Mobile.ViewModels.dll" />
+    <Path Id="a6b0c1e3-e487-4e91-934d-4ed3de2aa965.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Mobile.ViewModels/Bin/Debug/CloudyBank.Mobile.ViewModels.dll" />
+    <Path Id="b3c40815-d17f-403a-95bd-51f2b8c1d7df.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Web\bin\CloudyBank.Web.dll" />
+    <Path Id="b3c40815-d17f-403a-95bd-51f2b8c1d7df.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Web/bin/CloudyBank.Web.dll" />
+    <Path Id="b3db4a37-c083-4eb8-ab87-743ff0f94bb0.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.TestFixtures\bin\Debug\CloudyBank.TestFixtures.dll" />
+    <Path Id="b3db4a37-c083-4eb8-ab87-743ff0f94bb0.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.TestFixtures/bin/Debug/CloudyBank.TestFixtures.dll" />
+    <Path Id="bc3d3c08-07e2-44a1-8c13-ff10739b547f.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Core\bin\Debug\CloudyBank.Core.dll" />
+    <Path Id="bc3d3c08-07e2-44a1-8c13-ff10739b547f.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Core/bin/Debug/CloudyBank.Core.dll" />
+    <Path Id="ceb48563-cdec-4658-a04a-5d1f1d96a819.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Web.Ria.Components\Bin\Debug\OctoBank.Web.Ria.Components.dll" />
+    <Path Id="ceb48563-cdec-4658-a04a-5d1f1d96a819.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Web.Ria.Components/Bin/Debug/OctoBank.Web.Ria.Components.dll" />
+    <Path Id="e3c03587-b18b-40c0-b9e4-dd01ed0ac6be.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.CoreDomain\bin\Debug\CloudyBank.CoreDomain.dll" />
+    <Path Id="e3c03587-b18b-40c0-b9e4-dd01ed0ac6be.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.CoreDomain/bin/Debug/CloudyBank.CoreDomain.dll" />
+    <Path Id="ece025bf-b5ab-4bdc-837d-b76ebf648942.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.Mobile.MVVM\Bin\Debug\CloudyBank.Mobile.MVVM.dll" />
+    <Path Id="ece025bf-b5ab-4bdc-837d-b76ebf648942.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.Mobile.MVVM/Bin/Debug/CloudyBank.Mobile.MVVM.dll" />
+    <Path Id="f26e222a-85f6-4df6-a51a-40a772b270fd.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.PortableServices\bin\Debug\CloudyBank.PortableServices.dll" />
+    <Path Id="f26e222a-85f6-4df6-a51a-40a772b270fd.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.PortableServices/bin/Debug/CloudyBank.PortableServices.dll" />
+    <Path Id="f7c352de-00c3-4a20-a4ad-91738328974e.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.DataAccess\bin\Debug\CloudyBank.DataAccess.dll" />
+    <Path Id="f7c352de-00c3-4a20-a4ad-91738328974e.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.DataAccess/bin/Debug/CloudyBank.DataAccess.dll" />
+    <Path Id="ffe9909a-b8f2-4642-bd57-97babc117d0f.OutputPath" Value="E:\projects\octo\CloudyBank\Applications\CloudyBank.ParametrizedTests\bin\Debug\CloudyBank.ParametrizedTests.dll" />
+    <Path Id="ffe9909a-b8f2-4642-bd57-97babc117d0f.OutputPathUri" Value="file:///E:/projects/octo/CloudyBank/Applications/CloudyBank.ParametrizedTests/bin/Debug/CloudyBank.ParametrizedTests.dll" />
+  </Paths>
+</DirectedGraph>

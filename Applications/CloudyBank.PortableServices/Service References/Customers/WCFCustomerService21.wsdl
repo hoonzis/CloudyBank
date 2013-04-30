@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="octo.customers.service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="octo.customers.service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="octo.customers.service/Imports">
+      <xsd:import schemaLocation="http://localhost/WCFServices/WCFCustomerService.svc?xsd=xsd0" namespace="octo.customers.service" />
+      <xsd:import schemaLocation="http://localhost/WCFServices/WCFCustomerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/WCFServices/WCFCustomerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+      <xsd:import schemaLocation="http://localhost/WCFServices/WCFCustomerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Customers" />
+      <xsd:import schemaLocation="http://localhost/WCFServices/WCFCustomerService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Security" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="WCFCustomersService_SaveCustomerDto_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerDto" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_SaveCustomerDto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerDtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCustomersForAdvisor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersForAdvisor" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCustomersForAdvisor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersForAdvisorResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCurrentCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCustomer" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCurrentCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCustomerByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByID" />
+  </wsdl:message>
+  <wsdl:message name="WCFCustomersService_GetCustomerByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCFCustomersService">
+    <wsdl:operation name="SaveCustomerDto">
+      <wsdl:input wsaw:Action="octo.customers.service/WCFCustomersService/SaveCustomerDto" message="tns:WCFCustomersService_SaveCustomerDto_InputMessage" />
+      <wsdl:output wsaw:Action="octo.customers.service/WCFCustomersService/SaveCustomerDtoResponse" message="tns:WCFCustomersService_SaveCustomerDto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomersForAdvisor">
+      <wsdl:input wsaw:Action="octo.customers.service/WCFCustomersService/GetCustomersForAdvisor" message="tns:WCFCustomersService_GetCustomersForAdvisor_InputMessage" />
+      <wsdl:output wsaw:Action="octo.customers.service/WCFCustomersService/GetCustomersForAdvisorResponse" message="tns:WCFCustomersService_GetCustomersForAdvisor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCustomer">
+      <wsdl:input wsaw:Action="octo.customers.service/WCFCustomersService/GetCurrentCustomer" message="tns:WCFCustomersService_GetCurrentCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="octo.customers.service/WCFCustomersService/GetCurrentCustomerResponse" message="tns:WCFCustomersService_GetCurrentCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByID">
+      <wsdl:input wsaw:Action="octo.customers.service/WCFCustomersService/GetCustomerByID" message="tns:WCFCustomersService_GetCustomerByID_InputMessage" />
+      <wsdl:output wsaw:Action="octo.customers.service/WCFCustomersService/GetCustomerByIDResponse" message="tns:WCFCustomersService_GetCustomerByID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

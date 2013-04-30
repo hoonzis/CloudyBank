@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1739454b-4444-4da9-82bb-f72aa78aa8f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFAgencyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFAgencyService.xsd" MetadataType="Schema" ID="3d85eb6d-1e42-4586-8ba8-6d3aa8a43403" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFAgencyService.disco" MetadataType="Disco" ID="6da3e0b2-4e38-41b3-9773-63a6122bf7bf" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?disco" />
+    <MetadataFile FileName="WCFAgencyPort.wsdl" MetadataType="Wsdl" ID="7df298b0-3785-44b1-91f7-a45cdb785012" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?wsdl" />
+    <MetadataFile FileName="WCFAgencyService.wsdl" MetadataType="Wsdl" ID="87f2e1f9-8979-4b0c-8bec-378002f96c55" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFAgencyService1.wsdl" MetadataType="Wsdl" ID="9ecadaf4-af9e-4ad5-98e4-2b89d37eb11f" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="WCFAgencyService1.xsd" MetadataType="Schema" ID="de1aed76-b5d4-4b2a-a5c5-75f2ba2bf08f" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFAgencyService2.xsd" MetadataType="Schema" ID="5987ca32-4df7-4319-9124-ee60bd77321d" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFAgencyService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

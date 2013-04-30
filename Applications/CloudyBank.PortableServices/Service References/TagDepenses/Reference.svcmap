@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="411ecb6b-edbd-446d-b4e0-0bee28dd5db4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFTagDepensesServices.xsd" MetadataType="Schema" ID="7c202652-2fa7-42eb-85e0-77ea4a84e0ad" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFTagDepensesPort.wsdl" MetadataType="Wsdl" ID="67813153-1962-4ba8-9416-1046cc657b8d" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?wsdl" />
+    <MetadataFile FileName="WCFTagDepensesServices1.xsd" MetadataType="Schema" ID="6c5193c3-2a49-46e3-98a1-2af71e346915" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFTagDepensesServices.wsdl" MetadataType="Wsdl" ID="29c43bd2-32b7-4300-bd56-89d895f9c4a1" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="WCFTagDepensesServices.disco" MetadataType="Disco" ID="07c9de6d-4a26-4463-9f0e-5187d6aa789f" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?disco" />
+    <MetadataFile FileName="WCFTagDepensesServices1.wsdl" MetadataType="Wsdl" ID="7f491d64-9520-4d7c-b22c-dc85c866ef53" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFTagDepensesServices2.xsd" MetadataType="Schema" ID="854418f0-3605-49df-a363-bb784661205a" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

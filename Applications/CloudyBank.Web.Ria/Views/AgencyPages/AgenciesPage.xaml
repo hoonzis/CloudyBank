@@ -1,0 +1,43 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.UserControls.AgenciesPage"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:map="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"
+    xmlns:components="clr-namespace:CloudyBank.Web.Ria.Components;assembly=OctoBank.Web.Ria.Components"
+    
+    Foreground="White">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Text="{Binding Path=AgencyPageRes.Agencies, Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Path=AgencyPageRes.Note, Source={StaticResource Strings}}"/>
+        </StackPanel>
+        
+        <Border Margin="0,5,5,0" Grid.Row="1">
+            <components:SelectableMap ItemsSource="{Binding Agencies, Source={StaticResource Referential}}" x:Name="AgenciesMap"/>
+        </Border>
+
+        <Border Background="{StaticResource TealBrush}" Grid.Column="1" Margin="5,5,0,0" Grid.Row="1" DataContext="{Binding SelectedItem, ElementName=AgenciesMap}">
+            <StackPanel Margin="5">
+                <TextBlock Text="{Binding Path=AgencyPageRes.BranchAddress, Source={StaticResource Strings}}" FontWeight="Bold"/>
+                <TextBlock Text="{Binding Address}"/>
+                <TextBlock Text="{Binding Path=AgencyPageRes.OpenHour, Source={StaticResource Strings}}" FontWeight="Bold"/>
+                <TextBlock Text="{Binding OpeningHour}"/>
+                <TextBlock Text="{Binding Path=AgencyPageRes.CloseHour, Source={StaticResource Strings}}" FontWeight="Bold"/>
+                <TextBlock Text="{Binding ClosingHour}"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</navigation:Page>

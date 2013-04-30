@@ -1,0 +1,51 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.AgencyPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+           xmlns:controls="clr-namespace:CloudyBank.Web.Ria.UserControls"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Agency">
+    
+    <Grid x:Name="LayoutRoot">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Background="Transparent" CornerRadius="5" VerticalAlignment="Top">
+            <StackPanel>
+                <controls:AgencyMenuItem MenuText="{Binding Path=AgencyPageRes.NewTransaction,Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/transaction.png" NavigateUri="/Transaction" TargetName="AgencyNavigationFrame"/>
+                <controls:AgencyMenuItem MenuText="{Binding Path=AgencyPageRes.FindAgencies, Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/globe.png" NavigateUri="/Agencies" TargetName="AgencyNavigationFrame"/>
+                <controls:AgencyMenuItem MenuText="{Binding Path=AgencyPageRes.ElectronicVault, Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/locker.png" NavigateUri="/Vault" TargetName="AgencyNavigationFrame"/>
+                <controls:AgencyMenuItem MenuText="{Binding Path=Common.ManagePartners, Source={StaticResource Strings}}" NavigateUri="/Partners" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/partners.png" TargetName="AgencyNavigationFrame"/>
+                <controls:AgencyMenuItem MenuText="{Binding Path=Common.ManageTags, Source={StaticResource Strings}}" NavigateUri="/Tags" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/tags.png" TargetName="AgencyNavigationFrame"/>
+                <controls:AgencyMenuItem MenuText="{Binding Path=CustomerPageRes.EditPersInfo,Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/profile.png" NavigateUri="/PersonalInformation" Grid.Column="1" Grid.Row="1" TargetName="AgencyNavigationFrame"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border Grid.Column="1" Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel>
+                <navigation:Frame x:Name="AgencyNavigationFrame" Source="/Agency" JournalOwnership="OwnsJournal">
+                <navigation:Frame.UriMapper>
+                    <uriMapper:UriMapper>
+                        <uriMapper:UriMapping Uri="/Agency" MappedUri="/Views/AgencyPages/NewTransactionPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Transaction" MappedUri="/Views/AgencyPages/NewTransactionPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Vault" MappedUri="/Views/AgencyPages/VaultPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Agencies" MappedUri="/Views/AgencyPages/AgenciesPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Vault" MappedUri="/Views/AgencyPages/VaultPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Tags" MappedUri="/Views/AgencyPages/TagsPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/Partners" MappedUri="/Views/AgencyPages/PartnersPage.xaml"/>
+                        <uriMapper:UriMapping Uri="/PersonalInformation" MappedUri="/Views/AgencyPages/PersonalInformationPage.xaml"/>
+                    </uriMapper:UriMapper>
+                </navigation:Frame.UriMapper>
+            </navigation:Frame>
+            </StackPanel>
+        </Border>
+    </Grid>
+</navigation:Page>

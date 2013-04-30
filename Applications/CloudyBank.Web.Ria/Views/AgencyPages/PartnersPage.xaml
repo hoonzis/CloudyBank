@@ -1,0 +1,85 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.Pages.PartnersPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:dataForm="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.DataForm.Toolkit"
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+           xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+           xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="PartnersPage Page"
+           Foreground="White">
+    <Grid x:Name="LayoutRoot" d:DataContext="{d:DesignData /SampleData/CustomerViewModelSampleData.xaml}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.398*"/>
+            <ColumnDefinition Width="0.602*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Text="{Binding Path=Common.ManagePartners, Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Path=Common.PartnersNote, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
+        </StackPanel>
+        
+        <ListBox ItemsSource="{Binding Partners}" SelectedItem="{Binding Path=CurrentItem, ElementName=PartnerDataForm, Mode=TwoWay}" 
+                 Grid.Row="1" Background="Transparent" Foreground="White" BorderThickness="0" ItemContainerStyle="{StaticResource ListItemStyle}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                   <StackPanel Margin="5">
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Iban}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <dataForm:DataForm x:Name="PartnerDataForm" ItemsSource="{Binding Partners}" Margin="0,5,0,0" Grid.Column="1"  Grid.Row="1" 
+                           VerticalAlignment="Top" Background="{StaticResource BrownBrush}">
+            <dataForm:DataForm.EditTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Path=Common.Name, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Path=Common.Description, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="1"/>
+                        <TextBlock Text="{Binding Path=Common.Iban, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold" Grid.Row="2" VerticalAlignment="Center"/>
+                        
+
+                        <dataForm:DataField Margin="3" Grid.Column="1" LabelVisibility="Collapsed">
+                            <TextBox Text="{Binding Title, Mode=TwoWay}"/>
+                        </dataForm:DataField>
+                        <dataForm:DataField Margin="3" Grid.Column="1" Grid.Row="1" LabelVisibility="Collapsed">
+                            <TextBox  Text="{Binding Description, Mode=TwoWay, UpdateSourceTrigger=Default}" TextWrapping="Wrap" Height="100" />
+                        </dataForm:DataField>
+                        <dataForm:DataField Margin="3" Grid.Column="1" Grid.Row="2" LabelVisibility="Collapsed">
+                            <TextBox  Text="{Binding Iban, Mode=TwoWay, UpdateSourceTrigger=Default}" />
+                        </dataForm:DataField>
+                    </Grid>
+                </DataTemplate>
+            </dataForm:DataForm.EditTemplate>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="EditEnding">
+                    <mvvm:EventToCommand Command="{Binding UpdatePartnerCommand}" CommandParameter="{Binding Path=CurrentItem, ElementName=PartnerDataForm}"/>
+                </i:EventTrigger>
+                <i:EventTrigger EventName="DeletingItem">
+                    <mvvm:EventToCommand Command="{Binding RemovePartnerCommand}" CommandParameter="{Binding Path=CurrentItem, ElementName=PartnerDataForm}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </dataForm:DataForm>
+        <controlsToolkit:BusyIndicator IsBusy="{Binding InProgress}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}"/>
+    </Grid>
+</navigation:Page>

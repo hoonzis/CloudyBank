@@ -1,0 +1,103 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.BudgetPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:ctrls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           xmlns:controlsPrimitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls"
+           xmlns:dataForm="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.DataForm.Toolkit"
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+           xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           xmlns:components="clr-namespace:CloudyBank.Web.Ria.Components;assembly=OctoBank.Web.Ria.Components"
+           xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+           xmlns:userControls="clr-namespace:CloudyBank.Web.Ria.UserControls"
+           xmlns:budgetControls="clr-namespace:CloudyBank.Web.Ria.UserControls.Budget"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Budget Page" Foreground="White">
+    <Grid x:Name="LayoutRoot" d:DataContext="{d:DesignData /SampleData/CustomerViewModelSampleData.xaml}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.82*"/>
+            <ColumnDefinition Width="0.18*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <mvvm:ViewModelLocator ViewModelName="CustomerViewModel" x:Name="Customer"/>
+        
+        <StackPanel Margin="0,0,5,0" HorizontalAlignment="Stretch">
+            <TextBlock Text="{Binding Path=BudgetPageRes.ManagePayments, Source={StaticResource Strings}}" FontSize="16"/>
+            <TextBlock Text="{Binding Path=BudgetPageRes.PaymentsNote, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
+            
+            
+            <components:EventCalendar x:Name="PaymentEventCalendar" ItemsSource="{Binding FilteredEvents}" HorizontalAlignment="Stretch"
+                                        DatePropertyName="Date" EventClick="EventCalendar_EventClick"  DayClick="EventCalendar_DayClick"
+                                        MaxHeight="400" Grid.Row="1" Foreground="Black" Background="White" Margin="0,5,0,0">
+                <components:EventCalendar.CalendarEventButtonStyle>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <budgetControls:PaymentEventButton/>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </components:EventCalendar.CalendarEventButtonStyle>
+            </components:EventCalendar>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="5,0,0,0">
+            <TextBlock Text="{Binding Path=BudgetPageRes.SelectAccount, Source={StaticResource Strings}}" FontSize="16" TextWrapping="Wrap"/>
+            <ItemsControl ItemsSource="{Binding Path=Data.Accounts, ElementName=Customer}" Foreground="White">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding Title}" Loaded="CheckBox_Loaded" Foreground="White">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Checked">
+                                    <mvvm:EventToCommand Command="{Binding Path=Data.AccountCheckedCommand, ElementName=Customer}" CommandParameter="{Binding}"/>
+                                </i:EventTrigger>
+                                <i:EventTrigger EventName="Unchecked">
+                                    <mvvm:EventToCommand Command="{Binding Path=Data.AccountUncheckedCommand, ElementName=Customer}" CommandParameter="{Binding}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </CheckBox>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+            <TextBlock Text="{Binding Path=BudgetPageRes.ThisMonthPayments, Source={StaticResource Strings}}" FontSize="16" TextWrapping="Wrap"/>
+            <ListBox ItemsSource="{Binding ThisMonthEvents}" Background="Transparent" Foreground="White" 
+                     ItemContainerStyle="{StaticResource ListItemStyle}" BorderThickness="0" MaxHeight="380">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Amount, StringFormat=\{0:N2\}}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
+
+        <!-- Covering Canvas which allows positioning of selected payment according to the position of calendar button -->
+        <Canvas x:Name="CoordinateCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Transparent" 
+                MouseLeftButtonDown="CoordinateCanvas_MouseLeftButtonDown" Visibility="Collapsed">
+            <Border x:Name="PaymentDetailsBorder" Visibility="Collapsed" 
+                    DataContext="{Binding SelectedEvent, ElementName=PaymentEventCalendar}" IsHitTestVisible="True" Background="{StaticResource BrownBrush}">
+                <StackPanel>
+                    <userControls:EditPaymentEventControl x:Name="EditPaymentCtrl" Margin="5"/>
+                    <userControls:PaymentEventControl x:Name="InfoPaymentCtrl" Margin="5" EditEvent="EditPayment_Click"/>
+                </StackPanel>
+            </Border>
+        </Canvas>
+
+        <controlsToolkit:BusyIndicator IsBusy="{Binding InProgress}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}"/>
+    </Grid>
+</navigation:Page>

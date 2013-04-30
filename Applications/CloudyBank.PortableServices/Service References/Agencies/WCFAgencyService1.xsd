@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfAgencyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AgencyDto" nillable="true" type="tns:AgencyDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgencyDto" nillable="true" type="tns:ArrayOfAgencyDto" />
+  <xs:complexType name="AgencyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClosingHour" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="Lng" type="xs:double" />
+      <xs:element minOccurs="0" name="OpeningHour" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgencyDto" nillable="true" type="tns:AgencyDto" />
+</xs:schema>

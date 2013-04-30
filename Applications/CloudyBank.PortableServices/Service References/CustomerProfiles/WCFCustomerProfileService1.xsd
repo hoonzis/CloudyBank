@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Customers" />
+  <xs:complexType name="ArrayOfCustomerProfileDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerProfileDto" nillable="true" type="tns:CustomerProfileDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerProfileDto" nillable="true" type="tns:ArrayOfCustomerProfileDto" />
+  <xs:complexType name="CustomerProfileDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HighAge" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LowAge" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Customers" minOccurs="0" name="Situation" type="q1:FamilySituation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerProfileDto" nillable="true" type="tns:CustomerProfileDto" />
+</xs:schema>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CloudyBank.CoreDomain.Advisors.Advisor" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAg=</HashCode>
+      <FileName>Advisor\Advisor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.Account" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAIAAAAQAAEgAACAACCAAAAAAAAAAAApAAAA=</HashCode>
+      <FileName>Bank\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.Operation" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAgAAAAACAAQAyACAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Bank\Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Customers.Customer" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAEABAEAAAAAAkSgQAAAAAAFECAAAAAAIBAAg=</HashCode>
+      <FileName>Customers\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Security.UserIdentity" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAABACAAAAAAAAAAAAAAAAAACAAAAQIAAAAAAAA=</HashCode>
+      <FileName>Security\UserIdentity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.BalancePoint" Collapsed="true">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\BalancePoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.BusinessPartner" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAgAAAAAAAAACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\BusinessPartner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.PaymentEvent" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAACAAgAAAAAAAAAASAEQAAAAABAAEAAAAAAEg=</HashCode>
+      <FileName>Bank\PaymentEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.Tag" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.StandardTag" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\StandardTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.UserTag" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\UserTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.TagDepenses" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\TagDepenses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Customers.CustomerImage" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>Customers\CustomerImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Bank.CustomerProfile" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAEBAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAIA=</HashCode>
+      <FileName>Customers\CustomerProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloudyBank.CoreDomain.Security.Role" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Security\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CloudyBank.CoreDomain.Bank.Direction" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CloudyBank.CoreDomain.Customers.FamilySituation" Collapsed="true">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABACAQAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Customers\FamilySituation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CloudyBank.CoreDomain.Security.Permission" Collapsed="true">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAQAgACEAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Security\Permission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

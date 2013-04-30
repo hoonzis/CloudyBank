@@ -1,0 +1,23 @@
+<UserControl x:Class="CloudyBank.Web.Ria.Components.ImageTaker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel>
+            <Rectangle x:Name="WebcamVideo" Width="200" Height="200"/>
+            <TextBlock x:Name="InfoTextBox" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <!--<Button x:Name="StartCameraButton" Click="StartCameraButton_Click" Content="Start Camera"/>-->
+                <Button x:Name="TakeButton" Content="Take picture" Click="TakeButton_Click"/>
+                
+            </StackPanel>
+            
+            
+        </StackPanel>
+
+    </Grid>
+</UserControl>

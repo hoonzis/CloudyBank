@@ -1,0 +1,310 @@
+<CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel xmlns:CloudyBank_Web_Ria_ViewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:CloudyBank_PortableServices_Accounts="clr-namespace:CloudyBank.PortableServices.Accounts;assembly=CloudyBank.PortableServices" xmlns:CloudyBank_PortableServices_Operations="clr-namespace:CloudyBank.PortableServices.Operations;assembly=CloudyBank.PortableServices" xmlns:CloudyBank_PortableServices_PaymentEvents="clr-namespace:CloudyBank.PortableServices.PaymentEvents;assembly=CloudyBank.PortableServices" xmlns:CloudyBank_PortableServices_Partners="clr-namespace:CloudyBank.PortableServices.Partners;assembly=CloudyBank.PortableServices" CreditAccountIban="Montes augue nostra adipiscing" Date="12/02/2011 23:01:45" Description="Dolor conubia parturient" Error="Euismod vestibulum phasellus cras massa" HasErrors="True" Id="53" IsNew="True" Regular="False" Title="Sapien urna egestas">
+	<CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Amount>
+		<System:Decimal/>
+	</CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Amount>
+	<CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Account>
+		<CloudyBank_Web_Ria_ViewModels:AccountViewModel AccountTimeSpan="85" Currency="Amet maecenas" CompareDate="12/02/2011 23:01:45" Error="Vestibulum vestibulum accumsan proin" HasErrors="False" IsPositive="True" Id="71" Iban="Facilisis morbi" Number="Neque tellus vivamus adipiscing quam" Title="Blandit morbi nisl nulla commodo">
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.Account>
+				<CloudyBank_PortableServices_Accounts:AccountDto Currency="Aenean nam mauris" Id="38" Iban="Vestibulum cras" Number="Duis curabitur adipiscing" Title="Class curae nullam sed nunc">
+					<CloudyBank_PortableServices_Accounts:AccountDto.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:AccountDto.Balance>
+				</CloudyBank_PortableServices_Accounts:AccountDto>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.Account>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.Balance>
+				<System:Decimal/>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.Balance>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.BalanceEvolution>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="34">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="81">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="92">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="41">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="31">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="64">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="85">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="54">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="97">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="52">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.BalanceEvolution>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.FilteredOperations>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Parturient aptent" Date="12/02/2011 23:01:45" Description="Phasellus vestibulum aliquam donec integer" Error="Facilisi blandit faucibus" HasErrors="False" Motif="Consequat vestibulum convallis quisque auctor" Positive="True" TagName="Dis bibendum enim dictumst eleifend">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Vivamus aliquam adipiscing" Direction="Fusce congue arcu" Date="12/02/2011 23:01:45" Description="Ante etiam praesent" Id="51" Motif="Diam parturient" OppositeIban="Eget elit" TagName="Vestibulum dignissim" TransactionCode="Cursus aliquet accumsan dictum" TagId="22"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Lectus vestibulum erat commodo eros" Date="12/02/2011 23:01:45" Description="Conubia elementum lorem libero ligula" Error="Nunc vestibulum hendrerit adipiscing" HasErrors="False" Motif="Est hac morbi adipiscing" Positive="True" TagName="Mus mattis nascetur nisl">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Habitant litora facilisis" Direction="Euismod nibh nulla nisi proin" Date="12/02/2011 23:01:45" Description="Cubilia dapibus fermentum egestas" Id="31" Motif="Feugiat fringilla augue parturient dolor" OppositeIban="Gravida inceptos vestibulum habitasse iaculis" TagName="Leo lacinia interdum lobortis" TransactionCode="Luctus laoreet magnis" TagId="15"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Nec non himenaeos per parturient" Date="12/02/2011 23:01:45" Description="Imperdiet malesuada" Error="Adipiscing quis nostra parturient vestibulum" HasErrors="False" Motif="Mauris penatibus sed" Positive="True" TagName="Tincidunt potenti">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Sem sit mollis odio" Direction="Vel orci montes" Date="12/02/2011 23:01:45" Description="Natoque fames felis" Id="82" Motif="Pede porttitor" OppositeIban="Vestibulum ipsum" TagName="Nam sed dis vestibulum posuere" TransactionCode="Quam justo" TagId="10"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Vestibulum tristique urna cras adipiscing" Date="12/02/2011 23:01:45" Description="Pretium ornare rhoncus" Error="Lorem vestibulum taciti arcu" HasErrors="False" Motif="Parturient ultricies vestibulum lacus" Positive="True" TagName="Sociis ante nec vestibulum">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Venenatis est vulputate platea" Direction="Primis hac" Date="12/02/2011 23:01:45" Description="Pharetra duis nunc" Id="65" Motif="Curabitur placerat vestibulum adipiscing" OppositeIban="Pulvinar sagittis" TagName="Amet sodales rutrum parturient" TransactionCode="Leo sapien semper mus" TagId="42"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Magna adipiscing diam massa" Date="12/02/2011 23:01:45" Description="Metus non per" Error="Turpis sit" HasErrors="False" Motif="Morbi parturient neque tellus phasellus" Positive="True" TagName="Vestibulum convallis porta">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Eget sed" Direction="Eros sem" Date="12/02/2011 23:01:45" Description="Elit enim erat vestibulum" Id="84" Motif="Tempor vestibulum adipiscing parturient" OppositeIban="Netus vestibulum tempus nibh senectus" TagName="Nulla consequat viverra" TransactionCode="Sociosqu aliquam tortor" TagId="91"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Varius nisi" Date="12/02/2011 23:01:45" Description="Vel suscipit nam" Error="Fermentum aliquet" HasErrors="False" Motif="Torquent adipiscing purus parturient dignissim" Positive="True" TagName="Bibendum hac leo orci">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Ultrices aenean vehicula mauris" Direction="Nisl vestibulum velit maecenas vestibulum" Date="12/02/2011 23:01:45" Description="Volutpat risus sed" Id="45" Motif="Integer praesent nullam elementum" OppositeIban="Dis quisque accumsan nunc" TagName="Aptent adipiscing vivamus est aliquam" TransactionCode="Vitae facilisis odio parturient" TagId="71"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Auctor fringilla pede" Date="12/02/2011 23:01:45" Description="Vestibulum mus" Error="Feugiat libero facilisi sem faucibus" HasErrors="False" Motif="Vestibulum blandit class" Positive="True" TagName="Adipiscing eleifend euismod morbi parturient">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Nec congue cursus commodo" Direction="Cubilia habitasse etiam" Date="12/02/2011 23:01:45" Description="Curae quam quis conubia donec" Id="62" Motif="Hendrerit himenaeos dapibus imperdiet dictum" OppositeIban="Lectus malesuada fusce" TagName="Lorem urna egestas penatibus" TransactionCode="Dictumst non per sed" TagId="50"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Gravida sit porttitor cras" Date="12/02/2011 23:01:45" Description="Tincidunt ligula" Error="Diam mollis" HasErrors="False" Motif="Litora iaculis tristique lacinia" Positive="True" TagName="Vulputate adipiscing curabitur posuere">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Duis luctus magnis laoreet" Direction="Ultricies habitant venenatis" Date="12/02/2011 23:01:45" Description="Vel nunc nam vestibulum" Id="95" Motif="Amet ante arcu inceptos" OppositeIban="Natoque sed mattis" TagName="Nulla proin" TransactionCode="Mauris vestibulum interdum" TagId="69"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Dis augue" Date="12/02/2011 23:01:45" Description="Eget dolor montes phasellus nostra" Error="Nisl senectus sociosqu" HasErrors="False" Motif="Fames est elit lobortis potenti" Positive="True" TagName="Sagittis lacus nisi lorem adipiscing">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Pretium parturient ornare consequat felis" Direction="Platea enim" Date="12/02/2011 23:01:45" Description="Convallis rhoncus" Id="12" Motif="Primis vestibulum erat sodales eros" OppositeIban="Ipsum nascetur" TagName="Viverra aliquam nibh pharetra dignissim" TransactionCode="Integer placerat justo pulvinar vestibulum" TagId="31"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Parturient hac magna leo suscipit" Date="12/02/2011 23:01:45" Description="Vestibulum vestibulum" Error="Taciti praesent quisque" HasErrors="False" Motif="Torquent nunc" Positive="True" TagName="Pede vestibulum">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Ultrices rutrum" Direction="Sapien vehicula" Date="12/02/2011 23:01:45" Description="Adipiscing elementum massa" Id="71" Motif="Volutpat semper mus parturient" OppositeIban="Maecenas vestibulum odio" TagName="Nec non sociis" TransactionCode="Orci metus" TagId="43"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.FilteredOperations>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.FilteredBalanceEvolution>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="79">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="92">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="50">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="26">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="92">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="72">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="40">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="74">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="72">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+				<CloudyBank_PortableServices_Accounts:BalancePoint Date="12/02/2011 23:01:45" Id="55">
+					<CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+						<System:Decimal/>
+					</CloudyBank_PortableServices_Accounts:BalancePoint.Balance>
+				</CloudyBank_PortableServices_Accounts:BalancePoint>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.FilteredBalanceEvolution>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthDepenses>
+				<System:Decimal/>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthDepenses>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthStart>
+				<System:Decimal/>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthStart>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthIncome>
+				<System:Decimal/>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.LastMonthIncome>
+			<CloudyBank_Web_Ria_ViewModels:AccountViewModel.Operations>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Fermentum per tempor sed parturient" Date="12/02/2011 23:01:45" Description="Accumsan sem netus" Error="Amet ante aenean purus parturient" HasErrors="True" Motif="Vestibulum tempus" Positive="False" TagName="Hendrerit nunc blandit commodo">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Aliquam aliquet" Direction="Sit vestibulum fringilla urna adipiscing" Date="12/02/2011 23:01:45" Description="Quis bibendum" Id="76" Motif="Nulla habitasse dictumst tortor" OppositeIban="Cras duis" TagName="Eleifend turpis vel" TransactionCode="Nam sed porta dis varius" TagId="31"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Risus himenaeos" Date="12/02/2011 23:01:45" Description="Velit vestibulum conubia" Error="Porttitor egestas mus fusce" HasErrors="True" Motif="Vestibulum imperdiet vitae mauris arcu" Positive="False" TagName="Nisi dapibus etiam">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Facilisi faucibus nullam diam habitant" Direction="Erat malesuada eros cubilia hac" Date="12/02/2011 23:01:45" Description="Eget adipiscing elit enim est" Id="30" Motif="Class aptent" OppositeIban="Auctor curae" TagName="Inceptos leo congue parturient penatibus" TransactionCode="Donec interdum vestibulum nibh" TagId="50"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Tincidunt cursus nec vestibulum dictum" Date="12/02/2011 23:01:45" Description="Nisl adipiscing nunc lorem lobortis" Error="Quis sagittis urna" HasErrors="True" Motif="Euismod feugiat tristique ultricies morbi" Positive="False" TagName="Litora quam">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Lectus nulla parturient" Direction="Vulputate vestibulum" Date="12/02/2011 23:01:45" Description="Venenatis non proin nascetur gravida" Id="89" Motif="Odio pharetra per placerat pulvinar" OppositeIban="Libero orci sed" TagName="Pede augue curabitur ligula" TransactionCode="Iaculis vestibulum" TagId="43"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Phasellus cras" Date="12/02/2011 23:01:45" Description="Duis luctus consequat nunc adipiscing" Error="Leo mus" HasErrors="True" Motif="Convallis dignissim sem sit" Positive="False" TagName="Arcu mollis fringilla senectus justo">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Vel parturient amet vestibulum ante" Direction="Fames magnis posuere potenti" Date="12/02/2011 23:01:45" Description="Lacinia elementum laoreet natoque dolor" Id="46" Motif="Mattis nam facilisis sed" OppositeIban="Felis vestibulum" TagName="Dis est mauris adipiscing" TransactionCode="Fermentum hac ipsum" TagId="86"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Diam parturient eget" Date="12/02/2011 23:01:45" Description="Pretium sociosqu habitasse" Error="Integer magna primis" HasErrors="True" Motif="Montes suscipit" Positive="False" TagName="Adipiscing lorem">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Nec vestibulum nostra" Direction="Vestibulum ornare" Date="12/02/2011 23:01:45" Description="Torquent rhoncus" Id="69" Motif="Elit enim ultrices sodales erat" OppositeIban="Non per platea" TagName="Eros nibh sed lacus viverra" TransactionCode="Sem hendrerit aliquam" TagId="52"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Himenaeos massa rutrum sapien semper" Date="12/02/2011 23:01:45" Description="Sociis parturient" Error="Purus nam" HasErrors="True" Motif="Quisque taciti sit" Positive="False" TagName="Vestibulum cubilia vestibulum porta adipiscing">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Vivamus tellus imperdiet" Direction="Vestibulum malesuada" Date="12/02/2011 23:01:45" Description="Metus aliquam" Id="24" Motif="Vestibulum vel nisi" OppositeIban="Tempor adipiscing morbi aliquet blandit" TagName="Parturient commodo neque" TransactionCode="Netus conubia nulla" TagId="47"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Vehicula volutpat" Date="12/02/2011 23:01:45" Description="Sed parturient" Error="Tortor est gravida" HasErrors="True" Motif="Maecenas nisl" Positive="False" TagName="Parturient eleifend facilisi tristique risus">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Dapibus vestibulum" Direction="Tempus egestas" Date="12/02/2011 23:01:45" Description="Praesent penatibus nunc accumsan odio" Id="82" Motif="Orci dis" OppositeIban="Vestibulum adipiscing porttitor" TagName="Parturient euismod vestibulum bibendum pede" TransactionCode="Vestibulum dictumst feugiat tincidunt adipiscing" TagId="43"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Quam quis hac iaculis urna" Date="12/02/2011 23:01:45" Description="Faucibus cras habitant" Error="Natoque lobortis arcu libero vestibulum" HasErrors="True" Motif="Turpis vestibulum" Positive="False" TagName="Velit dictum ante lectus laoreet">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Varius aenean vestibulum mauris" Direction="Leo ultricies nullam inceptos venenatis" Date="12/02/2011 23:01:45" Description="Adipiscing lacinia duis" Id="21" Motif="Aptent parturient nunc vulputate" OppositeIban="Curabitur auctor vestibulum congue" TagName="Mus amet nec cursus" TransactionCode="Interdum phasellus consequat" TagId="60"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Posuere nascetur diam" Date="12/02/2011 23:01:45" Description="Potenti eget pretium" Error="Fermentum donec fringilla habitasse hendrerit" HasErrors="True" Motif="Rhoncus convallis" Positive="False" TagName="Suscipit elementum facilisis">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Ligula pharetra non" Direction="Adipiscing placerat" Date="12/02/2011 23:01:45" Description="Litora vitae" Id="87" Motif="Pulvinar per parturient class" OppositeIban="Curae luctus" TagName="Sagittis elit senectus dignissim" TransactionCode="Sociosqu sodales vestibulum enim erat" TagId="59"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+				<CloudyBank_Web_Ria_ViewModels:OperationViewModel Currency="Vestibulum viverra aliquam torquent etiam" Date="12/02/2011 23:01:45" Description="Sed ultrices adipiscing sem" Error="Mollis nisi dis venenatis" HasErrors="True" Motif="Eros himenaeos imperdiet" Positive="False" TagName="Maecenas ultricies praesent">
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+						<System:Decimal/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+					<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+						<CloudyBank_PortableServices_Operations:OperationDto Currency="Integer malesuada parturient sit" Direction="Mattis porttitor vivamus vel" Date="12/02/2011 23:01:45" Description="Quisque penatibus magnis" Id="31" Motif="Aliquam aliquet nibh" OppositeIban="Nam fusce" TagName="Vehicula mauris" TransactionCode="Volutpat tincidunt tristique lorem sed" TagId="98"/>
+					</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+				</CloudyBank_Web_Ria_ViewModels:OperationViewModel>
+			</CloudyBank_Web_Ria_ViewModels:AccountViewModel.Operations>
+		</CloudyBank_Web_Ria_ViewModels:AccountViewModel>
+	</CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Account>
+	<CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Payment>
+		<CloudyBank_PortableServices_PaymentEvents:PaymentEventDto AccountId="17" Date="12/02/2011 23:01:45" Description="Primis lacus eleifend orci lorem" Id="40" PartnerName="Rutrum magna" PartnerId="10" PartnerIban="Parturient pede quam dapibus" Payed="False" Regular="True" Title="Facilisi quis vestibulum faucibus">
+			<CloudyBank_PortableServices_PaymentEvents:PaymentEventDto.Amount>
+				<System:Decimal/>
+			</CloudyBank_PortableServices_PaymentEvents:PaymentEventDto.Amount>
+		</CloudyBank_PortableServices_PaymentEvents:PaymentEventDto>
+	</CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Payment>
+	<CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Partner>
+		<CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel Error="Vestibulum adipiscing dictumst" HasErrors="True" Id="69" IsNew="False" Iban="Est hac leo ornare fames" Title="Justo platea">
+			<CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel.Partner>
+				<CloudyBank_PortableServices_Partners:BusinessPartnerDto CustomerId="15" Description="Bibendum cubilia" Id="17" Iban="Vestibulum mus felis vulputate" Title="Nunc odio curabitur ipsum"/>
+			</CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel.Partner>
+		</CloudyBank_Web_Ria_ViewModels:BusinessPartnerViewModel>
+	</CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel.Partner>
+</CloudyBank_Web_Ria_ViewModels:PaymentEventViewModel>

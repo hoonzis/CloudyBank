@@ -1,0 +1,108 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.UserControls.VaultPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+    d:DesignHeight="500" d:DesignWidth="600" 
+    d:DataContext="{d:DesignData /SampleData/VaultViewModelSampleData.xaml}"             
+    Foreground="White" Background="Transparent">
+    <Grid>
+        <Grid x:Name="LayoutRoot" AllowDrop="True">
+        
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+        
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Drop">
+                    <mvvm:EventToCommand Command="{Binding Path=FileDropCommand}" BindParameters="True"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <mvvm:ViewModelLocator ViewModelName="VaultViewModel" x:Name="VaultVM"/>
+        
+            <StackPanel Grid.ColumnSpan="2">
+                <TextBlock Text="{Binding Path=AgencyPageRes.Vault, Source={StaticResource Strings}}" FontSize="16"/>
+                <TextBlock Text="{Binding Path=AgencyPageRes.VaultNote, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
+            </StackPanel>
+        
+            <StackPanel Grid.Row="1">
+                <ListBox ItemsSource="{Binding FileList}" AllowDrop="True" Foreground="White" BorderThickness="0" 
+                         ItemContainerStyle="{StaticResource ListItemStyle}" Background="Transparent">
+                    <!-- We can drop files over the field -->
+                
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Drop">
+                            <mvvm:EventToCommand Command="{Binding FileDropCommand}" BindParameters="True"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/CloudyBank.Web.Ria;component/Graphics/file.png" Width="30" Margin="3"/>
+                                <HyperlinkButton NavigateUri="{Binding Url}" TargetName="_blank" FontWeight="Bold" Margin="3" Foreground="White" Grid.Column="1" VerticalAlignment="Center">
+                                    <HyperlinkButton.Content>
+                                        <TextBlock Text="{Binding FileName}" TextWrapping="Wrap" Width="180"/>
+                                    </HyperlinkButton.Content>
+                                </HyperlinkButton>
+                                <Button Style="{StaticResource SimpleButton}" Command="{Binding Path=Data.RemoveFileCommand, ElementName=VaultVM}" CommandParameter="{Binding}" 
+                                        Content="{Binding Path=Common.Remove, Source={StaticResource Strings}}" Grid.Column="2" Width="60"
+                                        Background="Transparent" Margin="3"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+			    <TextBlock Text="{Binding ErrorMessage}" Visibility="{Binding IsError, Converter={StaticResource BoolToVisibility}}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="1" Margin="5,0,0,0">
+                <Button Command="{Binding UploadDirectCommand}" Content="{Binding Path=AgencyPageRes.Upload, Source={StaticResource Strings}}" 
+                        Style="{StaticResource SimpleButton}" Margin="5" Width="150" Background="{StaticResource LimeBrush}"/>
+                <Button Command="{Binding GeneratePdfCommand}" Style="{StaticResource SimpleButton}" Margin="5" Width="150" 
+                        Background="{StaticResource LimeBrush}">
+                    <Button.Content>
+                        <TextBlock Text="{Binding Path=AgencyPageRes.GenerateAccountsOverview, Source={StaticResource Strings}}" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center"/>
+                    </Button.Content>
+                </Button>
+                
+            
+                <!--<ListBox ItemsSource="{Binding Uploads}" Background="Transparent" BorderThickness="0" 
+                         Foreground="White" ItemContainerStyle="{StaticResource ListItemStyle}" Width="180">
+                    <ListBox.ItemTemplate>
+                    
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
+                            
+                                <StackPanel>
+                                    <TextBlock Text="{Binding AgencyPageRes.FileName, Source={StaticResource Strings}, StringFormat='\{0\}:'}" Margin="0,0,5,0" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding AgencyPageRes.State, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding AgencyPageRes.Done, Source={StaticResource Strings},StringFormat='\{0\}:'}" FontWeight="Bold"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding FileName}"/>
+                                    <TextBlock Text="{Binding State}"/>
+                                    <TextBlock Text="{Binding Done}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>-->
+            </StackPanel>
+        </Grid>
+        <controlsToolkit:BusyIndicator IsBusy="{Binding InProgress}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}"/>
+    </Grid>
+</navigation:Page>

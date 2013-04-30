@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="77ed808b-d8ad-47fc-b732-63db80b10cf4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFLogService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFLogService.wsdl" MetadataType="Wsdl" ID="959b4304-6a75-4ab9-b60e-4b86cf5ced1d" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFLogService.svc?wsdl" />
+    <MetadataFile FileName="WCFLogService.xsd" MetadataType="Schema" ID="c05b0276-c92a-44d8-a36d-52ad6b646ae9" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFLogService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFLogService1.xsd" MetadataType="Schema" ID="bb9f0f51-ce08-43f9-ab7f-180564b3920b" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFLogService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFLogService.disco" MetadataType="Disco" ID="fa54ccd2-c980-41f2-a772-1f7347722d64" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFLogService.svc?disco" />
+    <MetadataFile FileName="WCFLogService1.wsdl" MetadataType="Wsdl" ID="efc9a139-ea56-47e4-aef4-10977f603efe" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFLogService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

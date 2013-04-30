@@ -1,0 +1,31 @@
+<UserControl x:Class="CloudyBank.Web.Ria.Components.SelectableMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:map="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <map:Map CredentialsProvider="AlvQY3wmI3KvHvHhqzCw-wuEogZ8SzQs6eqvdzrBPTDLUZiIE9NcoEG_SrHE_xWG" Mode="Road" LogoVisibility="Collapsed"
+                x:Name="map" NavigationVisibility="Visible" ScaleVisibility="Visible" Center="48.862456,2.345993" ZoomLevel="12" Grid.Row="1">
+            <map:MapItemsControl x:Name="MapItems">
+                <map:MapItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <map:Pushpin Location="{Binding Location}" Width="Auto" Height="Auto" Cursor="Hand" PositionOrigin="BottomLeft" MouseLeftButtonDown="Pushpin_MouseLeftButtonDown">
+                            <!--<map:Pushpin.Template>
+                        <ControlTemplate>
+                            <Ellipse x:Name="Ellipse" Width="16" Height="16" StrokeThickness="1" Stroke="Black"
+                                    Fill="{Binding IsEmpty,Converter={StaticResource BoolToBrush}}"
+                                    Opacity="0.8" MouseLeftButtonDown="Border_MouseLeftButtonDown" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                            </Ellipse>
+                        </ControlTemplate>
+                    </map:Pushpin.Template>-->
+                        </map:Pushpin>
+                    </DataTemplate>
+                </map:MapItemsControl.ItemTemplate>
+            </map:MapItemsControl>
+        </map:Map>
+    </Grid>
+</UserControl>

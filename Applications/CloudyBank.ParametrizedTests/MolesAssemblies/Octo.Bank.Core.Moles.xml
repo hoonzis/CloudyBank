@@ -1,0 +1,1817 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CloudyBank.Core.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:CloudyBank.Core.Services.Moles.MAccountServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.AccountServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAccountServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAccountServicesException.#ctor(CloudyBank.Core.Services.AccountServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAccountServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAccountServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAccountServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAccountServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAccountServicesException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.AccountServicesException.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAccountServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.AccountServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAccountServicesException.ConstructorStringException">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.AccountServicesException.#ctor(System.String,System.Exception)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MAccountServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MAdvisorServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.AdvisorServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAdvisorServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAdvisorServicesException.#ctor(CloudyBank.Core.Services.AdvisorServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAdvisorServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAdvisorServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MAdvisorServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAdvisorServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MAdvisorServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.AdvisorServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MAdvisorServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.Exceptions.BusinessPartnersServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.#ctor(CloudyBank.Core.Services.Exceptions.BusinessPartnersServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.Exceptions.BusinessPartnersServicesException.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Exceptions.Moles.MBusinessPartnersServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MCustomerServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.CustomerServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MCustomerServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MCustomerServicesException.#ctor(CloudyBank.Core.Services.CustomerServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MCustomerServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MCustomerServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MCustomerServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MCustomerServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MCustomerServicesException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.CustomerServicesException.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MCustomerServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.CustomerServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MCustomerServicesException.ConstructorStringException">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.CustomerServicesException.#ctor(System.String,System.Exception)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MCustomerServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.MDataAccessException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.DataAccess.DataAccessException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.MDataAccessException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.MDataAccessException.#ctor(CloudyBank.Core.DataAccess.DataAccessException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.MDataAccessException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.MDataAccessException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.MDataAccessException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.MDataAccessException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.MDataAccessException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.DataAccess.DataAccessException.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.MDataAccessException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.DataAccess.DataAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.MDataAccessException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.DataAccess.DataAccessException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.MDataAccessException.ConstructorStringException">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.DataAccess.DataAccessException.#ctor(System.String,System.Exception)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.MDataAccessException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MDtoCreationException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.DtoCreationException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MDtoCreationException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MDtoCreationException.#ctor(CloudyBank.Core.Services.DtoCreationException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MDtoCreationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MDtoCreationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MDtoCreationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MDtoCreationException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MDtoCreationException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.DtoCreationException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MDtoCreationException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MOperationServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.OperationServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MOperationServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MOperationServicesException.#ctor(CloudyBank.Core.Services.OperationServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MOperationServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MOperationServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MOperationServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MOperationServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MOperationServicesException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.OperationServicesException.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MOperationServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.OperationServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MOperationServicesException.ConstructorStringException">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.OperationServicesException.#ctor(System.String,System.Exception)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MOperationServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MPaymentServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.PaymentServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MPaymentServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MPaymentServicesException.#ctor(CloudyBank.Core.Services.PaymentServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MPaymentServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MPaymentServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MPaymentServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MPaymentServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MPaymentServicesException.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.PaymentServicesException.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MPaymentServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MTagServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.TagServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTagServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTagServicesException.#ctor(CloudyBank.Core.Services.TagServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTagServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTagServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTagServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MTagServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MTagServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.TagServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MTagServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MTaskServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.TaskServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTaskServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTaskServicesException.#ctor(CloudyBank.Core.Services.TaskServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTaskServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTaskServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MTaskServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MTaskServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MTaskServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.TaskServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MTaskServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MUserServicesException">
+            <summary>Mole type of <see cref="T:CloudyBank.Core.Services.UserServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MUserServicesException.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MUserServicesException.#ctor(CloudyBank.Core.Services.UserServicesException)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MUserServicesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MUserServicesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.MUserServicesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MUserServicesException.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.MUserServicesException.ConstructorString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Core.Services.UserServicesException.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.MUserServicesException.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SAccountServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.AccountServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAccountServicesException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAccountServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAccountServicesException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAccountServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SAccountServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SAccountServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SAccountServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SAdvisorServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.AdvisorServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAdvisorServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SAdvisorServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SAdvisorServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SAdvisorServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SAdvisorServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Exceptions.Moles.SBusinessPartnersServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.Exceptions.BusinessPartnersServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.SBusinessPartnersServicesException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Exceptions.Moles.SBusinessPartnersServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SBusinessPartnersServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Exceptions.Moles.SBusinessPartnersServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Exceptions.Moles.SBusinessPartnersServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SCustomerServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.CustomerServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SCustomerServicesException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SCustomerServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SCustomerServicesException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SCustomerServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SCustomerServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SCustomerServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SDataAccessException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.DataAccessException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SDataAccessException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SDataAccessException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SDataAccessException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SDataAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SDataAccessException.InitializeStub">
+            <summary>Initializes a new instance of type SDataAccessException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.SDataAccessException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.DataAccess.Moles.SDataAccessException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SDtoCreationException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.DtoCreationException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SDtoCreationException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SDtoCreationException.InitializeStub">
+            <summary>Initializes a new instance of type SDtoCreationException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SDtoCreationException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SDtoCreationException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIAccountRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IAccountRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIAccountRepository.#ctor">
+            <summary>Initializes a new instance of type SIAccountRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIAccountRepository.GetAccountsByCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IAccountRepository.GetAccountsByCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIAccountRepository.obc::CloudyBank#Core#DataAccess#IAccountRepository#GetAccountsByCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IAccountRepository.GetAccountsByCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIAccountServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IAccountServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.#ctor">
+            <summary>Initializes a new instance of type SIAccountServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAccountServices.BalanceAccount">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.Balance(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAccountServices.CreateAccountStringInt32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.CreateAccount(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAccountServices.GetAccountBalanceEvolutionInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetAccountBalanceEvolution(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAccountServices.GetAccountsByCustomerCodeString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetAccountsByCustomerCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAccountServices.GetCustomerAccountsInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetCustomerAccounts(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.obc::CloudyBank#Core#Services#IAccountServices#Balance(CloudyBank.CoreDomain.Bank.Account)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.Balance(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.obc::CloudyBank#Core#Services#IAccountServices#CreateAccount(System.String,System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.CreateAccount(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.obc::CloudyBank#Core#Services#IAccountServices#GetAccountBalanceEvolution(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetAccountBalanceEvolution(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.obc::CloudyBank#Core#Services#IAccountServices#GetAccountsByCustomerCode(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetAccountsByCustomerCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAccountServices.obc::CloudyBank#Core#Services#IAccountServices#GetCustomerAccounts(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAccountServices.GetCustomerAccounts(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIAdvisorRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IAdvisorRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIAdvisorRepository.#ctor">
+            <summary>Initializes a new instance of type SIAdvisorRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIAdvisorRepository.GetAdvisorByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IAdvisorRepository.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIAdvisorRepository.obc::CloudyBank#Core#DataAccess#IAdvisorRepository#GetAdvisorByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IAdvisorRepository.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIAdvisorServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IAdvisorServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAdvisorServices.#ctor">
+            <summary>Initializes a new instance of type SIAdvisorServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAdvisorServices.GetAdvisorByIdInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAdvisorServices.GetAdvisorById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAdvisorServices.GetAdvisorByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAdvisorServices.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAdvisorServices.obc::CloudyBank#Core#Services#IAdvisorServices#GetAdvisorById(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAdvisorServices.GetAdvisorById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAdvisorServices.obc::CloudyBank#Core#Services#IAdvisorServices#GetAdvisorByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAdvisorServices.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIAgencyServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IAgencyServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAgencyServices.#ctor">
+            <summary>Initializes a new instance of type SIAgencyServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIAgencyServices.GetAcencies">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAgencyServices.GetAcencies"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIAgencyServices.obc::CloudyBank#Core#Services#IAgencyServices#GetAcencies">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IAgencyServices.GetAcencies"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Aggregations.Moles.SIAggregationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Aggregations.IAggregationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.#ctor">
+            <summary>Initializes a new instance of type SIAggregationServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.AggregateAccountTagsAccount">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateAccountTags(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.AggregateCustomerCustomer">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.AggregateCustomerFromDBCustomer">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateCustomerFromDB(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.AggregateProfileTagsCustomerProfile">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateProfileTags(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.AggregateProfileTagsFromDBCustomerProfile">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateProfileTagsFromDB(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.ComputeBalancePointsAccount">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ComputeBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.ComputeBalancesForAllAccounts">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ComputeBalancesForAllAccounts"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.FindProfileCustomerIListOfCustomerProfile">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.FindProfile(CloudyBank.CoreDomain.Customers.Customer,System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.CustomerProfile})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#AggregateAccountTags(CloudyBank.CoreDomain.Bank.Account)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateAccountTags(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#AggregateCustomer(CloudyBank.CoreDomain.Customers.Customer)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#AggregateCustomerFromDB(CloudyBank.CoreDomain.Customers.Customer)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateCustomerFromDB(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#AggregateProfileTags(CloudyBank.CoreDomain.Bank.CustomerProfile)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateProfileTags(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#AggregateProfileTagsFromDB(CloudyBank.CoreDomain.Bank.CustomerProfile)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.AggregateProfileTagsFromDB(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#ComputeBalancePoints(CloudyBank.CoreDomain.Bank.Account)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ComputeBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#ComputeBalancesForAllAccounts">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ComputeBalancesForAllAccounts"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#FindProfile(CloudyBank.CoreDomain.Customers.Customer,System.Collections.Generic.IList{CloudyBank.CoreDomain.Bank.CustomerProfile})">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.FindProfile(CloudyBank.CoreDomain.Customers.Customer,System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.CustomerProfile})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#ReAggregateAllOperations">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ReAggregateAllOperations"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#UpdateAllBalancePoints">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.UpdateAllBalancePoints"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.obc::CloudyBank#Core#Aggregations#IAggregationServices#UpdateBalancePoints(CloudyBank.CoreDomain.Bank.Account)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.UpdateBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.ReAggregateAllOperations">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.ReAggregateAllOperations"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.UpdateAllBalancePoints">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.UpdateAllBalancePoints"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Aggregations.Moles.SIAggregationServices.UpdateBalancePointsAccount">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Aggregations.IAggregationServices.UpdateBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IBusinessPartnerServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.#ctor">
+            <summary>Initializes a new instance of type SIBusinessPartnerServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.CreateBusinessPartnerBusinessPartnerDtoInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.CreateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.GetBusinessPartnerForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.GetBusinessPartnerForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.obc::CloudyBank#Core#Services#IBusinessPartnerServices#CreateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.CreateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.obc::CloudyBank#Core#Services#IBusinessPartnerServices#GetBusinessPartnerForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.GetBusinessPartnerForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.obc::CloudyBank#Core#Services#IBusinessPartnerServices#RemoveBusinessPartner(System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.RemoveBusinessPartner(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.obc::CloudyBank#Core#Services#IBusinessPartnerServices#UpdateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.UpdateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.RemoveBusinessPartnerInt32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.RemoveBusinessPartner(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIBusinessPartnerServices.UpdateBusinessPartnerBusinessPartnerDtoInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IBusinessPartnerServices.UpdateBusinessPartner(CloudyBank.Dto.BusinessPartnerDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Integration.Moles.SICBSAccess">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Integration.ICBSAccess"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Integration.Moles.SICBSAccess.#ctor">
+            <summary>Initializes a new instance of type SICBSAccess</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Integration.Moles.SICBSAccess.obc::CloudyBank#Core#Integration#ICBSAccess#ProcessPayments">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Integration.ICBSAccess.ProcessPayments"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Integration.Moles.SICBSAccess.obc::CloudyBank#Core#Integration#ICBSAccess#SendOperationToCBS(CloudyBank.CoreDomain.Bank.Operation)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Integration.ICBSAccess.SendOperationToCBS(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Integration.Moles.SICBSAccess.ProcessPayments">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Integration.ICBSAccess.ProcessPayments"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Integration.Moles.SICBSAccess.SendOperationToCBSOperation">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Integration.ICBSAccess.SendOperationToCBS(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Categorization.Moles.SICategorizationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Categorization.ICategorizationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Categorization.Moles.SICategorizationServices.#ctor">
+            <summary>Initializes a new instance of type SICategorizationServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Categorization.Moles.SICategorizationServices.CategorizePaymentsInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Categorization.ICategorizationServices.CategorizePayments(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Categorization.Moles.SICategorizationServices.obc::CloudyBank#Core#Categorization#ICategorizationServices#CategorizePayments(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Categorization.ICategorizationServices.CategorizePayments(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SICloudStorageServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.ICloudStorageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.#ctor">
+            <summary>Initializes a new instance of type SICloudStorageServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.DownLoadBlockStringInt64Int32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.DownLoadBlock(System.String,System.Int64,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.DownloadSmallFileStringInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.DownloadSmallFile(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.FileSizeStringInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.FileSize(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.GetBlobSignedSignatureInt32String">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetBlobSignedSignature(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.GetContainerSignedSignatureInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetContainerSignedSignature(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.GetContainerUrlInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetContainerUrl(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.GetFileListInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetFileList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#DownLoadBlock(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.DownLoadBlock(System.String,System.Int64,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#DownloadSmallFile(System.String,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.DownloadSmallFile(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#FileSize(System.String,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.FileSize(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#GetBlobSignedSignature(System.Int32,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetBlobSignedSignature(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#GetContainerSignedSignature(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetContainerSignedSignature(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#GetContainerUrl(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetContainerUrl(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#GetFileList(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.GetFileList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#PutBlock(System.String,System.String,System.Byte[],System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.PutBlock(System.String,System.String,System.Byte[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#PutBlockList(System.String,System.String[],System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.PutBlockList(System.String,System.String[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#SaveBytesToCloud(System.Byte[],System.String,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.SaveBytesToCloud(System.Byte[],System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICloudStorageServices.obc::CloudyBank#Core#Services#ICloudStorageServices#UploadSmallFile(System.String,System.Int32,System.Byte[])">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.UploadSmallFile(System.String,System.Int32,System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.PutBlockListStringStringArrayInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.PutBlockList(System.String,System.String[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.PutBlockStringStringByteArrayInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.PutBlock(System.String,System.String,System.Byte[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.SaveBytesToCloudByteArrayStringInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.SaveBytesToCloud(System.Byte[],System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICloudStorageServices.UploadSmallFileStringInt32ByteArray">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICloudStorageServices.UploadSmallFile(System.String,System.Int32,System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Security.Moles.SICryptoProvider">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Security.ICryptoProvider"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SICryptoProvider.#ctor">
+            <summary>Initializes a new instance of type SICryptoProvider</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Security.Moles.SICryptoProvider.DecryptByteArray">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.ICryptoProvider.Decrypt(System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Security.Moles.SICryptoProvider.EncryptByteArray">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.ICryptoProvider.Encrypt(System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SICryptoProvider.obc::CloudyBank#Core#Security#ICryptoProvider#Decrypt(System.Byte[])">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.ICryptoProvider.Decrypt(System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SICryptoProvider.obc::CloudyBank#Core#Security#ICryptoProvider#Encrypt(System.Byte[])">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.ICryptoProvider.Encrypt(System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SICustomerProfileServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.ICustomerProfileServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerProfileServices.#ctor">
+            <summary>Initializes a new instance of type SICustomerProfileServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerProfileServices.GetAllCustomerProfiles">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerProfileServices.GetAllCustomerProfiles"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerProfileServices.obc::CloudyBank#Core#Services#ICustomerProfileServices#GetAllCustomerProfiles">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerProfileServices.GetAllCustomerProfiles"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SICustomerRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.ICustomerRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.#ctor">
+            <summary>Initializes a new instance of type SICustomerRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.FindCustomersByNameStringArray">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.FindCustomersByName(System.String[])"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.GetCustomerByCodeString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.GetCustomerByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.obc::CloudyBank#Core#DataAccess#ICustomerRepository#FindCustomersByName(System.String[])">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.FindCustomersByName(System.String[])"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.obc::CloudyBank#Core#DataAccess#ICustomerRepository#GetCustomerByCode(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SICustomerRepository.obc::CloudyBank#Core#DataAccess#ICustomerRepository#GetCustomerByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ICustomerRepository.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SICustomerServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.ICustomerServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.#ctor">
+            <summary>Initializes a new instance of type SICustomerServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.CreateCustomerStringStringStringString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CreateCustomer(System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.CreateCustomerStringStringStringStringString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CreateCustomer(System.String,System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.CustomerBalanceCustomer">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CustomerBalance(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.GetCustomerByCodeString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.GetCustomerByIdInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.GetCustomerByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.GetCustomersForAdvisorInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomersForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#CreateCustomer(System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CreateCustomer(System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#CreateCustomer(System.String,System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CreateCustomer(System.String,System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#CustomerBalance(CloudyBank.CoreDomain.Customers.Customer)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.CustomerBalance(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#GetCustomerByCode(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#GetCustomerById(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#GetCustomerByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#GetCustomersForAdvisor(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.GetCustomersForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SICustomerServices.obc::CloudyBank#Core#Services#ICustomerServices#SaveCustomer(CloudyBank.Dto.CustomerDto)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.SaveCustomer(CloudyBank.Dto.CustomerDto)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SICustomerServices.SaveCustomerCustomerDto">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ICustomerServices.SaveCustomer(CloudyBank.Dto.CustomerDto)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Dto.Moles.SIDtoCreator`2">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Dto.IDtoCreator`2"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Dto.Moles.SIDtoCreator`2.#ctor">
+            <summary>Initializes a new instance of type SIDtoCreator</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Dto.Moles.SIDtoCreator`2.CreateT">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Dto.IDtoCreator`2.Create(`1)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Dto.Moles.SIDtoCreator`2.obc::CloudyBank#Core#Dto#IDtoCreator{T@T2}#Create(`0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Dto.IDtoCreator`2.Create(`1)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Security.Moles.SIHashProvider">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Security.IHashProvider"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SIHashProvider.#ctor">
+            <summary>Initializes a new instance of type SIHashProvider</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Security.Moles.SIHashProvider.CreateSaltInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.IHashProvider.CreateSalt(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Security.Moles.SIHashProvider.HashString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.IHashProvider.Hash(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SIHashProvider.obc::CloudyBank#Core#Security#IHashProvider#CreateSalt(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.IHashProvider.CreateSalt(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Security.Moles.SIHashProvider.obc::CloudyBank#Core#Security#IHashProvider#Hash(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Security.IHashProvider.Hash(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIHomeLoanRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IHomeLoanRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIHomeLoanRepository.#ctor">
+            <summary>Initializes a new instance of type SIHomeLoanRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIHomeLoanRepository.GetHomeLoanByCustomerCustomer">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IHomeLoanRepository.GetHomeLoanByCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIHomeLoanRepository.obc::CloudyBank#Core#DataAccess#IHomeLoanRepository#GetHomeLoanByCustomer(CloudyBank.CoreDomain.Customers.Customer)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IHomeLoanRepository.GetHomeLoanByCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIImageRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IImageRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIImageRepository.#ctor">
+            <summary>Initializes a new instance of type SIImageRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIImageRepository.GetImagesForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IImageRepository.GetImagesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIImageRepository.GetImagesLabelsTuples">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IImageRepository.GetImagesLabelsTuples"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIImageRepository.obc::CloudyBank#Core#DataAccess#IImageRepository#GetImagesForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IImageRepository.GetImagesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIImageRepository.obc::CloudyBank#Core#DataAccess#IImageRepository#GetImagesLabelsTuples">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IImageRepository.GetImagesLabelsTuples"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIImageServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IImageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIImageServices.#ctor">
+            <summary>Initializes a new instance of type SIImageServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIImageServices.AddImageToCustomerInt32ArrayInt32Int32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.AddImageToCustomer(System.Int32[],System.Int32,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIImageServices.GetCustomerImagesInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.GetCustomerImages(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIImageServices.obc::CloudyBank#Core#Services#IImageServices#AddImageToCustomer(System.Int32[],System.Int32,System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.AddImageToCustomer(System.Int32[],System.Int32,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIImageServices.obc::CloudyBank#Core#Services#IImageServices#GetCustomerImages(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.GetCustomerImages(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIImageServices.obc::CloudyBank#Core#Services#IImageServices#RecognizeCustomer(System.Int32[],System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.RecognizeCustomer(System.Int32[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIImageServices.obc::CloudyBank#Core#Services#IImageServices#RemoveCustomerImage(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.RemoveCustomerImage(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIImageServices.RecognizeCustomerInt32ArrayInt32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.RecognizeCustomer(System.Int32[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIImageServices.RemoveCustomerImageInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IImageServices.RemoveCustomerImage(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IOAuthRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository.#ctor">
+            <summary>Initializes a new instance of type SIOAuthRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository.GetConsumerString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOAuthRepository.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository.GetTokenString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOAuthRepository.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository.obc::CloudyBank#Core#DataAccess#IOAuthRepository#GetConsumer(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOAuthRepository.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIOAuthRepository.obc::CloudyBank#Core#DataAccess#IOAuthRepository#GetToken(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOAuthRepository.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIOAuthServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IOAuthServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.#ctor">
+            <summary>Initializes a new instance of type SIOAuthServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.GetAccessTokenString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetAccessToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.GetConsumerString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.GetCustomersTokensInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetCustomersTokens(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.GetRequestTokenString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetRequestToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.GetTokenString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.InvalidateTokenInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.InvalidateToken(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#GetAccessToken(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetAccessToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#GetConsumer(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetConsumer(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#GetCustomersTokens(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetCustomersTokens(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#GetRequestToken(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetRequestToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#GetToken(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.GetToken(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#InvalidateToken(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.InvalidateToken(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#StoreNewRequestToken(CloudyBank.CoreDomain.Security.AuthToken)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.StoreNewRequestToken(CloudyBank.CoreDomain.Security.AuthToken)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOAuthServices.obc::CloudyBank#Core#Services#IOAuthServices#UpdateToken(CloudyBank.CoreDomain.Security.AuthToken)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.UpdateToken(CloudyBank.CoreDomain.Security.AuthToken)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.StoreNewRequestTokenAuthToken">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.StoreNewRequestToken(CloudyBank.CoreDomain.Security.AuthToken)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOAuthServices.UpdateTokenAuthToken">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOAuthServices.UpdateToken(CloudyBank.CoreDomain.Security.AuthToken)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIOperationRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IOperationRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIOperationRepository.#ctor">
+            <summary>Initializes a new instance of type SIOperationRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIOperationRepository.GetOperationsByAccountInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOperationRepository.GetOperationsByAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIOperationRepository.obc::CloudyBank#Core#DataAccess#IOperationRepository#GetOperationsByAccount(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IOperationRepository.GetOperationsByAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIOperationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IOperationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.#ctor">
+            <summary>Initializes a new instance of type SIOperationServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.GetOperationByAccountIdCodeInt32String">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationByAccountIdCode(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.GetOperationByIdInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.GetOperationsByCustomerIDInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationsByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.GetOperationsDtoByCustomerIDInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationsDtoByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.GetOperationsInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperations(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.InsertOperationFromCBSStringStringDecimalDateTime">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.InsertOperationFromCBS(System.String,System.String,System.Decimal,System.DateTime)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.InsertOperationsBulkDataStringString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.InsertOperationsBulkData(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.MakeTransferInt32Int32DecimalString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.MakeTransfer(System.Int32,System.Int32,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.MakeTransferToExternalInt32StringDecimalString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.MakeTransferToExternal(System.Int32,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#GetOperationByAccountIdCode(System.Int32,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationByAccountIdCode(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#GetOperationById(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#GetOperations(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperations(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#GetOperationsByCustomerID(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationsByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#GetOperationsDtoByCustomerID(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.GetOperationsDtoByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#InsertOperationFromCBS(System.String,System.String,System.Decimal,System.DateTime)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.InsertOperationFromCBS(System.String,System.String,System.Decimal,System.DateTime)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#InsertOperationsBulkData(System.String,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.InsertOperationsBulkData(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#MakeTransfer(System.Int32,System.Int32,System.Decimal,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.MakeTransfer(System.Int32,System.Int32,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#MakeTransferToExternal(System.Int32,System.String,System.Decimal,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.MakeTransferToExternal(System.Int32,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#Transfer(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Bank.Account,System.Decimal,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.Transfer(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Bank.Account,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIOperationServices.obc::CloudyBank#Core#Services#IOperationServices#TransferToExternal(CloudyBank.CoreDomain.Bank.Account,System.String,System.Decimal,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.TransferToExternal(CloudyBank.CoreDomain.Bank.Account,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.TransferAccountAccountDecimalString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.Transfer(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Bank.Account,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIOperationServices.TransferToExternalAccountStringDecimalString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IOperationServices.TransferToExternal(CloudyBank.CoreDomain.Bank.Account,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIPaymentEventRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IPaymentEventRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIPaymentEventRepository.#ctor">
+            <summary>Initializes a new instance of type SIPaymentEventRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIPaymentEventRepository.GetPaymentEventsForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IPaymentEventRepository.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIPaymentEventRepository.obc::CloudyBank#Core#DataAccess#IPaymentEventRepository#GetPaymentEventsForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IPaymentEventRepository.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIPaymentEventServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IPaymentEventServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.#ctor">
+            <summary>Initializes a new instance of type SIPaymentEventServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.CreatePaymentEventPaymentEventDtoInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.CreatePaymentEvent(CloudyBank.Dto.PaymentEventDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.GetPaymentEventByIdInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.GetPaymentEventById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.GetPaymentEventsForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.MarkAsPayedInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.MarkAsPayed(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#CreatePaymentEvent(CloudyBank.Dto.PaymentEventDto,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.CreatePaymentEvent(CloudyBank.Dto.PaymentEventDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#GetPaymentEventById(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.GetPaymentEventById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#GetPaymentEventsForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#MarkAsPayed(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.MarkAsPayed(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#RemovePayment(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.RemovePayment(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIPaymentEventServices.obc::CloudyBank#Core#Services#IPaymentEventServices#UpdatePaymentEvent(CloudyBank.Dto.PaymentEventDto)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.UpdatePaymentEvent(CloudyBank.Dto.PaymentEventDto)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.RemovePaymentInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.RemovePayment(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIPaymentEventServices.UpdatePaymentEventPaymentEventDto">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IPaymentEventServices.UpdatePaymentEvent(CloudyBank.Dto.PaymentEventDto)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIReportsServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IReportsServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIReportsServices.#ctor">
+            <summary>Initializes a new instance of type SIReportsServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIReportsServices.GenerateAccountsListInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IReportsServices.GenerateAccountsList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIReportsServices.obc::CloudyBank#Core#Services#IReportsServices#GenerateAccountsList(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IReportsServices.GenerateAccountsList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.#ctor">
+            <summary>Initializes a new instance of type SIRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIRepository.Clear">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Clear"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.CountAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Int32})">
+            <summary>Sets stubs of CountAll()</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.DeleteT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of Delete(!!0 obj)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.EvictT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of Evict(!!0 obj)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.FindExpressionOfFuncOfTBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets stubs of Find(Expression`1&lt;Func`2&lt;!!0,Boolean&gt;&gt; matchingCriteria)</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIRepository.Flush">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Flush"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.GetAll``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets stubs of GetAll()</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.GetObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Object,``0})">
+            <summary>Sets stubs of Get(Object id)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.LoadObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Object,``0})">
+            <summary>Sets stubs of Load(Object id)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Clear">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Clear"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#CountAll``1">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.CountAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Delete``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Delete``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Evict``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Evict``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Find``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Find``1(System.Linq.Expressions.Expression`1{System.Func`2{``0,System.Boolean}})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Flush">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Flush"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Get``1(System.Object)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Get``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#GetAll``1">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.GetAll``1"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Load``1(System.Object)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Load``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Refresh``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Refresh``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Save``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Save``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#SaveOrUpdate``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.SaveOrUpdate``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.obc::CloudyBank#Core#DataAccess#IRepository#Update``1(``0)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IRepository.Update``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.RefreshT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of Refresh(!!0 obj)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.SaveOrUpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of SaveOrUpdate(!!0 obj)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.SaveT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of Save(!!0 obj)</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIRepository.UpdateT``1(Microsoft.Moles.Framework.MolesDelegates.Action{``0})">
+            <summary>Sets stubs of Update(!!0 obj)</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Moles.SITagDepensesServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.ITagDepensesServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Moles.SITagDepensesServices.#ctor">
+            <summary>Initializes a new instance of type SITagDepensesServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Moles.SITagDepensesServices.GetTagDepensesForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.ITagDepensesServices.GetTagDepensesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Moles.SITagDepensesServices.GetTagDepensesForProfileInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.ITagDepensesServices.GetTagDepensesForProfile(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Moles.SITagDepensesServices.obc::CloudyBank#Core#ITagDepensesServices#GetTagDepensesForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.ITagDepensesServices.GetTagDepensesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Moles.SITagDepensesServices.obc::CloudyBank#Core#ITagDepensesServices#GetTagDepensesForProfile(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.ITagDepensesServices.GetTagDepensesForProfile(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SITagRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.ITagRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SITagRepository.#ctor">
+            <summary>Initializes a new instance of type SITagRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SITagRepository.GetTagsForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ITagRepository.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SITagRepository.obc::CloudyBank#Core#DataAccess#ITagRepository#GetTagsForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ITagRepository.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SITagServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.ITagServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.#ctor">
+            <summary>Initializes a new instance of type SITagServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.CreateTagInt32TagDto">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.CreateTag(System.Int32,CloudyBank.Dto.TagDto)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.GetStandardTags">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.GetStandardTags"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.GetTagsForCustomerInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#CreateTag(System.Int32,CloudyBank.Dto.TagDto)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.CreateTag(System.Int32,CloudyBank.Dto.TagDto)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#GetStandardTags">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.GetStandardTags"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#GetTagsForCustomer(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#RemoveTag(System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.RemoveTag(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#SaveOrUpdateTag(CloudyBank.Dto.TagDto,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.SaveOrUpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#TagOperation(System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.TagOperation(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITagServices.obc::CloudyBank#Core#Services#ITagServices#UpdateTag(CloudyBank.Dto.TagDto,System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.UpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.RemoveTagInt32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.RemoveTag(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.SaveOrUpdateTagTagDtoInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.SaveOrUpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.TagOperationInt32Int32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.TagOperation(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITagServices.UpdateTagTagDtoInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITagServices.UpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SITaskRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.ITaskRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SITaskRepository.#ctor">
+            <summary>Initializes a new instance of type SITaskRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SITaskRepository.GetTasksForAdvisorInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ITaskRepository.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SITaskRepository.obc::CloudyBank#Core#DataAccess#ITaskRepository#GetTasksForAdvisor(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.ITaskRepository.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SITaskServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.ITaskServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITaskServices.#ctor">
+            <summary>Initializes a new instance of type SITaskServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SITaskServices.GetTasksForAdvisorInt32">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITaskServices.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SITaskServices.obc::CloudyBank#Core#Services#ITaskServices#GetTasksForAdvisor(System.Int32)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.ITaskServices.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.DataAccess.Moles.SIUserRepository">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.DataAccess.IUserRepository"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIUserRepository.#ctor">
+            <summary>Initializes a new instance of type SIUserRepository</summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIUserRepository.GetUserByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIUserRepository.GetUserPermissionInt32String">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserPermission(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIUserRepository.GetUserRoleString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserRole(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.DataAccess.Moles.SIUserRepository.GetUserTypeString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserType(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIUserRepository.obc::CloudyBank#Core#DataAccess#IUserRepository#GetUserByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIUserRepository.obc::CloudyBank#Core#DataAccess#IUserRepository#GetUserPermission(System.Int32,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserPermission(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIUserRepository.obc::CloudyBank#Core#DataAccess#IUserRepository#GetUserRole(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserRole(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.DataAccess.Moles.SIUserRepository.obc::CloudyBank#Core#DataAccess#IUserRepository#GetUserType(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.DataAccess.IUserRepository.GetUserType(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SIUserServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.IUserServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.#ctor">
+            <summary>Initializes a new instance of type SIUserServices</summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.AuthenticateUserStringString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.AuthenticateUser(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.GetAdvisorRightsAccountAdvisor">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetAdvisorRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.GetCustomerRightsAccountCustomer">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetCustomerRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.GetUserByIdentityString">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.GetUserRightsAccountUserIdentity">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="F:CloudyBank.Core.Services.Moles.SIUserServices.GetUserRightsInt32UserIdentity">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserRights(System.Int32,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#AuthenticateUser(System.String,System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.AuthenticateUser(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#GetAdvisorRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Advisors.Advisor)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetAdvisorRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#GetCustomerRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Customers.Customer)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetCustomerRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#GetUserByIdentity(System.String)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#GetUserRights(System.Int32,CloudyBank.CoreDomain.Security.UserIdentity)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserRights(System.Int32,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SIUserServices.obc::CloudyBank#Core#Services#IUserServices#GetUserRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.UserIdentity)">
+            <summary>Sets the stub of <see cref="M:CloudyBank.Core.Services.IUserServices.GetUserRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SOperationServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.OperationServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SOperationServicesException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SOperationServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SOperationServicesException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SOperationServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SOperationServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SOperationServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SOperationServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SPaymentServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.PaymentServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SPaymentServicesException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SPaymentServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SPaymentServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SPaymentServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SPaymentServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.STagServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.TagServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.STagServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.STagServicesException.InitializeStub">
+            <summary>Initializes a new instance of type STagServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.STagServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.STagServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.STaskServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.TaskServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.STaskServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.STaskServicesException.InitializeStub">
+            <summary>Initializes a new instance of type STaskServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.STaskServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.STaskServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Core.Services.Moles.SUserServicesException">
+            <summary>Stub type of <see cref="T:CloudyBank.Core.Services.UserServicesException"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SUserServicesException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Core.Services.Moles.SUserServicesException.InitializeStub">
+            <summary>Initializes a new instance of type SUserServicesException</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SUserServicesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Core.Services.Moles.SUserServicesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

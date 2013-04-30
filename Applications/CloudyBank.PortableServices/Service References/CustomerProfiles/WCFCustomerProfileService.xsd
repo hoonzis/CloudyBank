@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Customers" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CloudyBank.CoreDomain.Customers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="FamilySituation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InCouple" />
+      <xs:enumeration value="Single" />
+      <xs:enumeration value="Maried" />
+      <xs:enumeration value="NotSet" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FamilySituation" nillable="true" type="tns:FamilySituation" />
+</xs:schema>

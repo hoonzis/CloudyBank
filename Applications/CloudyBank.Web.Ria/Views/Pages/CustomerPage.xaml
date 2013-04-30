@@ -1,0 +1,124 @@
+<navigation:Page 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:mvvm="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           xmlns:views="clr-namespace:CloudyBank.Web.Ria.Views"
+           xmlns:viewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels"
+           xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:userControls="clr-namespace:CloudyBank.Web.Ria.UserControls"
+           xmlns:CloudyBank_Web_Ria="clr-namespace:CloudyBank.Web.Ria" x:Class="CloudyBank.Web.Ria.Views.CustomerPage"
+           mc:Ignorable="d"
+           d:DesignWidth="1000" d:DesignHeight="800"
+           d:DataContext="{d:DesignData /SampleData/CustomerViewModelSampleData.xaml}" Margin="0"
+           Title="CustomerPage Page" Foreground="White">
+    <Grid x:Name="LayoutRoot" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Transparent">
+        <Grid.Resources>
+            <viewModels:NewsViewModel x:Key="NewsVM"/>
+        </Grid.Resources>
+    	<Grid.ColumnDefinitions>
+        	<ColumnDefinition Width="Auto"/>
+        	<ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <mvvm:ViewModelLocator x:Name="CustomerVM" ViewModelName="CustomerViewModel"/>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="{Binding Path=CustomerPageRes.AccountsOverview, Source={StaticResource Strings}}" FontSize="16"/>
+            
+            <TextBlock Text="{Binding Path=Common.Loading, Source={StaticResource Strings}}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}" Margin="100"/>
+            <ListBox x:Name="AccountListBox" ItemsSource="{Binding Accounts}" HorizontalAlignment="Left"  Background="Transparent" 
+                     BorderBrush="Transparent" BorderThickness="0">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <userControls:MetroStyleAccountItem/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Welcome" FontSize="16"/>
+                    <TextBlock Text="{Binding Name}" Margin="10,0,0,0" FontSize="16"/>
+                    
+                    <TextBlock Text="{Binding Id, StringFormat=(\{0\})}" FontSize="16" Margin="10,0,0,0"/>
+                </StackPanel>
+                <TextBlock Text="{Binding CustomerPageRes.Note, Source={StaticResource Strings}}"/>
+            </StackPanel>
+                
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Border Width="130" Background="{StaticResource GreenBrush}" Margin="0,5,5,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+
+                        <TextBlock Text="{Binding Path=CustomerPageRes.AvailableResources, Source={StaticResource Strings}}" FontSize="16" TextWrapping="Wrap" Margin="5"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="1">
+                            <Image Source="/CloudyBank.Web.Ria;component/Graphics/sum.png" Width="40"/>
+                            <TextBlock Text="{Binding Sum,StringFormat=\{0:N2\}}" Foreground="White" FontSize="16" VerticalAlignment="Center" Margin="3"/>
+                        </StackPanel>
+                    
+                    </Grid>
+                </Border>
+                
+                <Border Height="180" Background="{StaticResource BrownBrush}" Margin="5" Width="310">
+                    <StackPanel Margin="5">
+                        <TextBlock Text="{Binding Path=CustomerPageRes.FinancialNews,Source={StaticResource Strings}}" FontSize="16"/>
+                        <TextBlock Text="{Binding Path=Common.Loading, Source={StaticResource Strings}}" Visibility="{Binding InProgress,Source={StaticResource NewsVM}, Converter={StaticResource BoolToVisibility}}" Margin="40"/>
+                        <ListBox ItemsSource="{Binding News,Source={StaticResource NewsVM}}" Background="Transparent" BorderThickness="0">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <HyperlinkButton Content="{Binding Title}" NavigateUri="{Binding Link}" Foreground="White" TargetName="_blank"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            
+            <Border Grid.Row="2" Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock FontSize="16" Foreground="White" Text="{Binding Path=CustomerPageRes.QuickActions,Source={StaticResource Strings}}"/>
+                    <userControls:AgencyMenuItem MenuText="{Binding Path=CustomerPageRes.NewTransaction,Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/transaction.png" NavigateUri="/Agency" Grid.Row="1" Background="{StaticResource OrangeBrush}"/>
+                    <userControls:AgencyMenuItem MenuText="{Binding Path=CustomerPageRes.EditPersInfo, Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/profile.png" NavigateUri="/Agency?View=PersonalInformation" Grid.Column="1" Grid.Row="1"/>
+                    <userControls:AgencyMenuItem MenuText="{Binding Path=CustomerPageRes.NearestAgency,Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/globe.png" NavigateUri="/Agency?View=Agencies" Grid.Row="2"/>
+                    <userControls:AgencyMenuItem MenuText="{Binding Path=CustomerPageRes.GenAccounts,Source={StaticResource Strings}}" ImageSrc="/CloudyBank.Web.Ria;component/Graphics/report.png" NavigateUri="/Agency?View=Vault" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</navigation:Page>

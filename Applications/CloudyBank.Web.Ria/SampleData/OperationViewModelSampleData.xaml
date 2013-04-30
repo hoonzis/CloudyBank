@@ -1,0 +1,12 @@
+<CloudyBank_Web_Ria_ViewModels:OperationViewModel xmlns:CloudyBank_Web_Ria_ViewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:CloudyBank_Web_Ria_WCFOperationService="clr-namespace:CloudyBank.Web.Ria.WCFOperationService" Currency="Curabitur phasellus nam cras maecenas" Date="10/19/2011 23:20:51" HasErrors="False" Motif="Vestibulum duis aliquam class nunc" Positive="True" TagName="Arcu diam dictumst">
+	<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+		<System:Decimal/>
+	</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Amount>
+	<CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+		<CloudyBank_Web_Ria_WCFOperationService:OperationDto Currency="EUR" Direction="Adipiscing donec" Date="10/19/2011 23:20:51" Id="32" Motif="Aenean mauris integer dis" OppositeIban="GR16 0110 1250 0000 0001 2300 695" TagName="Some Tag" TransactionCode="XKCD-q13435-DRf-34" TagId="79">
+			<CloudyBank_Web_Ria_WCFOperationService:OperationDto.Amount>
+				<System:Decimal/>
+			</CloudyBank_Web_Ria_WCFOperationService:OperationDto.Amount>
+		</CloudyBank_Web_Ria_WCFOperationService:OperationDto>
+	</CloudyBank_Web_Ria_ViewModels:OperationViewModel.Operation>
+</CloudyBank_Web_Ria_ViewModels:OperationViewModel>

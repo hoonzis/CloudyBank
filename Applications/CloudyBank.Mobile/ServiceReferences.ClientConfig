@@ -1,0 +1,86 @@
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+              <binding name="BinaryBinding">
+
+                <httpCookieContainer/>
+                <binaryMessageEncoding />
+                <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"/>
+                
+              </binding>
+            </customBinding>
+            <basicHttpBinding>
+              <binding name="SoapBinding" enableHttpCookieContainer="True" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                <security mode="None"/>
+               
+
+              </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <!--<endpoint address="http://localhost:49830/WCFServices/WCFAccountService.svc/"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Accounts.WCFAccountService" name="BinaryEndpoint"/>
+            <endpoint address="http://localhost:49830/WCFServices/WCFCustomerProfileService.svc/"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="CustomerProfiles.WCFCustomerProfileService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFTagDepensesServices.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="TagDepenses.WCFTagDepensesService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFOperationService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Operations.WCFOperationService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFTagService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Tags.WCFTagService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFCustomerService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Customers.WCFCustomersService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFPartnerService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Partners.WCFPartnerService" name="BinaryEndpoint" />
+            <endpoint address="http://localhost:49830/WCFServices/WCFPaymentEventService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="PaymentEvents.WCFPaymentEventService" name="BinaryEndpoint" />
+          <endpoint address="http://localhost:49830/WCFServices/WCFUserService.svc"
+                binding="customBinding" bindingConfiguration="BinaryBinding"
+                contract="Users.WCFUserService" name="BinaryEndpoint" />
+                
+                <endpoint address="/WCFServices/WCFOAuthManagementService.svc"
+                binding="customBinding" bindingConfiguration="BinaryOverHttp"
+                contract="OAuthTokens.WCFOAuthManagementService" name="Endpoint_WCFOAuthManagementService" />
+                -->
+          
+          <!-- SOAP endpoints-->
+          <endpoint address="http://localhost/WCFServices/WCFAccountService.svc/soap"
+                binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+                contract="Accounts.WCFAccountService" name="SoapAccounts"/>
+          <endpoint address="http://localhost/WCFServices/WCFCustomerProfileService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="CustomerProfiles.WCFCustomerProfileService" name="SoapCustomerProfiles" />
+          <endpoint address="http://localhost/WCFServices/WCFTagDepensesServices.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="TagDepenses.WCFTagDepensesService" name="SoapTagDepenses" />
+          <endpoint address="http://localhost/WCFServices/WCFOperationService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="Operations.WCFOperationService" name="SoapOperations" />
+          <endpoint address="http://localhost/WCFServices/WCFTagService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="Tags.WCFTagService" name="SoapTags" />
+          <endpoint address="http://localhost/WCFServices/WCFCustomerService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="Customers.WCFCustomersService" name="SoapCustomers" />
+          <endpoint address="http://localhost/WCFServices/WCFPartnerService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="Partners.WCFPartnerService" name="SoapPatners" />
+          <endpoint address="http://localhost/WCFServices/WCFPaymentEventService.svc/soap"
+              binding="basicHttpBinding" bindingConfiguration="SoapBinding"
+              contract="PaymentEvents.WCFPaymentEventService" name="SoapPaymentEvents" />
+          <endpoint address="http://localhost/WCFServices/WCFUserService.svc" binding="customBinding"
+                bindingConfiguration="BinaryBinding" contract="Users.WCFUserService"
+                name="Endpoint_WCFUserService" />
+          
+        </client>
+    </system.serviceModel>
+</configuration>

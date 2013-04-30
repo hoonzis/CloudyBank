@@ -1,0 +1,61 @@
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="BinaryOverHttp">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"/>
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="/WCFServices/WCFOperationService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Operations.WCFOperationService"
+                name="Endpoint_WCFOperationService" />
+            <endpoint address="/WCFServices/WCFAdvisorService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Advisors.WCFAdvisorService"
+                name="Endpoint_WCFAdvisorService" />
+            <endpoint address="/WCFServices/WCFRoleService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Roles.WCFRoleService"
+                name="Endpoint_WCFRoleService" />
+            <endpoint address="/WCFServices/WCFTagService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Tags.WCFTagService"
+                name="Endpoint_WCFTagService" />
+            <endpoint address="/WCFServices/WCFPaymentEventService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="PaymentEvents.WCFPaymentEventService"
+                name="Endpoint_WCFPaymentEventService" />
+            <endpoint address="/WCFServices/WCFPartnerService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Partners.WCFPartnerService"
+                name="Endpoint_WCFPartnerService" />
+            <endpoint address="/WCFServices/WCFTagDepensesServices.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="TagDepenses.WCFTagDepensesService"
+                name="Endpoint_WCFTagDepensesServices" />
+            <endpoint address="/WCFServices/WCFCustomerProfileService.svc"
+                binding="customBinding" bindingConfiguration="BinaryOverHttp"
+                contract="CustomerProfiles.WCFCustomerProfileService"
+                name="Endpoint_CustomerProfileService" />
+            <endpoint address="/WCFServices/WCFFileService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Files.WCFFileService"
+                name="Endpoint_WCFFileService" />
+            <endpoint address="/WCFServices/WCFAgencyService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Agencies.WCFAgencyService"
+                name="Endpoint_WCFAgencyService" />
+            <endpoint address="/WCFServices/WCFAccountService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Accounts.WCFAccountService"
+                name="Endpoint_WCFAccountServices" />
+            <endpoint address="/WCFServices/WCFCustomerService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Customers.WCFCustomersService"
+                name="Endpoint_WCFCustomerService" />
+            <endpoint address="/WCFServices/WCFUserService.svc" binding="customBinding"
+                bindingConfiguration="BinaryOverHttp" contract="Users.WCFUserService"
+                name="Endpoint_WCFUserService" />
+          <endpoint address="/WCFServices/WCFOAuthManagementService.svc"
+                binding="customBinding" bindingConfiguration="BinaryOverHttp"
+                contract="OAuthTokens.WCFOAuthManagementService" name="Endpoint_WCFOAuthManagementService" />
+          <endpoint address="/WCFServices/WCFImageService.svc"
+                binding="customBinding" bindingConfiguration="BinaryOverHttp"
+                contract="Images.WCFImageService" name="Endpoint_WCFImageService" />
+           
+        </client>
+    </system.serviceModel>
+</configuration>

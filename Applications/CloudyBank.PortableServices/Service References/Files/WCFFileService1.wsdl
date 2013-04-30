@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="octo.files.service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="octo.files.service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="octo.files.service/Imports">
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFFileService.svc?xsd=xsd0" namespace="octo.files.service" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFFileService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFFileService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="WCFFileService_GetFileList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileList" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetFileList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetContainerSignedSignature_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContainerSignedSignature" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetContainerSignedSignature_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContainerSignedSignatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetBlobSignedSignature_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlobSignedSignature" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetBlobSignedSignature_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlobSignedSignatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetContainerUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContainerUrl" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GetContainerUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContainerUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GenerateAccountsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateAccountsList" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GenerateAccountsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateAccountsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GenereateClientIdentity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenereateClientIdentity" />
+  </wsdl:message>
+  <wsdl:message name="WCFFileService_GenereateClientIdentity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenereateClientIdentityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCFFileService">
+    <wsdl:operation name="GetFileList">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GetFileList" message="tns:WCFFileService_GetFileList_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GetFileListResponse" message="tns:WCFFileService_GetFileList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContainerSignedSignature">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GetContainerSignedSignature" message="tns:WCFFileService_GetContainerSignedSignature_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GetContainerSignedSignatureResponse" message="tns:WCFFileService_GetContainerSignedSignature_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBlobSignedSignature">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GetBlobSignedSignature" message="tns:WCFFileService_GetBlobSignedSignature_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GetBlobSignedSignatureResponse" message="tns:WCFFileService_GetBlobSignedSignature_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContainerUrl">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GetContainerUrl" message="tns:WCFFileService_GetContainerUrl_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GetContainerUrlResponse" message="tns:WCFFileService_GetContainerUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateAccountsList">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GenerateAccountsList" message="tns:WCFFileService_GenerateAccountsList_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GenerateAccountsListResponse" message="tns:WCFFileService_GenerateAccountsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenereateClientIdentity">
+      <wsdl:input wsaw:Action="octo.files.service/WCFFileService/GenereateClientIdentity" message="tns:WCFFileService_GenereateClientIdentity_InputMessage" />
+      <wsdl:output wsaw:Action="octo.files.service/WCFFileService/GenereateClientIdentityResponse" message="tns:WCFFileService_GenereateClientIdentity_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

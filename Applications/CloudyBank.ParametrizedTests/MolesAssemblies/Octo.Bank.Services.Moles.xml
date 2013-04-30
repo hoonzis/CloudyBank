@@ -1,0 +1,2412 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CloudyBank.Services.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.AccountDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.#ctor(CloudyBank.Services.DtoCreators.AccountDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Account,CloudyBank.Dto.AccountDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AccountDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.CreateAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AccountDtoCreator.Create(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAccountDtoCreator.AllInstances.CreateAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AccountDtoCreator.Create(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAccountServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.AccountServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAccountServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAccountServices.#ctor(CloudyBank.Services.AccountServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAccountServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAccountServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAccountServices.Bind(CloudyBank.Core.Services.IAccountServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.BalanceAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.Balance(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.ConstructorIRepositoryIAccountRepositoryICustomerRepositoryIDtoCreatorOfAccountAccountDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IAccountRepository,CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.Dto.AccountDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.CreateAccountStringInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.CreateAccount(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.CreateBalancePointBalancePoint">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.CreateBalancePoint(CloudyBank.CoreDomain.Bank.BalancePoint)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.GetAccountBalanceEvolutionInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetAccountBalanceEvolution(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.GetAccountsByCustomerCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetAccountsByCustomerCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.GetCustomerAccountsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetCustomerAccounts(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices._Balanceb__2Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.&lt;Balance&gt;b__2(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices._GetAccountBalanceEvolutionb__4BalancePoint">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.&lt;GetAccountBalanceEvolution&gt;b__4(CloudyBank.CoreDomain.Bank.BalancePoint)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices._GetCustomerAccountsb__0Account">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.&lt;GetCustomerAccounts&gt;b__0(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAccountServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.BalanceAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.Balance(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.CreateAccountStringInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.CreateAccount(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.CreateBalancePointBalancePoint">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.CreateBalancePoint(CloudyBank.CoreDomain.Bank.BalancePoint)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.GetAccountBalanceEvolutionInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetAccountBalanceEvolution(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.GetAccountsByCustomerCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetAccountsByCustomerCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances.GetCustomerAccountsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.GetCustomerAccounts(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances._GetAccountBalanceEvolutionb__4BalancePoint">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.&lt;GetAccountBalanceEvolution&gt;b__4(CloudyBank.CoreDomain.Bank.BalancePoint)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAccountServices.AllInstances._GetCustomerAccountsb__0Account">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AccountServices.&lt;GetCustomerAccounts&gt;b__0(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.AdvisorDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.#ctor(CloudyBank.Services.DtoCreators.AdvisorDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Advisors.Advisor,CloudyBank.Dto.AdvisorDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AdvisorDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.CreateAdvisor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AdvisorDtoCreator.Create(CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MAdvisorDtoCreator.AllInstances.CreateAdvisor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.AdvisorDtoCreator.Create(CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAdvisorServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.AdvisorServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAdvisorServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAdvisorServices.#ctor(CloudyBank.Services.AdvisorServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAdvisorServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAdvisorServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAdvisorServices.Bind(CloudyBank.Core.Services.IAdvisorServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.ConstructorIRepositoryIAdvisorRepositoryIDtoCreatorOfAdvisorAdvisorDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AdvisorServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IAdvisorRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Advisors.Advisor,CloudyBank.Dto.AdvisorDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.GetAdvisorByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AdvisorServices.GetAdvisorById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.GetAdvisorByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AdvisorServices.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAdvisorServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.AllInstances.GetAdvisorByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AdvisorServices.GetAdvisorById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAdvisorServices.AllInstances.GetAdvisorByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AdvisorServices.GetAdvisorByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAgencyServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.AgencyServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAgencyServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAgencyServices.#ctor(CloudyBank.Services.AgencyServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAgencyServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAgencyServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAgencyServices.Bind(CloudyBank.Core.Services.IAgencyServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.ConstructorIRepository">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.#ctor(CloudyBank.Core.DataAccess.IRepository)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.GetAcencies">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.GetAcencies"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.ToDtoAgency">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.ToDto(CloudyBank.CoreDomain.Bank.Agency)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices._GetAcenciesb__0Agency">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.&lt;GetAcencies&gt;b__0(CloudyBank.CoreDomain.Bank.Agency)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAgencyServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.AllInstances.GetAcencies">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.GetAcencies"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.AllInstances.ToDtoAgency">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.ToDto(CloudyBank.CoreDomain.Bank.Agency)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAgencyServices.AllInstances._GetAcenciesb__0Agency">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AgencyServices.&lt;GetAcencies&gt;b__0(CloudyBank.CoreDomain.Bank.Agency)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Aggregations.Moles.MAggregationServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Aggregations.AggregationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.MAggregationServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.MAggregationServices.#ctor(CloudyBank.Services.Aggregations.AggregationServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.MAggregationServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.MAggregationServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.MAggregationServices.Bind(CloudyBank.Core.Aggregations.IAggregationServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AggregateAccountTagsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateAccountTags(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AggregateCustomerCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AggregateCustomerFromDBCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateCustomerFromDB(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AggregateProfileTagsCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateProfileTags(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AggregateProfileTagsFromDBCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateProfileTagsFromDB(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.ComputeBalancePointsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ComputeBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.ComputeBalancesForAllAccounts">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ComputeBalancesForAllAccounts"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.ConstructorIRepository">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.#ctor(CloudyBank.Core.DataAccess.IRepository)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.CreateBalancePointsForOperationsIEnumerableOfOperationDecimalAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.CreateBalancePointsForOperations(System.Collections.Generic.IEnumerable`1{CloudyBank.CoreDomain.Bank.Operation},System.Decimal,CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.FindProfileCustomerIListOfCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.FindProfile(CloudyBank.CoreDomain.Customers.Customer,System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.CustomerProfile})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.MapTagDepensesDictionaryOfTagTagDepensesIListOfTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.MapTagDepenses(System.Collections.Generic.Dictionary`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.TagDepenses},System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.TagDepenses})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.ReAggregateAllOperations">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ReAggregateAllOperations"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.UpdateAllBalancePoints">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.UpdateAllBalancePoints"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.UpdateBalancePointsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.UpdateBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__19Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__19(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__1aOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__1a(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__1bIGroupingOfTagOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__1b(System.Linq.IGrouping`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.Operation})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__1cIGroupingOfTagOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__1c(System.Linq.IGrouping`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.Operation})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__1dOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__1d(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateAccountTagsb__1eKeyValuePairOfTagDecimal">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateAccountTags&gt;b__1e(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Tag,System.Decimal})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateCustomerFromDBb__27KeyValuePairOfTagTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateCustomerFromDB&gt;b__27(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.TagDepenses})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._AggregateCustomerb__25KeyValuePairOfTagTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;AggregateCustomer&gt;b__25(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.TagDepenses})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._CreateBalancePointsForOperationsb__6Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;CreateBalancePointsForOperations&gt;b__6(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._CreateBalancePointsForOperationsb__7Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;CreateBalancePointsForOperations&gt;b__7(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._CreateBalancePointsForOperationsb__8IGroupingOfDateTimeOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;CreateBalancePointsForOperations&gt;b__8(System.Linq.IGrouping`2{System.DateTime,CloudyBank.CoreDomain.Bank.Operation})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._CreateBalancePointsForOperationsb__9IGroupingOfDateTimeOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;CreateBalancePointsForOperations&gt;b__9(System.Linq.IGrouping`2{System.DateTime,CloudyBank.CoreDomain.Bank.Operation})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._CreateBalancePointsForOperationsb__aOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;CreateBalancePointsForOperations&gt;b__a(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._ReAggregateAllOperationsb__29TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;ReAggregateAllOperations&gt;b__29(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices._UpdateBalancePointsb__0BalancePoint">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;UpdateBalancePoints&gt;b__0(CloudyBank.CoreDomain.Bank.BalancePoint)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.AggregateAccountTagsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateAccountTags(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.AggregateCustomerCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateCustomer(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.AggregateCustomerFromDBCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateCustomerFromDB(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.AggregateProfileTagsCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateProfileTags(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.AggregateProfileTagsFromDBCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.AggregateProfileTagsFromDB(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.ComputeBalancePointsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ComputeBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.ComputeBalancesForAllAccounts">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ComputeBalancesForAllAccounts"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.CreateBalancePointsForOperationsIEnumerableOfOperationDecimalAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.CreateBalancePointsForOperations(System.Collections.Generic.IEnumerable`1{CloudyBank.CoreDomain.Bank.Operation},System.Decimal,CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.FindProfileCustomerIListOfCustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.FindProfile(CloudyBank.CoreDomain.Customers.Customer,System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.CustomerProfile})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.MapTagDepensesDictionaryOfTagTagDepensesIListOfTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.MapTagDepenses(System.Collections.Generic.Dictionary`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.CoreDomain.Bank.TagDepenses},System.Collections.Generic.IList`1{CloudyBank.CoreDomain.Bank.TagDepenses})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.ReAggregateAllOperations">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.ReAggregateAllOperations"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.UpdateAllBalancePoints">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.UpdateAllBalancePoints"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances.UpdateBalancePointsAccount">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.UpdateBalancePoints(CloudyBank.CoreDomain.Bank.Account)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.MAggregationServices.AllInstances._ReAggregateAllOperationsb__29TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Aggregations.AggregationServices.&lt;ReAggregateAllOperations&gt;b__29(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAzureBlobExtensions">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.AzureBlobExtensions"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureBlobExtensions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureBlobExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureBlobExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureBlobExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureBlobExtensions.ExistsCloudBlob">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureBlobExtensions.Exists(Microsoft.WindowsAzure.StorageClient.CloudBlob)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAzureStorageServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.AzureStorageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureStorageServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureStorageServices.#ctor(CloudyBank.Services.AzureStorageServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureStorageServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureStorageServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MAzureStorageServices.Bind(CloudyBank.Core.Services.ICloudStorageServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.ChechUserAndReturnContainerNameInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.ChechUserAndReturnContainerName(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.ConstructorIRepository">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.#ctor(CloudyBank.Core.DataAccess.IRepository)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.DownLoadBlockStringInt64Int32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.DownLoadBlock(System.String,System.Int64,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.DownloadSmallFileStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.DownloadSmallFile(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.FileSizeStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.FileSize(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.GetBlobSignedSignatureInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetBlobSignedSignature(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.GetBlockBlobStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetBlockBlob(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.GetContainerSignedSignatureInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetContainerSignedSignature(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.GetContainerUrlInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetContainerUrl(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.GetFileListInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetFileList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.PutBlockListStringStringArrayInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.PutBlockList(System.String,System.String[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.PutBlockStringStringByteArrayInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.PutBlock(System.String,System.String,System.Byte[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.SaveBytesToCloudByteArrayStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.SaveBytesToCloud(System.Byte[],System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.UploadSmallFileStringInt32ByteArray">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.UploadSmallFile(System.String,System.Int32,System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices._ctorb__0StringFuncOfStringBoolean">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.&lt;.ctor&gt;b__0(System.String,System.Func`2{System.String,System.Boolean})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.ChechUserAndReturnContainerNameInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.ChechUserAndReturnContainerName(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.DownLoadBlockStringInt64Int32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.DownLoadBlock(System.String,System.Int64,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.DownloadSmallFileStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.DownloadSmallFile(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.FileSizeStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.FileSize(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.GetBlobSignedSignatureInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetBlobSignedSignature(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.GetBlockBlobStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetBlockBlob(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.GetContainerSignedSignatureInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetContainerSignedSignature(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.GetContainerUrlInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetContainerUrl(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.GetFileListInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.GetFileList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.PutBlockListStringStringArrayInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.PutBlockList(System.String,System.String[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.PutBlockStringStringByteArrayInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.PutBlock(System.String,System.String,System.Byte[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.SaveBytesToCloudByteArrayStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.SaveBytesToCloud(System.Byte[],System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MAzureStorageServices.AllInstances.UploadSmallFileStringInt32ByteArray">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.AzureStorageServices.UploadSmallFile(System.String,System.Int32,System.Byte[])"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Bank.Moles.MBankMethods">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Bank.BankMethods"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Bank.Moles.MBankMethods.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Bank.Moles.MBankMethods.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Bank.Moles.MBankMethods.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Bank.Moles.MBankMethods.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Bank.Moles.MBankMethods.GenerateAccountCode">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Bank.BankMethods.GenerateAccountCode"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Bank.Moles.MBankMethods.GenerateCustomerCodeUserType">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Bank.BankMethods.GenerateCustomerCode(CloudyBank.CoreDomain.Security.UserType)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Bank.Moles.MBankMethods.RandomNumberStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Bank.BankMethods.RandomNumberString(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Bank.Moles.MBankMethods.RandomStringInt32Boolean">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Bank.BankMethods.RandomString(System.Int32,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.#ctor(CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.BusinessPartner,CloudyBank.Dto.BusinessPartnerDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.CreateBusinessPartner">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator.Create(CloudyBank.CoreDomain.Bank.BusinessPartner)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MBusinessPartnerDtoCreator.AllInstances.CreateBusinessPartner">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator.Create(CloudyBank.CoreDomain.Bank.BusinessPartner)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Technical.Moles.MCSVProcessing">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Technical.CSVProcessing"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MCSVProcessing.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MCSVProcessing.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MCSVProcessing.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MCSVProcessing.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MCSVProcessing.ComposeOperationStringStringRefString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.CSVProcessing.ComposeOperation(System.String,System.String@,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MCSVProcessing.GetCategorizedTransactionsCreateAndStoreTagsTextReaderIRepositoryDictionaryOfStringStandardTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.CSVProcessing.GetCategorizedTransactionsCreateAndStoreTags(System.IO.TextReader,CloudyBank.Core.DataAccess.IRepository,System.Collections.Generic.Dictionary`2{System.String,CloudyBank.CoreDomain.Bank.StandardTag})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MCSVProcessing.GetTransactionsFromCSVTextReader">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.CSVProcessing.GetTransactionsFromCSV(System.IO.TextReader)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Categorization.Moles.MCategorizationServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Categorization.CategorizationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.MCategorizationServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.MCategorizationServices.#ctor(CloudyBank.Services.Categorization.CategorizationServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.MCategorizationServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.MCategorizationServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.MCategorizationServices.Bind(CloudyBank.Core.Categorization.ICategorizationServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices.CategorizePaymentsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Categorization.CategorizationServices.CategorizePayments(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices.ConstructorIRepositoryIOperationServices">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Categorization.CategorizationServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Services.IOperationServices)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices._CategorizePaymentsb__0Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Categorization.CategorizationServices.&lt;CategorizePayments&gt;b__0(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices._CategorizePaymentsb__1Operation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Categorization.CategorizationServices.&lt;CategorizePayments&gt;b__1(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Categorization.Moles.MCategorizationServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.MCategorizationServices.AllInstances.CategorizePaymentsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Categorization.CategorizationServices.CategorizePayments(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.CustomerDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.#ctor(CloudyBank.Services.DtoCreators.CustomerDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Customers.Customer,CloudyBank.Dto.CustomerDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.CustomerDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.CreateCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.CustomerDtoCreator.Create(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MCustomerDtoCreator.AllInstances.CreateCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.CustomerDtoCreator.Create(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MCustomerProfileServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.CustomerProfileServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerProfileServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerProfileServices.#ctor(CloudyBank.Services.CustomerProfileServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerProfileServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerProfileServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerProfileServices.Bind(CloudyBank.Core.Services.ICustomerProfileServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices.ConstructorIRepositoryIDtoCreatorOfCustomerProfileCustomerProfileDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerProfileServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.CustomerProfile,CloudyBank.Dto.CustomerProfileDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices.GetAllCustomerProfiles">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerProfileServices.GetAllCustomerProfiles"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices._GetAllCustomerProfilesb__0CustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerProfileServices.&lt;GetAllCustomerProfiles&gt;b__0(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MCustomerProfileServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices.AllInstances.GetAllCustomerProfiles">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerProfileServices.GetAllCustomerProfiles"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerProfileServices.AllInstances._GetAllCustomerProfilesb__0CustomerProfile">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerProfileServices.&lt;GetAllCustomerProfiles&gt;b__0(CloudyBank.CoreDomain.Bank.CustomerProfile)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MCustomerServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.CustomerServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerServices.#ctor(CloudyBank.Services.CustomerServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MCustomerServices.Bind(CloudyBank.Core.Services.ICustomerServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.ConstructorICustomerRepositoryIRepositoryIAccountServicesIDtoCreatorOfCustomerCustomerDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.#ctor(CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Services.IAccountServices,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Customers.Customer,CloudyBank.Dto.CustomerDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.CreateCustomerStringStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CreateCustomer(System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.CreateCustomerStringStringStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CreateCustomer(System.String,System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.CustomerBalanceCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CustomerBalance(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.GetCustomerByCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.GetCustomerByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.GetCustomerByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.GetCustomersForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomersForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.SaveCustomerCustomerDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.SaveCustomer(CloudyBank.Dto.CustomerDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices._CustomerBalanceb__0KeyValuePairOfAccountRole">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.&lt;CustomerBalance&gt;b__0(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.Role})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MCustomerServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.CreateCustomerStringStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CreateCustomer(System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.CreateCustomerStringStringStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CreateCustomer(System.String,System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.CustomerBalanceCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.CustomerBalance(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.GetCustomerByCodeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerByCode(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.GetCustomerByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.GetCustomerByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomerByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.GetCustomersForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.GetCustomersForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances.SaveCustomerCustomerDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.SaveCustomer(CloudyBank.Dto.CustomerDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MCustomerServices.AllInstances._CustomerBalanceb__0KeyValuePairOfAccountRole">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.CustomerServices.&lt;CustomerBalance&gt;b__0(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.Role})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DataGeneration.GenerationUtils"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.SubArrayTArrayInt32Int32``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0[],System.Int32,System.Int32,``0[]})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DataGeneration.GenerationUtils.SubArray``1(``0[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.ConvertToNumbersString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DataGeneration.GenerationUtils.ConvertToNumbers(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.GenerateIbanStringStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DataGeneration.GenerationUtils.GenerateIban(System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.RandomNumberStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DataGeneration.GenerationUtils.RandomNumberString(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DataGeneration.Moles.MGenerationUtils.RandomStringInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DataGeneration.GenerationUtils.RandomString(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.ImageProc.ImageProcessingUtils"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.ConvertBitmapToByteArrayBitmapImageFormat">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.ConvertBitmapToByteArray(System.Drawing.Bitmap,System.Drawing.Imaging.ImageFormat)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.ConvertToBitmapInt32ArrayInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.ConvertToBitmap(System.Int32[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.ConvertToByteInt32Array">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.ConvertToByte(System.Int32[])"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.ConvertToImageByteArrayInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.ConvertToImage(System.Byte[],System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.DetectAndTrimFaceInt32ArraySizeSizeString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.DetectAndTrimFace(System.Int32[],System.Drawing.Size,System.Drawing.Size,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.EqualizeHistImageOfGrayByte">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.EqualizeHist(Emgu.CV.Image`2{Emgu.CV.Structure.Gray,System.Byte})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageProcessingUtils.GetHaarCascadePath">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageProcessingUtils.GetHaarCascadePath"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.ImageProc.Moles.MImageServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.ImageProc.ImageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageServices.#ctor(CloudyBank.Services.ImageProc.ImageServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.MImageServices.Bind(CloudyBank.Core.Services.IImageServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AddImageToCustomerInt32ArrayInt32Int32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.AddImageToCustomer(System.Int32[],System.Int32,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.ConstructorIRepositoryIImageRepository">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IImageRepository)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.CreateRecognizerDoubleInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.CreateRecognizer(System.Double,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.GetCustomerImagesInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.GetCustomerImages(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.HaarCascadeLocationGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.Services.ImageProc.ImageServices.HaarCascadeLocation"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.HaarCascadeLocationSetString">
+            <summary>Sets the mole of <see cref="P:CloudyBank.Services.ImageProc.ImageServices.HaarCascadeLocation"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.RecognizeCustomerInt32ArrayInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.RecognizeCustomer(System.Int32[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.RemoveCustomerImageInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.RemoveCustomerImage(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices._GetCustomerImagesb__1CustomerImage">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.&lt;GetCustomerImages&gt;b__1(CloudyBank.CoreDomain.Customers.CustomerImage)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.AddImageToCustomerInt32ArrayInt32Int32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.AddImageToCustomer(System.Int32[],System.Int32,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.CreateRecognizerDoubleInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.CreateRecognizer(System.Double,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.GetCustomerImagesInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.GetCustomerImages(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.HaarCascadeLocationGet">
+            <summary>Sets the mole of <see cref="P:CloudyBank.Services.ImageProc.ImageServices.HaarCascadeLocation"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.HaarCascadeLocationSetString">
+            <summary>Sets the mole of <see cref="P:CloudyBank.Services.ImageProc.ImageServices.HaarCascadeLocation"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.RecognizeCustomerInt32ArrayInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.RecognizeCustomer(System.Int32[],System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.MImageServices.AllInstances.RemoveCustomerImageInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ImageProc.ImageServices.RemoveCustomerImage(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Logging.Moles.MLoggingAdvice">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Logging.LoggingAdvice"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.#ctor(CloudyBank.Services.Logging.LoggingAdvice)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.Bind(AopAlliance.Aop.IAdvice)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.Bind(AopAlliance.Intercept.IInterceptor)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.MLoggingAdvice.Bind(AopAlliance.Intercept.IMethodInterceptor)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.MLoggingAdvice.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.MLoggingAdvice.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Logging.LoggingAdvice.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.MLoggingAdvice.InvokeIMethodInvocation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Logging.LoggingAdvice.Invoke(AopAlliance.Intercept.IMethodInvocation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Logging.Moles.MLoggingAdvice.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.MLoggingAdvice.AllInstances.InvokeIMethodInvocation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Logging.LoggingAdvice.Invoke(AopAlliance.Intercept.IMethodInvocation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.OperationDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.#ctor(CloudyBank.Services.DtoCreators.OperationDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Operation,CloudyBank.Dto.OperationDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.OperationDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.CreateOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.OperationDtoCreator.Create(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MOperationDtoCreator.AllInstances.CreateOperation">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.OperationDtoCreator.Create(CloudyBank.CoreDomain.Bank.Operation)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MOperationServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.OperationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MOperationServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MOperationServices.#ctor(CloudyBank.Services.OperationServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MOperationServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MOperationServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MOperationServices.Bind(CloudyBank.Core.Services.IOperationServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.ConstructorIOperationRepositoryIRepositoryIDtoCreatorOfOperationOperationDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.#ctor(CloudyBank.Core.DataAccess.IOperationRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.Operation,CloudyBank.Dto.OperationDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.GetOperationByAccountIdCodeInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationByAccountIdCode(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.GetOperationByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.GetOperationsByCustomerIDInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationsByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.GetOperationsDtoByCustomerIDInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationsDtoByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.GetOperationsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperations(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.InsertOperationFromCBSStringStringDecimalDateTime">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.InsertOperationFromCBS(System.String,System.String,System.Decimal,System.DateTime)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.InsertOperationsBulkDataStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.InsertOperationsBulkData(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.MakeTransferInt32Int32DecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.MakeTransfer(System.Int32,System.Int32,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.MakeTransferToExternalInt32StringDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.MakeTransferToExternal(System.Int32,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.TransferAccountAccountDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.Transfer(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Bank.Account,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.TransferToExternalAccountStringDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.TransferToExternal(CloudyBank.CoreDomain.Bank.Account,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices._GetOperationsByCustomerIDb__8KeyValuePairOfAccountRole">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.&lt;GetOperationsByCustomerID&gt;b__8(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.Role})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MOperationServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.GetOperationByAccountIdCodeInt32String">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationByAccountIdCode(System.Int32,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.GetOperationByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.GetOperationsByCustomerIDInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationsByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.GetOperationsDtoByCustomerIDInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperationsDtoByCustomerID(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.GetOperationsInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.GetOperations(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.InsertOperationFromCBSStringStringDecimalDateTime">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.InsertOperationFromCBS(System.String,System.String,System.Decimal,System.DateTime)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.InsertOperationsBulkDataStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.InsertOperationsBulkData(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.MakeTransferInt32Int32DecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.MakeTransfer(System.Int32,System.Int32,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.MakeTransferToExternalInt32StringDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.MakeTransferToExternal(System.Int32,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.TransferAccountAccountDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.Transfer(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Bank.Account,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances.TransferToExternalAccountStringDecimalString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.TransferToExternal(CloudyBank.CoreDomain.Bank.Account,System.String,System.Decimal,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MOperationServices.AllInstances._GetOperationsByCustomerIDb__8KeyValuePairOfAccountRole">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.OperationServices.&lt;GetOperationsByCustomerID&gt;b__8(System.Collections.Generic.KeyValuePair`2{CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.Role})"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.PaymentEventDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.#ctor(CloudyBank.Services.DtoCreators.PaymentEventDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.PaymentEvent,CloudyBank.Dto.PaymentEventDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.PaymentEventDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.CreatePaymentEvent">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.PaymentEventDtoCreator.Create(CloudyBank.CoreDomain.Bank.PaymentEvent)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MPaymentEventDtoCreator.AllInstances.CreatePaymentEvent">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.PaymentEventDtoCreator.Create(CloudyBank.CoreDomain.Bank.PaymentEvent)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MPaymentEventServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.PaymentEventServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MPaymentEventServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MPaymentEventServices.#ctor(CloudyBank.Services.PaymentEventServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MPaymentEventServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MPaymentEventServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MPaymentEventServices.Bind(CloudyBank.Core.Services.IPaymentEventServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.ConstructorIRepositoryIPaymentEventRepositoryIDtoCreatorOfPaymentEventPaymentEventDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IPaymentEventRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.PaymentEvent,CloudyBank.Dto.PaymentEventDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.CreatePaymentEventPaymentEventDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.CreatePaymentEvent(CloudyBank.Dto.PaymentEventDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.GetPaymentEventByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.GetPaymentEventById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.GetPaymentEventsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.MarkAsPayedInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.MarkAsPayed(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.RemovePaymentInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.RemovePayment(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.UpdatePaymentEventPaymentEventDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.UpdatePaymentEvent(CloudyBank.Dto.PaymentEventDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices._GetPaymentEventsForCustomerb__0PaymentEvent">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.&lt;GetPaymentEventsForCustomer&gt;b__0(CloudyBank.CoreDomain.Bank.PaymentEvent)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.CreatePaymentEventPaymentEventDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.CreatePaymentEvent(CloudyBank.Dto.PaymentEventDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.GetPaymentEventByIdInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.GetPaymentEventById(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.GetPaymentEventsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.GetPaymentEventsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.MarkAsPayedInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.MarkAsPayed(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.RemovePaymentInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.RemovePayment(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances.UpdatePaymentEventPaymentEventDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.UpdatePaymentEvent(CloudyBank.Dto.PaymentEventDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MPaymentEventServices.AllInstances._GetPaymentEventsForCustomerb__0PaymentEvent">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.PaymentEventServices.&lt;GetPaymentEventsForCustomer&gt;b__0(CloudyBank.CoreDomain.Bank.PaymentEvent)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.FileGeneration.PdfLibrary"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.ConvertPDFToBytesPdfDocument">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.FileGeneration.PdfLibrary.ConvertPDFToBytes(PdfSharp.Pdf.PdfDocument)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.FileGeneration.Moles.MPdfLibrary.GetClientAccountListICollectionOfAccountStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.FileGeneration.PdfLibrary.GetClientAccountList(System.Collections.Generic.ICollection`1{CloudyBank.CoreDomain.Bank.Account},System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MReportsServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.ReportsServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MReportsServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MReportsServices.#ctor(CloudyBank.Services.ReportsServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MReportsServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MReportsServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MReportsServices.Bind(CloudyBank.Core.Services.IReportsServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.ConstructorICloudStorageServicesIRepository">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ReportsServices.#ctor(CloudyBank.Core.Services.ICloudStorageServices,CloudyBank.Core.DataAccess.IRepository)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.GenerateAccountsListInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ReportsServices.GenerateAccountsList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.GetNameCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ReportsServices.GetName(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MReportsServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.AllInstances.GenerateAccountsListInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ReportsServices.GenerateAccountsList(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MReportsServices.AllInstances.GetNameCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.ReportsServices.GetName(CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.TagDepensesDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.#ctor(CloudyBank.Services.DtoCreators.TagDepensesDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.TagDepenses,CloudyBank.Dto.TagDepensesDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDepensesDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.CreateTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDepensesDtoCreator.Create(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDepensesDtoCreator.AllInstances.CreateTagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDepensesDtoCreator.Create(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTagDepensesServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.TagDepensesServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagDepensesServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagDepensesServices.#ctor(CloudyBank.Services.TagDepensesServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagDepensesServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagDepensesServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagDepensesServices.Bind(CloudyBank.Core.ITagDepensesServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.ConstructorIRepositoryIDtoCreatorOfTagDepensesTagDepensesDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.TagDepenses,CloudyBank.Dto.TagDepensesDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.GetTagDepensesForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.GetTagDepensesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.GetTagDepensesForProfileInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.GetTagDepensesForProfile(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices._GetTagDepensesForCustomerb__2TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.&lt;GetTagDepensesForCustomer&gt;b__2(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices._GetTagDepensesForProfileb__0TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.&lt;GetTagDepensesForProfile&gt;b__0(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTagDepensesServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.AllInstances.GetTagDepensesForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.GetTagDepensesForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.AllInstances.GetTagDepensesForProfileInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.GetTagDepensesForProfile(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.AllInstances._GetTagDepensesForCustomerb__2TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.&lt;GetTagDepensesForCustomer&gt;b__2(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagDepensesServices.AllInstances._GetTagDepensesForProfileb__0TagDepenses">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagDepensesServices.&lt;GetTagDepensesForProfile&gt;b__0(CloudyBank.CoreDomain.Bank.TagDepenses)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.TagDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.#ctor(CloudyBank.Services.DtoCreators.TagDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.Dto.TagDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.CreateTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDtoCreator.Create(CloudyBank.CoreDomain.Bank.Tag)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTagDtoCreator.AllInstances.CreateTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TagDtoCreator.Create(CloudyBank.CoreDomain.Bank.Tag)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTagServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.TagServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagServices.#ctor(CloudyBank.Services.TagServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTagServices.Bind(CloudyBank.Core.Services.ITagServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.ConstructorIRepositoryITagRepositoryIDtoCreatorOfTagTagDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.ITagRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.Dto.TagDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.CreateTagInt32TagDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.CreateTag(System.Int32,CloudyBank.Dto.TagDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.GetStandardTags">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.GetStandardTags"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.GetTagsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.RemoveTagInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.RemoveTag(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.SaveOrUpdateTagTagDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.SaveOrUpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.TagOperationInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.TagOperation(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.UpdateTagTagDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.UpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices._GetStandardTagsb__3StandardTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.&lt;GetStandardTags&gt;b__3(CloudyBank.CoreDomain.Bank.StandardTag)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices._GetTagsForCustomerb__0UserTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.&lt;GetTagsForCustomer&gt;b__0(CloudyBank.CoreDomain.Bank.UserTag)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTagServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.CreateTagInt32TagDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.CreateTag(System.Int32,CloudyBank.Dto.TagDto)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.GetStandardTags">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.GetStandardTags"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.GetTagsForCustomerInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.GetTagsForCustomer(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.RemoveTagInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.RemoveTag(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.SaveOrUpdateTagTagDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.SaveOrUpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.TagOperationInt32Int32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.TagOperation(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances.UpdateTagTagDtoInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.UpdateTag(CloudyBank.Dto.TagDto,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTagServices.AllInstances._GetTagsForCustomerb__0UserTag">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TagServices.&lt;GetTagsForCustomer&gt;b__0(CloudyBank.CoreDomain.Bank.UserTag)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.TaskDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.#ctor(CloudyBank.Services.DtoCreators.TaskDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Advisors.Task,CloudyBank.Dto.TaskDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TaskDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.CreateTask">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TaskDtoCreator.Create(CloudyBank.CoreDomain.Advisors.Task)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MTaskDtoCreator.AllInstances.CreateTask">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.TaskDtoCreator.Create(CloudyBank.CoreDomain.Advisors.Task)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTaskServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.TaskServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTaskServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTaskServices.#ctor(CloudyBank.Services.TaskServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTaskServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTaskServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MTaskServices.Bind(CloudyBank.Core.Services.ITaskServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTaskServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTaskServices.ConstructorIRepositoryITaskRepositoryIDtoCreatorOfTaskTaskDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TaskServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.ITaskRepository,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Advisors.Task,CloudyBank.Dto.TaskDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTaskServices.GetTasksForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TaskServices.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MTaskServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MTaskServices.AllInstances.GetTasksForAdvisorInt32">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.TaskServices.GetTasksForAdvisor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.DtoCreators.UserIdentityDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.#ctor(CloudyBank.Services.DtoCreators.UserIdentityDtoCreator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.Bind(CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Security.UserIdentity,CloudyBank.Dto.UserIdentityDto})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.Constructor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.UserIdentityDtoCreator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.CreateUserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.UserIdentityDtoCreator.Create(CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.MUserIdentityDtoCreator.AllInstances.CreateUserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.DtoCreators.UserIdentityDtoCreator.Create(CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MUserServices">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.UserServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MUserServices.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MUserServices.#ctor(CloudyBank.Services.UserServices)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MUserServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MUserServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.MUserServices.Bind(CloudyBank.Core.Services.IUserServices)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AuthenticateUserStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.AuthenticateUser(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.ConstructorICustomerRepositoryIRepositoryIUserRepositoryIHashProviderIDtoCreatorOfUserIdentityUserIdentityDto">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.#ctor(CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IUserRepository,CloudyBank.Core.Security.IHashProvider,CloudyBank.Core.Dto.IDtoCreator`2{CloudyBank.CoreDomain.Security.UserIdentity,CloudyBank.Dto.UserIdentityDto})"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.CreateNewCustomerStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.CreateNewCustomer(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.GetAdvisorRightsAccountAdvisor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetAdvisorRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.GetCustomerRightsAccountCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetCustomerRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.GetUserByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.GetUserRightsAccountUserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.GetUserRightsInt32UserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserRights(System.Int32,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.MUserServices.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.AuthenticateUserStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.AuthenticateUser(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.CreateNewCustomerStringStringString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.CreateNewCustomer(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.GetAdvisorRightsAccountAdvisor">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetAdvisorRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Advisors.Advisor)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.GetCustomerRightsAccountCustomer">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetCustomerRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Customers.Customer)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.GetUserByIdentityString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserByIdentity(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.GetUserRightsAccountUserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserRights(CloudyBank.CoreDomain.Bank.Account,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.MUserServices.AllInstances.GetUserRightsInt32UserIdentity">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.UserServices.GetUserRights(System.Int32,CloudyBank.CoreDomain.Security.UserIdentity)"/>
+            </summary>
+        </member>
+        <member name="T:CloudyBank.Services.Technical.Moles.MUtils">
+            <summary>Mole type of <see cref="T:CloudyBank.Services.Technical.Utils"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MUtils.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MUtils.AreListsEqualsIListOfTIListOfT``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0},System.Boolean})">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.Utils.AreListsEquals``1(System.Collections.Generic.IList`1{``0},System.Collections.Generic.IList`1{``0})"/>
+            </summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MUtils.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Technical.Moles.MUtils.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MUtils.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MUtils.GetAppDataPathString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.Utils.GetAppDataPath(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:CloudyBank.Services.Technical.Moles.MUtils.GetStringAfterLastSlashString">
+            <summary>Sets the mole of <see cref="M:CloudyBank.Services.Technical.Utils.GetStringAfterLastSlash(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Moles.Framework.OctoBankServicesDelegates">
+            <summary>Contains custom delegates used for the stubs and moles of CloudyBank.Services</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SAccountDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.AccountDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SAccountDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SAccountDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SAccountDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SAccountDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SAccountDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SAccountServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.AccountServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAccountServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IAccountRepository,CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Account,CloudyBank.Dto.AccountDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAccountServices.InitializeStub">
+            <summary>Initializes a new instance of type SAccountServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAccountServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAccountServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SAdvisorDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.AdvisorDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SAdvisorDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SAdvisorDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SAdvisorDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SAdvisorDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SAdvisorDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SAdvisorServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.AdvisorServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAdvisorServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IAdvisorRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Advisors.Advisor,CloudyBank.Dto.AdvisorDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAdvisorServices.InitializeStub">
+            <summary>Initializes a new instance of type SAdvisorServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAdvisorServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAdvisorServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SAgencyServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.AgencyServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAgencyServices.#ctor(CloudyBank.Core.DataAccess.IRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAgencyServices.InitializeStub">
+            <summary>Initializes a new instance of type SAgencyServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAgencyServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAgencyServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Aggregations.Moles.SAggregationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.Aggregations.AggregationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.SAggregationServices.#ctor(CloudyBank.Core.DataAccess.IRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Aggregations.Moles.SAggregationServices.InitializeStub">
+            <summary>Initializes a new instance of type SAggregationServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.SAggregationServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Aggregations.Moles.SAggregationServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SAzureStorageServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.AzureStorageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAzureStorageServices.#ctor(CloudyBank.Core.DataAccess.IRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SAzureStorageServices.InitializeStub">
+            <summary>Initializes a new instance of type SAzureStorageServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAzureStorageServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SAzureStorageServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SBusinessPartnerDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.BusinessPartnerDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SBusinessPartnerDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SBusinessPartnerDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SBusinessPartnerDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SBusinessPartnerDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SBusinessPartnerDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Categorization.Moles.SCategorizationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.Categorization.CategorizationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.SCategorizationServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Services.IOperationServices)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Categorization.Moles.SCategorizationServices.InitializeStub">
+            <summary>Initializes a new instance of type SCategorizationServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.SCategorizationServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Categorization.Moles.SCategorizationServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SCustomerDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.CustomerDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SCustomerDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SCustomerDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SCustomerDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SCustomerDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SCustomerProfileServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.CustomerProfileServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SCustomerProfileServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.CustomerProfile,CloudyBank.Dto.CustomerProfileDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SCustomerProfileServices.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerProfileServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SCustomerProfileServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SCustomerProfileServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SCustomerServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.CustomerServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SCustomerServices.#ctor(CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Services.IAccountServices,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Customers.Customer,CloudyBank.Dto.CustomerDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SCustomerServices.InitializeStub">
+            <summary>Initializes a new instance of type SCustomerServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SCustomerServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SCustomerServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.ImageProc.Moles.SImageServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.ImageProc.ImageServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.SImageServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IImageRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.ImageProc.Moles.SImageServices.InitializeStub">
+            <summary>Initializes a new instance of type SImageServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.SImageServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.ImageProc.Moles.SImageServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Logging.Moles.SLoggingAdvice">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.Logging.LoggingAdvice"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.SLoggingAdvice.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Logging.Moles.SLoggingAdvice.InitializeStub">
+            <summary>Initializes a new instance of type SLoggingAdvice</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.SLoggingAdvice.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Logging.Moles.SLoggingAdvice.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SOperationDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.OperationDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SOperationDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SOperationDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SOperationDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SOperationDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SOperationDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SOperationServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.OperationServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SOperationServices.#ctor(CloudyBank.Core.DataAccess.IOperationRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Operation,CloudyBank.Dto.OperationDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SOperationServices.InitializeStub">
+            <summary>Initializes a new instance of type SOperationServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SOperationServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SOperationServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SPaymentEventDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.PaymentEventDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SPaymentEventDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SPaymentEventDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SPaymentEventDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SPaymentEventDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SPaymentEventDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SPaymentEventServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.PaymentEventServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SPaymentEventServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IPaymentEventRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.PaymentEvent,CloudyBank.Dto.PaymentEventDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SPaymentEventServices.InitializeStub">
+            <summary>Initializes a new instance of type SPaymentEventServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SPaymentEventServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SPaymentEventServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SReportsServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.ReportsServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SReportsServices.#ctor(CloudyBank.Core.Services.ICloudStorageServices,CloudyBank.Core.DataAccess.IRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SReportsServices.InitializeStub">
+            <summary>Initializes a new instance of type SReportsServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SReportsServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SReportsServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.STagDepensesDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.TagDepensesDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STagDepensesDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STagDepensesDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type STagDepensesDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STagDepensesDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STagDepensesDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.STagDepensesServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.TagDepensesServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STagDepensesServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.TagDepenses,CloudyBank.Dto.TagDepensesDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STagDepensesServices.InitializeStub">
+            <summary>Initializes a new instance of type STagDepensesServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STagDepensesServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STagDepensesServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.STagDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.TagDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STagDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STagDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type STagDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STagDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STagDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.STagServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.TagServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STagServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.ITagRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Bank.Tag,CloudyBank.Dto.TagDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STagServices.InitializeStub">
+            <summary>Initializes a new instance of type STagServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STagServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STagServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.STaskDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.TaskDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STaskDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.STaskDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type STaskDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STaskDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.STaskDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.STaskServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.TaskServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STaskServices.#ctor(CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.ITaskRepository,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Advisors.Task,CloudyBank.Dto.TaskDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.STaskServices.InitializeStub">
+            <summary>Initializes a new instance of type STaskServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STaskServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.STaskServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.DtoCreators.Moles.SUserIdentityDtoCreator">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.DtoCreators.UserIdentityDtoCreator"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SUserIdentityDtoCreator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.DtoCreators.Moles.SUserIdentityDtoCreator.InitializeStub">
+            <summary>Initializes a new instance of type SUserIdentityDtoCreator</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SUserIdentityDtoCreator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.DtoCreators.Moles.SUserIdentityDtoCreator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:CloudyBank.Services.Moles.SUserServices">
+            <summary>Stub type of <see cref="T:CloudyBank.Services.UserServices"/>
+            .</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SUserServices.#ctor(CloudyBank.Core.DataAccess.ICustomerRepository,CloudyBank.Core.DataAccess.IRepository,CloudyBank.Core.DataAccess.IUserRepository,CloudyBank.Core.Security.IHashProvider,CloudyBank.Core.Dto.IDtoCreator{CloudyBank.CoreDomain.Security.UserIdentity,CloudyBank.Dto.UserIdentityDto})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CloudyBank.Services.Moles.SUserServices.InitializeStub">
+            <summary>Initializes a new instance of type SUserServices</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SUserServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CloudyBank.Services.Moles.SUserServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

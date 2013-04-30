@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CloudyBank.CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="CloudyBank.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=octostorage;AccountKey=It21LiFBTBW+WESnn/fypJHTIEkHcQOZg4DdRauGr3z7q8/HIo2IyRNGwbQ9VYheOrOUeY6NMBzVak9F2jz6qQ==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=octostorage;AccountKey=It21LiFBTBW+WESnn/fypJHTIEkHcQOZg4DdRauGr3z7q8/HIo2IyRNGwbQ9VYheOrOUeY6NMBzVak9F2jz6qQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="jfa" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEEetWvHek+mXRcfwTVeei8gwDQYJKoZIhvcNAQEBBQAEggEALCJ/ItyMGvixXczZE9d2f0Y0fg7ozX5CAmU1mFTrZmWVSW1rMIyeF2kLjifZFOTNgPwKtDDtjFgJGIS/RiWr3eptfmfWVUvi3ZtuZq70+KcMlZcWAvI9cfp+mofZsQmmD23o3tG1FR5aCe9P8EUiJ4SLOnSiAZAqSfirLIHCUjWGrWHM/wXCaFOj7o13CZqkF8SvexWapQFRacqF7w2IR9Kg/rsarMRTrOruIdQzS0dEba45IygS7Gdlbr9aZZnEldzxAUWODHc4JxDEo2zcXtlaz01/4UrjX2vvmxcdvV+cJPDwvHlrPLg7AC53T+ctNQchl8GMj2vykNdcJ0gOWDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECFt5Yrf0G8z0gBBfxVw9PP1xQJ+PxcKkVerc" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-08-02T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="34C2E06F87BA82DA286364EEA5BEE3CE2CD925CF" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

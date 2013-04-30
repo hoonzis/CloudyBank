@@ -1,0 +1,20 @@
+\chapter{Summary}
+This thesis analyzed the current trends in online banking. During the analysis several innovative features were identified such as Personal Finance Management, document digitization and open data management, which will most likely become standard functions offered by the web banking portals.
+
+A set of functional and non-functional requirements was defined. The functional requirements were based mainly on the analysis of innovative functions, but also on the traditional banking functions. The non-functional requirements describe the demands on selected technologies, patterns and architectures.
+
+After the requirements were defined a technical solution was provided which solves most of the issues identified in the first part. This solution is build upon .NET technology stack and uses several open source libraries and components to implement the defined system. Since Cloud platforms are gaining in popularity and usability, the solution was designed to be deploy-able to Cloud platform. Azure platform was chosen to fit the .NET nature of the solution.
+
+This thesis has shown, that it is possible to build innovative system using open source or self-developed components. Features such as authentication using face recognition, payment categorization or implementation of electronic vault were defined and successfully developed. The solution has a service oriented architecture. All business layer functions are exposed as stateless services. This assures that the solution can in the future support any type of front-end client application.
+
+Universal approach was described in this thesis which gives the possibility to reuse the majority of the code in the presentation layer on Windows Phone 7 and Silverlight platforms, thanks to Model-View-ViewModel pattern.
+
+Modularity of the application was one of the non-functional requirements. The solution was designed to allow future replacements or improvements of individual modules. It should not be complicated to replace individual components by new ones, such as provide new image processing library for face authentication or completely change the data access layer.
+
+Special emphasis has been put on the testability of the solution. The solution was designed to allow testability of all of the parts and application modules. Infrastructure was build to allow the definition of functional tests by non-developers.
+
+Even though, that several innovative features were successfully implemented, not all the functions defined in the initial analyzes were developed. There is still a place to continue this work in two directions.
+
+First direction is the development of innovative features identified during the analysis which were not implemented. Since the web in general changes in fast pace, new innovative ideas will also emerge.
+
+Second direction is the improvement of the developed parts, such as new categorization engine based on different machine learning algorithm or change of the algorithm used for face authentication.

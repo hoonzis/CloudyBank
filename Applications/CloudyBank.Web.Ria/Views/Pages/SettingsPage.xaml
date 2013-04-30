@@ -1,0 +1,112 @@
+<navigation:Page x:Class="CloudyBank.Web.Ria.Views.Pages.SettingsPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:components="clr-namespace:CloudyBank.Web.Ria.Components;assembly=OctoBank.Web.Ria.Components"
+           xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+           xmlns:MVVM="clr-namespace:CloudyBank.MVVM;assembly=CloudyBank.MVVM"
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+           xmlns:viewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels"
+           xmlns:userControls="clr-namespace:CloudyBank.Web.Ria.UserControls"      
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="SettingsPage Page" Foreground="White">
+
+    <Grid x:Name="LayoutRoot">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <MVVM:ViewModelLocator ViewModelName="CustomerViewModel" x:Name="Customer"/>
+        
+        <Border x:Name="ImageTreatmentBorder" Margin="5">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="KeyDown">
+                    <MVVM:KeyEventToCommand Command="{Binding RemoveImage}" CommandParameter="{Binding Path=SelectedItem, ElementName=ImagesListBox}" Key="Delete"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <StackPanel>
+                <TextBlock Text="{Binding Path=SettingsPageRes.ManageImages, Source={StaticResource Strings}}" FontSize="16"/>
+                <TextBlock Text="{Binding Path=SettingsPageRes.ManageImagesMessage, Source={StaticResource Strings}}"/>
+                <Button x:Name="StartWebCamButton" Content="{Binding Path=SettingsPageRes.StartWebCam, Source={StaticResource Strings}}" 
+                        Click="StartWebCamButton_Click" Style="{StaticResource SimpleButton}" HorizontalAlignment="Right" 
+                        Background="{StaticResource LimeBrush}" Width="120"/>
+                
+                <components:ImageTaker x:Name="ImgTaker" Grid.Column="1" Visibility="Collapsed">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="ImageCaptured">
+                            <MVVM:EventToCommand Command="{Binding Path=AddImage}" BindParameters="True"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </components:ImageTaker>
+                <TextBlock x:Name="CurrentPicturesText" Text="{Binding Path=SettingsPageRes.CurrentPictures,Source={StaticResource Strings}}" FontSize="16" Margin="0,5,0,5"/>
+                <ListBox x:Name="ImagesListBox"  HorizontalAlignment="Right" ItemsSource="{Binding Images}">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="80" Height="80" Stretch="Fill" Source="{Binding Image}"></Image>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Border>
+                
+        <Border Grid.Column="1" Background="Transparent" Margin="5">
+            <StackPanel>
+                <TextBlock Text="{Binding Path=SettingsPageRes.OpenData, Source={StaticResource Strings}}" FontSize="16"/>
+                <TextBlock Text="{Binding Path=SettingsPageRes.ListOfTokens, Source={StaticResource Strings}}"/>
+                <TextBlock Text="{Binding Path=SettingsPageRes.TokensNote, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
+                
+                
+                
+                <ListBox ItemsSource="{Binding Tokens}" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource ListItemStyle}" Foreground="White">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="{Binding Path=SettingsPageRes.ApplicationName, Source={StaticResource Strings}, StringFormat='\{0\}:'}" FontWeight="Bold" Margin="0,0,3,0"/>
+                                    <TextBlock Text="{Binding ApplicationName}" Grid.Column="1"/>
+                                    <TextBlock Text="{Binding Path=SettingsPageRes.Resource, Source={StaticResource Strings}, StringFormat='\{0\}:'}" Grid.Row="1" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Scope}" Grid.Column="1" Grid.Row="1"/>
+                                    <Button Command="{Binding RemoveTokenCommand}" Style="{StaticResource SimpleButton}"  Content="{Binding Path=Common.Remove, Source={StaticResource Strings}}" 
+                                            Grid.Column="2" Grid.RowSpan="2" Margin="3" HorizontalAlignment="Right" Background="Transparent"/>
+                                </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Button Content="Reload" Command="{Binding LoadTokensCommand}" Style="{StaticResource SimpleButton}" HorizontalAlignment="Right" Background="{StaticResource LimeBrush}" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+        
+        <!--<StackPanel Grid.Row="1">
+            <RadioButton x:Name="AccountVMRB" Content="Account View Model" Foreground="White"/>
+            <RadioButton x:Name="CustomerVMRB" Content="Customer View Model" Foreground="White"/>
+            <Button x:Name="GenerateButton" Content="Generate" Click="GenerateButton_Click"/>
+        </StackPanel>-->
+        <controlsToolkit:BusyIndicator IsBusy="{Binding InProgress}" Visibility="{Binding InProgress,Converter={StaticResource BoolToVisibility}}"/>
+        
+    </Grid>
+</navigation:Page>

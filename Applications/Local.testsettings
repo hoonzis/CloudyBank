@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="34ddf666-00c8-451f-ae29-48a2b26b8564" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="Libraries\" />
+    <DeploymentItem filename="CloudyBank.Tests\Data\" />
+    <DeploymentItem filename="CloudyBank.Tests\Data\transactions.csv" />
+  </Deployment>
+  <Execution hostProcessPlatform="MSIL">
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="CloudyBank.Services\bin\Debug\CloudyBank.Services.dll" pdbFile="CloudyBank.Services\bin\Debug\CloudyBank.Services.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CloudyBank.CoreDomain\bin\Debug\CloudyBank.CoreDomain.dll" pdbFile="CloudyBank.CoreDomain\bin\Debug\CloudyBank.CoreDomain.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CloudyBank.Core\bin\Debug\CloudyBank.Core.dll" pdbFile="CloudyBank.Core\bin\Debug\CloudyBank.Core.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CloudyBank.DataAccess\bin\Debug\CloudyBank.DataAccess.dll" pdbFile="CloudyBank.DataAccess\bin\Debug\CloudyBank.DataAccess.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CloudyBank.Dto\bin\Debug\CloudyBank.Dto.dll" pdbFile="CloudyBank.Dto\bin\Debug\CloudyBank.Dto.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CloudyBank.Web.Ria\Bin\Debug\CloudyBank.Web.Ria.dll" pdbFile="CloudyBank.Web.Ria\Bin\Debug\CloudyBank.Web.Ria.pdb" instrumentInPlace="true" />
+              </Regular>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+</TestSettings>

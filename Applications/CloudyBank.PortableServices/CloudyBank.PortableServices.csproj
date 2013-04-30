@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F26E222A-85F6-4DF6-A51A-40A772B270FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudyBank.PortableServices</RootNamespace>
+    <AssemblyName>CloudyBank.PortableServices</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile2</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\CloudyBank.PortableServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\CloudyBank.PortableServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Accounts\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Advisors\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Agencies\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CustomerProfiles\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Customers\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Files\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Images\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Logs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OAuthTokens\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Operations\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Partners\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PaymentEvents\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TagDepenses\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Tags\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Users\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Accounts\CloudyBank.PortableServices.Accounts.AccountDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Accounts\CloudyBank.PortableServices.Accounts.BalancePointDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Accounts\WCFAccountPort1.wsdl" />
+    <None Include="Service References\Accounts\WCFAccountService2.wsdl" />
+    <None Include="Service References\Accounts\WCFAccountService21.wsdl" />
+    <None Include="Service References\Accounts\WCFAccountService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Accounts\WCFAccountService51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Accounts\WCFAccountService52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Advisors\CloudyBank.PortableServices.Advisors.AdvisorDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Advisors\WCFAdvisorPort.wsdl" />
+    <None Include="Service References\Advisors\WCFAdvisorService.wsdl" />
+    <None Include="Service References\Advisors\WCFAdvisorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Advisors\WCFAdvisorService1.wsdl" />
+    <None Include="Service References\Advisors\WCFAdvisorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Advisors\WCFAdvisorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Agencies\CloudyBank.PortableServices.Agencies.AgencyDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Agencies\WCFAgencyPort.wsdl" />
+    <None Include="Service References\Agencies\WCFAgencyService.wsdl" />
+    <None Include="Service References\Agencies\WCFAgencyService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Agencies\WCFAgencyService1.wsdl" />
+    <None Include="Service References\Agencies\WCFAgencyService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Agencies\WCFAgencyService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerProfiles\CloudyBank.PortableServices.CustomerProfiles.CustomerProfileDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfilePort.wsdl" />
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService.wsdl" />
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService1.wsdl" />
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\CloudyBank.PortableServices.Customers.CustomerDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Customers\WCFCustomerService2.wsdl" />
+    <None Include="Service References\Customers\WCFCustomerService21.wsdl" />
+    <None Include="Service References\Customers\WCFCustomerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\WCFCustomerService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\WCFCustomerService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\WCFCustomerService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\WCFCustomerService44.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Customers\WCFCustomersPort1.wsdl" />
+    <None Include="Service References\Files\CloudyBank.PortableServices.Files.FileDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Files\WCFFilePort.wsdl" />
+    <None Include="Service References\Files\WCFFileService.wsdl" />
+    <None Include="Service References\Files\WCFFileService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Files\WCFFileService1.wsdl" />
+    <None Include="Service References\Files\WCFFileService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Files\WCFFileService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Images\CloudyBank.PortableServices.Images.CustomerImageDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Images\WCFImageService.wsdl" />
+    <None Include="Service References\Images\WCFImageService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Images\WCFImageService1.wsdl" />
+    <None Include="Service References\Images\WCFImageService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Images\WCFImageService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Images\WCFImageService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Logs\WCFLogService.wsdl" />
+    <None Include="Service References\Logs\WCFLogService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Logs\WCFLogService1.wsdl" />
+    <None Include="Service References\Logs\WCFLogService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAuthTokens\CloudyBank.PortableServices.OAuthTokens.TokenDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService.wsdl" />
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService1.wsdl" />
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Operations\CloudyBank.PortableServices.Operations.OperationDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Operations\WCFOperationPort.wsdl" />
+    <None Include="Service References\Operations\WCFOperationService.wsdl" />
+    <None Include="Service References\Operations\WCFOperationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Operations\WCFOperationService1.wsdl" />
+    <None Include="Service References\Operations\WCFOperationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Operations\WCFOperationService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Partners\CloudyBank.PortableServices.Partners.BusinessPartnerDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Partners\WCFPartnerPort.wsdl" />
+    <None Include="Service References\Partners\WCFPartnerService.wsdl" />
+    <None Include="Service References\Partners\WCFPartnerService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Partners\WCFPartnerService1.wsdl" />
+    <None Include="Service References\Partners\WCFPartnerService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Partners\WCFPartnerService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentEvents\CloudyBank.PortableServices.PaymentEvents.PaymentEventDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PaymentEvents\WCFPaymentEventPort.wsdl" />
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService.wsdl" />
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService1.wsdl" />
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TagDepenses\CloudyBank.PortableServices.TagDepenses.TagDepensesDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TagDepenses\WCFTagDepensesPort.wsdl" />
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices.wsdl" />
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices1.wsdl" />
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tags\CloudyBank.PortableServices.Tags.TagDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Tags\WCFTagPort.wsdl" />
+    <None Include="Service References\Tags\WCFTagService.wsdl" />
+    <None Include="Service References\Tags\WCFTagService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tags\WCFTagService1.wsdl" />
+    <None Include="Service References\Tags\WCFTagService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tags\WCFTagService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Users\CloudyBank.PortableServices.Users.UserIdentityDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Users\WCFUserPort.wsdl" />
+    <None Include="Service References\Users\WCFUserService.wsdl" />
+    <None Include="Service References\Users\WCFUserService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Users\WCFUserService1.wsdl" />
+    <None Include="Service References\Users\WCFUserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Users\WCFUserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Users\WCFUserService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ServiceReferences.ClientConfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Accounts\" />
+    <WCFMetadataStorage Include="Service References\Advisors\" />
+    <WCFMetadataStorage Include="Service References\Agencies\" />
+    <WCFMetadataStorage Include="Service References\CustomerProfiles\" />
+    <WCFMetadataStorage Include="Service References\Customers\" />
+    <WCFMetadataStorage Include="Service References\Files\" />
+    <WCFMetadataStorage Include="Service References\Images\" />
+    <WCFMetadataStorage Include="Service References\Logs\" />
+    <WCFMetadataStorage Include="Service References\OAuthTokens\" />
+    <WCFMetadataStorage Include="Service References\Operations\" />
+    <WCFMetadataStorage Include="Service References\Partners\" />
+    <WCFMetadataStorage Include="Service References\PaymentEvents\" />
+    <WCFMetadataStorage Include="Service References\TagDepenses\" />
+    <WCFMetadataStorage Include="Service References\Tags\" />
+    <WCFMetadataStorage Include="Service References\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Accounts\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Accounts\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Accounts\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerProfiles\WCFCustomerProfileService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerProfiles\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerProfiles\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerProfiles\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Customers\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Customers\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Customers\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TagDepenses\WCFTagDepensesServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TagDepenses\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TagDepenses\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TagDepenses\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Tags\WCFTagService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Tags\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Tags\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Tags\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Users\WCFUserService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Users\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Users\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Users\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Advisors\WCFAdvisorService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Advisors\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Advisors\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Advisors\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Agencies\WCFAgencyService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Agencies\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Agencies\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Agencies\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Files\WCFFileService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Files\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Files\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Files\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Images\WCFImageService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Images\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Images\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Images\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Logs\WCFLogService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Logs\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Logs\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Logs\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Operations\WCFOperationService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Operations\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Operations\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Operations\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Partners\WCFPartnerService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Partners\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Partners\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Partners\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentEvents\WCFPaymentEventService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentEvents\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentEvents\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentEvents\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OAuthTokens\WCFOAuthManagementService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OAuthTokens\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OAuthTokens\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OAuthTokens\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Customers\WCFCustomerService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Accounts\WCFAccountService1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

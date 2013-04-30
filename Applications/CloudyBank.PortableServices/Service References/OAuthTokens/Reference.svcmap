@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="baceedc3-4137-4bbd-be8a-831507d9ad95" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFOAuthManagementService.xsd" MetadataType="Schema" ID="dd14d33a-fa67-49d0-9c9b-78f4cad22a5b" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFOAuthManagementService.disco" MetadataType="Disco" ID="2c2ddfe1-85c3-4671-a53e-8f5183fa13f4" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?disco" />
+    <MetadataFile FileName="WCFOAuthManagementService.wsdl" MetadataType="Wsdl" ID="d6e145d9-e9c9-42b5-9b3b-d042bdac51a0" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?wsdl" />
+    <MetadataFile FileName="WCFOAuthManagementService2.xsd" MetadataType="Schema" ID="cf41c2e1-c8dd-4494-a187-c6dd661d1c53" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFOAuthManagementService1.wsdl" MetadataType="Wsdl" ID="77cd15ed-6994-4d49-a173-38c187978c71" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCFOAuthManagementService1.xsd" MetadataType="Schema" ID="ab78d2b9-cc85-4d15-bc7e-264382824f5c" SourceId="1" SourceUrl="http://localhost:49830/WCFServices/WCFOAuthManagementService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

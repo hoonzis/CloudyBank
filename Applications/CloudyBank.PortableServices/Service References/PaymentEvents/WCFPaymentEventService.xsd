@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPaymentEventDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentEventDto" nillable="true" type="tns:PaymentEventDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentEventDto" nillable="true" type="tns:ArrayOfPaymentEventDto" />
+  <xs:complexType name="PaymentEventDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountId" type="xs:int" />
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="PartnerIban" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartnerId" type="xs:int" />
+      <xs:element minOccurs="0" name="PartnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Regular" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentEventDto" nillable="true" type="tns:PaymentEventDto" />
+</xs:schema>

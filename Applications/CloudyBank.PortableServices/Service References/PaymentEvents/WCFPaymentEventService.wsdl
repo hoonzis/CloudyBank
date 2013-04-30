@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="octo.events.service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="octo.events.service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="octo.events.service/Imports">
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPaymentEventService.svc?xsd=xsd0" namespace="octo.events.service" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPaymentEventService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49830/WCFServices/WCFPaymentEventService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudyBank.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="WCFPaymentEventService_GetPaymentEventsForCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentEventsForCustomer" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_GetPaymentEventsForCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentEventsForCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_CreatePaymentEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentEvent" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_CreatePaymentEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_GetPaymentEventById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentEventById" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_GetPaymentEventById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentEventByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_RemovePaymentEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePaymentEvent" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_RemovePaymentEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePaymentEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_UpdatePaymentEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentEvent" />
+  </wsdl:message>
+  <wsdl:message name="WCFPaymentEventService_UpdatePaymentEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentEventResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCFPaymentEventService">
+    <wsdl:operation name="GetPaymentEventsForCustomer">
+      <wsdl:input wsaw:Action="octo.events.service/WCFPaymentEventService/GetPaymentEventsForCustomer" message="tns:WCFPaymentEventService_GetPaymentEventsForCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="octo.events.service/WCFPaymentEventService/GetPaymentEventsForCustomerResponse" message="tns:WCFPaymentEventService_GetPaymentEventsForCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentEvent">
+      <wsdl:input wsaw:Action="octo.events.service/WCFPaymentEventService/CreatePaymentEvent" message="tns:WCFPaymentEventService_CreatePaymentEvent_InputMessage" />
+      <wsdl:output wsaw:Action="octo.events.service/WCFPaymentEventService/CreatePaymentEventResponse" message="tns:WCFPaymentEventService_CreatePaymentEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentEventById">
+      <wsdl:input wsaw:Action="octo.events.service/WCFPaymentEventService/GetPaymentEventById" message="tns:WCFPaymentEventService_GetPaymentEventById_InputMessage" />
+      <wsdl:output wsaw:Action="octo.events.service/WCFPaymentEventService/GetPaymentEventByIdResponse" message="tns:WCFPaymentEventService_GetPaymentEventById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePaymentEvent">
+      <wsdl:input wsaw:Action="octo.events.service/WCFPaymentEventService/RemovePaymentEvent" message="tns:WCFPaymentEventService_RemovePaymentEvent_InputMessage" />
+      <wsdl:output wsaw:Action="octo.events.service/WCFPaymentEventService/RemovePaymentEventResponse" message="tns:WCFPaymentEventService_RemovePaymentEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentEvent">
+      <wsdl:input wsaw:Action="octo.events.service/WCFPaymentEventService/UpdatePaymentEvent" message="tns:WCFPaymentEventService_UpdatePaymentEvent_InputMessage" />
+      <wsdl:output wsaw:Action="octo.events.service/WCFPaymentEventService/UpdatePaymentEventResponse" message="tns:WCFPaymentEventService_UpdatePaymentEvent_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

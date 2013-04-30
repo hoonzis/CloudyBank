@@ -1,0 +1,44 @@
+<Application
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:resources="clr-namespace:CloudyBank.Web.Ria.Resources"
+  xmlns:technical="clr-namespace:CloudyBank.Web.Ria.Technical"
+  xmlns:viewModels="clr-namespace:CloudyBank.Web.Ria.ViewModels" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"   
+  x:Class="CloudyBank.Web.Ria.App"
+  >
+
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Assets/Styles.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+
+            <!-- Converters -->
+            <technical:BoolToVisibilityConverter x:Key="BoolToVisibility" TrueValue="Visible" FalseValue="Collapsed"/>
+            <technical:BoolToVisibilityConverter x:Key="BoolToVisibilityReversed" TrueValue="Collapsed" FalseValue="Visible"/>
+            <technical:BoolToFillConverter x:Key="OperationBoolToFill" TrueValue="Green" FalseValue="Red"/>
+            <technical:ParameterToIntegerConverter x:Key="ParameterToInt"/>
+            <technical:IntegerToColorConverter x:Key="IntegerToColor"/>
+            <technical:IsInCollectionConverter x:Key="IsInCollection"/>
+       
+            <!-- String Resources -->
+            <resources:LocalizedStrings x:Key="Strings" />
+        
+            <!-- Referential data -->
+            <viewModels:ReferentialDataViewModel x:Key="Referential"/>
+
+            <!-- Brushes -->
+            <SolidColorBrush x:Name="LimeBrush" Color="#8CBF26"/>
+            <SolidColorBrush x:Name="OrangeBrush" Color="#F09609"/>
+            <SolidColorBrush x:Name="RedBrush" Color="#E51400"/>
+            <SolidColorBrush x:Name="BlueBrush" Color="#1BA1E2"/>
+            <SolidColorBrush x:Name="GreenBrush" Color="#339933"/>
+            <SolidColorBrush x:Name="BrownBrush" Color="#996600"/>
+            <SolidColorBrush x:Name="TealBrush" Color="#00ABA9"/>
+            <SolidColorBrush x:Name="MagentaBrush" Color="#FF0097"/>
+            <SolidColorBrush x:Name="PurpleBrush" Color="#A200FF"/>
+
+        </ResourceDictionary>
+  </Application.Resources>
+
+</Application>
